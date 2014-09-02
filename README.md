@@ -20,6 +20,7 @@ triggers OpenNMS events on the event bus. As we have not ported the event bus,
 there will be a hook to an Event Service, which the Discovery service will 
 check for presence. If not, it will log that the service is not available. 
 
-
+As services are littered with Event-bus annotations, we duplicate the annotation (But change the namespace)
+, but will not have a processor for it. 
 
 
