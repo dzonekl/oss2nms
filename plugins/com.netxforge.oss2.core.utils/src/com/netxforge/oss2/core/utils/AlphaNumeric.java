@@ -28,7 +28,7 @@
 
 package com.netxforge.oss2.core.utils;
 
-import org.opennms.core.utils.ThreadCategory;
+import com.netxforge.oss2.core.utilsII.ThreadCategory;
 
 /**
  * Convenience classes for parsing and manipulating Strings.

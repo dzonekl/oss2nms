@@ -8,4 +8,7 @@ Bundle-Vendor: NetXForge
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: org.osgi.framework;version="1.3.0"
 Bundle-ActivationPolicy: lazy
-Require-Bundle: com.netxforge.oss2.model;bundle-version="1.0.0"
+Require-Bundle: com.netxforge.oss2.model;bundle-version="1.0.0",
+ com.netxforge.oss2.icmp;bundle-version="1.0.0",
+ com.netxforge.oss2.core.utils;bundle-version="1.0.0",
+ com.netxforge.oss2.core;bundle-version="1.0.0"

@@ -31,6 +31,8 @@ package com.netxforge.oss2.core.utils;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.netxforge.oss2.core.utilsII.ThreadCategory;
+
 
 /**
  * <p>Abstract StringReplaceOperation class.</p>

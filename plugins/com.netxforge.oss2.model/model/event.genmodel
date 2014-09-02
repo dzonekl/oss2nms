@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.netxforge.oss2.model/src" modelPluginID="com.netxforge.oss2.model"
+    modelName="Event" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="6.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>event.xsd</foreignModel>
+  <genPackages prefix="Event" basePackage="org.opennms.xmlns.xsd" resource="XML" disposableProviderFactory="true"
+      ecorePackage="event.ecore#/">
+    <genDataTypes ecoreDataType="event.ecore#//AlarmTypeType"/>
+    <genDataTypes ecoreDataType="event.ecore#//AlarmTypeTypeObject"/>
+    <genDataTypes ecoreDataType="event.ecore#//DbidType"/>
+    <genDataTypes ecoreDataType="event.ecore#//DbidTypeObject"/>
+    <genDataTypes ecoreDataType="event.ecore#//DestType"/>
+    <genDataTypes ecoreDataType="event.ecore#//EncodingType"/>
+    <genDataTypes ecoreDataType="event.ecore#//MechanismType"/>
+    <genDataTypes ecoreDataType="event.ecore#//PathType"/>
+    <genDataTypes ecoreDataType="event.ecore#//StateType"/>
+    <genDataTypes ecoreDataType="event.ecore#//StateType1"/>
+    <genDataTypes ecoreDataType="event.ecore#//StateType2"/>
+    <genDataTypes ecoreDataType="event.ecore#//StateType3"/>
+    <genDataTypes ecoreDataType="event.ecore#//StateType4"/>
+    <genDataTypes ecoreDataType="event.ecore#//StateType5"/>
+    <genDataTypes ecoreDataType="event.ecore#//TypeType"/>
+    <genDataTypes ecoreDataType="event.ecore#//X733AlarmType"/>
+    <genClasses ecoreClass="event.ecore#//AlarmDataType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//AlarmDataType/updateField"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//AlarmDataType/alarmType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//AlarmDataType/autoClean"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//AlarmDataType/clearKey"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//AlarmDataType/reductionKey"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//AlarmDataType/x733AlarmType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//AlarmDataType/x733ProbableCause"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//AutoacknowledgeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//AutoacknowledgeType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//AutoacknowledgeType/state"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//AutoactionType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//AutoactionType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//AutoactionType/state"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//CorrelationType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//CorrelationType/cuei"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//CorrelationType/cmin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//CorrelationType/cmax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//CorrelationType/ctime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//CorrelationType/path"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//CorrelationType/state"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/alarmData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/autoacknowledge"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/autoaction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/correlation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/event"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/eventReceipt"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/events"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/forward"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/header"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/log"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/logmsg"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/mask"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/maskelement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/operaction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/parm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/parms"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/script"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/snmp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/tticket"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//DocumentRoot/value"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//EventReceiptType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventReceiptType/uuid"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//EventsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventsType/event"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//EventType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/dbid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/distPoller"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/creationTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/masterStation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/mask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/uei"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/nodeid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/time"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/host"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/interface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/snmphost"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/service"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/snmp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/parms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/descr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/logmsg"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/severity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/pathoutage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/correlation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/operinstruct"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/autoaction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/operaction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/autoacknowledge"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/loggroup"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/tticket"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/forward"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/script"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/ifIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/ifAlias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/mouseovertext"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//EventType/alarmData"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//EventType/uuid"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//ForwardType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//ForwardType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//ForwardType/mechanism"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//ForwardType/state"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//HeaderType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//HeaderType/ver"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//HeaderType/dpName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//HeaderType/created"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//HeaderType/mstation"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//LogmsgType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//LogmsgType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//LogmsgType/dest"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//LogmsgType/notify"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//LogType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//LogType/header"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//LogType/events"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//MaskelementType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//MaskelementType/mename"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//MaskelementType/mevalue"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//MaskType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//MaskType/maskelement"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//OperactionType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//OperactionType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//OperactionType/menutext"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//OperactionType/state"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//ParmsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//ParmsType/parm"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//ParmType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//ParmType/parmName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference event.ecore#//ParmType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//ScriptType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//ScriptType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//ScriptType/language"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//SnmpType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//SnmpType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//SnmpType/idtext"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//SnmpType/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//SnmpType/specific"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//SnmpType/generic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//SnmpType/community"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//SnmpType/timeStamp"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//TticketType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//TticketType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//TticketType/state"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//UpdateFieldType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//UpdateFieldType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//UpdateFieldType/update"/>
+    </genClasses>
+    <genClasses ecoreClass="event.ecore#//ValueType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//ValueType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//ValueType/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event.ecore#//ValueType/type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -39,6 +39,8 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 
+import com.netxforge.oss2.core.utilsII.LogUtils;
+
 /**
  * @author <a href="mailto:seth@opennms.org">Seth</a>
  * @author <a href="http://www.opennms.org">OpenNMS </a>

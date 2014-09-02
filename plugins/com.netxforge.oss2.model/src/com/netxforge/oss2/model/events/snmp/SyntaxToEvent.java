@@ -28,10 +28,9 @@
 
 package com.netxforge.oss2.model.events.snmp;
 
-import org.opennms.netmgt.EventConstants;
-import org.opennms.netmgt.snmp.SnmpValue;
-import org.opennms.netmgt.xml.event.Parm;
-import org.opennms.netmgt.xml.event.Value;
+import com.netxforge.oss2.EventConstants;
+import com.netxforge.oss2.xml.event.Parm;
+import com.netxforge.oss2.xml.event.Value;
 
 /**
  * <p>SyntaxToEvent class.</p>

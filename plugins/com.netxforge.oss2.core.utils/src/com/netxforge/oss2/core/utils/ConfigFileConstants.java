@@ -32,7 +32,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.opennms.core.utils.LogUtils;
+import com.netxforge.oss2.core.utilsII.LogUtils;
 
 /**
  * This class holds all OpenNMS related config filenames

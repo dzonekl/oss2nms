@@ -32,8 +32,9 @@
 
 package com.netxforge.oss2.xml.event;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static com.netxforge.oss2.core.utils.InetAddressUtils.addr;
+import static com.netxforge.oss2.core.utils.InetAddressUtils.str;
+
 
 import java.io.Serializable;
 import java.net.InetAddress;
@@ -53,7 +54,9 @@ import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
-import org.opennms.core.xml.bind.InetAddressXmlAdapter;
+
+//import org.opennms.core.xml.bind.InetAddressXmlAdapter;
+import com.netxforge.oss2.core.utils.xml.bind.InetAddressXmlAdapter;
 
 @XmlRootElement(name = "event")
 @XmlAccessorType(XmlAccessType.FIELD)

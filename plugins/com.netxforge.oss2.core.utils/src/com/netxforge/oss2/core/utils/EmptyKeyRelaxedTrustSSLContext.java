@@ -15,7 +15,7 @@ import javax.net.ssl.SSLSessionContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-import org.opennms.core.utils.ThreadCategory;
+import com.netxforge.oss2.core.utilsII.ThreadCategory;
 
 /*******************************************************************************
  * This file is part of OpenNMS(R).

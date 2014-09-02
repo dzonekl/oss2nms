@@ -5,5 +5,11 @@ Bundle-SymbolicName: com.netxforge.oss2.model
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: NetXForge
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: com.netxforge.oss2.model.events.annotations
-Require-Bundle: org.apache.commons.lang;bundle-version="2.6.0"
+Export-Package: com.netxforge.oss2,
+ com.netxforge.oss2.model,
+ com.netxforge.oss2.model.discovery,
+ com.netxforge.oss2.model.events,
+ com.netxforge.oss2.model.events.annotations,
+ com.netxforge.oss2.xml.event
+Require-Bundle: org.apache.commons.lang;bundle-version="2.6.0",
+ com.netxforge.oss2.core.utils;bundle-version="1.0.0"

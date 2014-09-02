@@ -30,6 +30,8 @@ package com.netxforge.oss2.core.utils;
 
 import java.util.Locale;
 
+import com.netxforge.oss2.core.utilsII.LogUtils;
+
 /**
  * @author Seth
  */

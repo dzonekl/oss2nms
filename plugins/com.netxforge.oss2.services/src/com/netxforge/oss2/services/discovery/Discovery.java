@@ -45,25 +45,28 @@ import java.util.concurrent.locks.Lock;
 import org.exolab.castor.xml.MarshalException;
 import org.exolab.castor.xml.ValidationException;
 
-
+// DB Stuff....
 import org.opennms.core.db.DataSourceFactory;
 import org.opennms.core.utils.DBUtils;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.netmgt.EventConstants;
+
+import com.netxforge.oss2.EventConstants;
+import com.netxforge.oss2.core.utils.InetAddressUtils;
+
 import org.opennms.netmgt.config.DiscoveryConfigFactory;
-import org.opennms.netmgt.daemon.AbstractServiceDaemon;
+import com.netxforge.oss2.daemon.AbstractServiceDaemon;
+
 import org.opennms.netmgt.eventd.EventIpcManagerFactory;
-import org.opennms.netmgt.icmp.Pinger;
-import org.opennms.netmgt.model.discovery.IPPollAddress;
 
-
-import org.opennms.netmgt.model.events.EventBuilder;
-import org.opennms.netmgt.model.events.EventForwarder;
+import com.netxforge.oss2.icmp.Pinger;
+import com.netxforge.oss2.model.discovery.IPPollAddress;
+import com.netxforge.oss2.model.events.EventBuilder;
+import com.netxforge.oss2.model.events.EventForwarder;
 //import org.opennms.netmgt.model.events.annotations.EventHandler;
 //import org.opennms.netmgt.model.events.annotations.EventListener;
-
-import org.opennms.netmgt.xml.event.Event;
-import org.opennms.netmgt.xml.event.Parm;
+import com.netxforge.oss2.model.events.annotations.EventHandler;
+import com.netxforge.oss2.model.events.annotations.EventListener;
+import com.netxforge.oss2.xml.event.Event;
+import com.netxforge.oss2.xml.event.Parm;
 
 
 //import org.springframework.util.Assert;

@@ -74,7 +74,7 @@ public class Parm implements Serializable {
      * parm value
      */
 	@XmlElement(name="value", required=true)
-	private org.opennms.netmgt.xml.event.Value _value;
+	private Value _value;
 
 
       //----------------/
@@ -114,7 +114,7 @@ public class Parm implements Serializable {
      * 
      * @return the value of field 'Value'.
      */
-    public org.opennms.netmgt.xml.event.Value getValue(
+    public Value getValue(
     ) {
         return this._value;
     }
@@ -137,7 +137,7 @@ public class Parm implements Serializable {
      * @param value the value of field 'value'.
      */
     public void setValue(
-            final org.opennms.netmgt.xml.event.Value value) {
+            final Value value) {
         this._value = value;
     }
 
