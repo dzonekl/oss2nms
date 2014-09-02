@@ -29,7 +29,7 @@
 package com.netxforge.oss2.model.events;
 
 // castor generated event class
-import org.opennms.netmgt.xml.event.Event;
+import com.netxforge.oss2.xml.event.Event;
 
 /**
  * The interface to be implemented by all services that wish to receive events

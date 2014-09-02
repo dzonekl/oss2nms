@@ -30,7 +30,7 @@ package com.netxforge.oss2.model.events;
 
 import java.util.List;
 
-import org.opennms.netmgt.EventConstants;
+import com.netxforge.oss2.EventConstants;
 
 /**
  * This class contains the constants and methods related to inserting events

@@ -31,9 +31,9 @@ package com.netxforge.oss2.model.events;
 import java.util.Collection;
 import java.util.List;
 
-import org.opennms.netmgt.xml.event.Event;
-import org.opennms.netmgt.xml.event.Log;
-import org.springframework.util.Assert;
+import com.netxforge.oss2.xml.event.Event;
+import com.netxforge.oss2.xml.event.Log;
+//import org.springframework.util.Assert;
 
 /**
  * Late initializing proxy to another EventIpcManager object.

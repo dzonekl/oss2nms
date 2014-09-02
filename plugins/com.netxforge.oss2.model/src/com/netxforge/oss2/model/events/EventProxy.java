@@ -28,8 +28,8 @@
 
 package com.netxforge.oss2.model.events;
 
-import org.opennms.netmgt.xml.event.Event;
-import org.opennms.netmgt.xml.event.Log;
+import com.netxforge.oss2.xml.event.Event;
+import com.netxforge.oss2.xml.event.Log;
 
 /**
  * This is the interface used to send events into the event subsystem - It is

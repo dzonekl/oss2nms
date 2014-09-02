@@ -30,8 +30,8 @@ package com.netxforge.oss2.model.events;
 
 import java.sql.SQLException;
 
-import org.opennms.netmgt.xml.event.Event;
-import org.opennms.netmgt.xml.event.Header;
+import com.netxforge.oss2.xml.event.Event;
+import com.netxforge.oss2.xml.event.Header;
 
 
 /**

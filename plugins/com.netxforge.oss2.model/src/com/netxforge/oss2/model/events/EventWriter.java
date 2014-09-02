@@ -28,7 +28,7 @@
 
 package com.netxforge.oss2.model.events;
 
-import org.opennms.netmgt.xml.event.Event;
+import com.netxforge.oss2.xml.event.Event;
 
 /**
  * @author brozow

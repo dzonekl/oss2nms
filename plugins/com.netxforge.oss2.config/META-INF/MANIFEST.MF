@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NMS Config
+Bundle-SymbolicName: com.netxforge.oss2.config
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: NetXForge
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.netxforge.oss2.model;bundle-version="1.0.0",
+ com.netxforge.oss2.core.utils;bundle-version="1.0.0",
+ org.apache.commons.io;bundle-version="2.0.1"

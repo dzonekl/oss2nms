@@ -31,9 +31,9 @@ package com.netxforge.oss2.model.events;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.opennms.netmgt.xml.event.Event;
-import org.opennms.netmgt.xml.event.Parm;
-import org.opennms.netmgt.xml.event.Value;
+import com.netxforge.oss2.xml.event.Event;
+import com.netxforge.oss2.xml.event.Parm;
+import com.netxforge.oss2.xml.event.Value;
 
 /**
  * This is an utility class used to format the event parameters - to be inserted
