@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NMS Core Utils
+Bundle-SymbolicName: com.netxforge.oss2.core.utils
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: NetXForge
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
