@@ -62,13 +62,16 @@ import com.netxforge.oss2.core.utils.IteratorIterator;
 import com.netxforge.oss2.core.utilsII.LogUtils;
 import org.opennms.core.xml.CastorUtils;
 
-import org.opennms.netmgt.config.discovery.DiscoveryConfiguration;
-import org.opennms.netmgt.config.discovery.ExcludeRange;
-import org.opennms.netmgt.config.discovery.IncludeRange;
-import org.opennms.netmgt.config.discovery.IncludeUrl;
-import org.opennms.netmgt.config.discovery.Specific;
+import com.netxforge.oss2.config.discovery.DiscoveryConfiguration;
+import com.netxforge.oss2.config.discovery.ExcludeRange;
+import com.netxforge.oss2.config.discovery.IncludeRange;
+import com.netxforge.oss2.config.discovery.IncludeUrl;
+import com.netxforge.oss2.config.discovery.Specific;
 import com.netxforge.oss2.model.discovery.IPPollAddress;
 import com.netxforge.oss2.model.discovery.IPPollRange;
+
+
+// MIGRATE SPRING STUFF. 
 import org.springframework.core.io.FileSystemResource;
 
 /**

@@ -9,4 +9,5 @@ Export-Package: com.netxforge.oss2.daemon
 Require-Bundle: org.apache.log4j;bundle-version="1.2.15",
  org.slf4j.api;bundle-version="1.7.2",
  com.netxforge.oss2.model;bundle-version="1.0.0",
- com.netxforge.oss2.core.utils;bundle-version="1.0.0"
+ com.netxforge.oss2.core.utils;bundle-version="1.0.0",
+ org.apache.commons.io;bundle-version="2.0.1"

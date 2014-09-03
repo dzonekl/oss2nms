@@ -30,13 +30,12 @@ package com.netxforge.oss2.services.discovery;
 
 import java.net.InetAddress;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.ThreadCategory;
-import org.opennms.netmgt.EventConstants;
-import org.opennms.netmgt.eventd.EventIpcManagerFactory;
-import org.opennms.netmgt.icmp.EchoPacket;
-import org.opennms.netmgt.icmp.PingResponseCallback;
-import org.opennms.netmgt.model.events.EventBuilder;
+import com.netxforge.oss2.EventConstants;
+import com.netxforge.oss2.core.utils.InetAddressUtils;
+import com.netxforge.oss2.core.utilsII.ThreadCategory;
+import com.netxforge.oss2.icmp.EchoPacket;
+import com.netxforge.oss2.icmp.PingResponseCallback;
+import com.netxforge.oss2.model.events.EventBuilder;
 
 /**
  * <p>DiscoveryPingResponseCallback class.</p>
@@ -56,7 +55,9 @@ public class DiscoveryPingResponseCallback implements PingResponseCallback {
         eb.addParam("RTT", response.getReceivedTimeNanos() - response.getSentTimeNanos());
 
         try {
-            EventIpcManagerFactory.getIpcManager().sendNow(eb.getEvent());
+        	
+        	// CB TODO, WE HAVE NOT MIGRATED THE EventD Service, so we don't fire the event.  
+//            EventIpcManagerFactory.getIpcManager().sendNow(eb.getEvent());
 
             if (log().isDebugEnabled()) {
                 log().debug("Sent event: " + EventConstants.NEW_SUSPECT_INTERFACE_EVENT_UEI);

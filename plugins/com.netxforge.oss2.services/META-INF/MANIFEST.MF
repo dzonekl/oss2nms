@@ -11,4 +11,5 @@ Bundle-ActivationPolicy: lazy
 Require-Bundle: com.netxforge.oss2.model;bundle-version="1.0.0",
  com.netxforge.oss2.icmp;bundle-version="1.0.0",
  com.netxforge.oss2.core.utils;bundle-version="1.0.0",
- com.netxforge.oss2.core;bundle-version="1.0.0"
+ com.netxforge.oss2.core;bundle-version="1.0.0",
+ com.netxforge.oss2.config;bundle-version="1.0.0"

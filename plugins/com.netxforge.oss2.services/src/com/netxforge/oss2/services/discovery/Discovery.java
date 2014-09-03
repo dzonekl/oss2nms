@@ -52,10 +52,10 @@ import org.opennms.core.utils.DBUtils;
 import com.netxforge.oss2.EventConstants;
 import com.netxforge.oss2.core.utils.InetAddressUtils;
 
-import org.opennms.netmgt.config.DiscoveryConfigFactory;
+import com.netxforge.oss2.config.DiscoveryConfigFactory;
 import com.netxforge.oss2.daemon.AbstractServiceDaemon;
 
-import org.opennms.netmgt.eventd.EventIpcManagerFactory;
+//import org.opennms.netmgt.eventd.EventIpcManagerFactory;
 
 import com.netxforge.oss2.icmp.Pinger;
 import com.netxforge.oss2.model.discovery.IPPollAddress;
@@ -176,7 +176,8 @@ public class Discovery extends AbstractServiceDaemon {
         
         try {
             initializeConfiguration();
-            EventIpcManagerFactory.init();
+            // CB TODO eventd not migrated. 
+//            EventIpcManagerFactory.init();
         } catch (Throwable e) {
             log().debug("onInit: initialization failed: "+e, e);
             throw new IllegalStateException("Could not initialize discovery configuration.", e);
