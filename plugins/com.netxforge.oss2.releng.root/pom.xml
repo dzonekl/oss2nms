@@ -85,7 +85,7 @@
     <url>http://opennms.git.sourceforge.net/git/gitweb.cgi?p=opennms/opennms;a=shortlog;h=refs/heads/master</url>
   </scm>
   <modules>
-    <module>../dependencies</module>
+    <module>../../dependencies</module>
   </modules>
   <build>
   <extensions>
