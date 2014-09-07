@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: NMS Services
-Bundle-SymbolicName: org.netxforge.oss2.nms.services
+Bundle-SymbolicName: com.netxforge.oss2.services
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: com.netxforge.oss2.services.internal.NMSActivator
 Bundle-Vendor: NetXForge

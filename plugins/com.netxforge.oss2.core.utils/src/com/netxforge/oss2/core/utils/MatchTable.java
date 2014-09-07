@@ -29,6 +29,8 @@
 package com.netxforge.oss2.core.utils;
 
 import java.util.regex.Matcher;
+import com.netxforge.oss2.core.utilsII.PropertiesUtils;
+
 public class MatchTable implements PropertiesUtils.SymbolTable {
     
     private Matcher m_matcher;
