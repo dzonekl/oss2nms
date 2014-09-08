@@ -21,11 +21,12 @@ Proof Of Concept.
 
 SpringFramework Dependencies: 
 
-- Remove springframework dependencies (From the back-end services). 
-- ApplicationContext / @Autowire
+(To ease the migration, add these dependencies) 
+- ApplicationContext / @Autowire (context/beans module). 
 - SpringDaemon
 - FileSystemResource
-- Assert
+- Assert (Core module) 
+- Dao (TX module)
 
 
 Current Services Architecture & Bootstrap
@@ -126,6 +127,18 @@ Configuration Service
 - As schemas  (See project config-model) 
 Castor is used for Java-XML binding. For Eclipse there is old-style repo (Yippe) here: http://eclipse.opennms.org/
 It installs an m2e connector in Eclipse which does....?
+
+
+
+DAO/Persistence Service
+-----------------------
+
+The Discovery Service, uses the DataSourceFactory (Singleton) to obtain a Connection. 
+The DataSourceFactory reads a configuration file which has DataSource information, from which 
+the connection is created. 
+
+As the PoC, will not include persistence, we do not re-package this service for now. 
+
 
 
 
