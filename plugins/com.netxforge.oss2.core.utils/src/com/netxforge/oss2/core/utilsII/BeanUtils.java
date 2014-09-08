@@ -32,6 +32,13 @@ import java.lang.reflect.Field;
 
 import javax.annotation.Resource;
 
+import static org.springframework.util.Assert.notNull;
+
+import org.springframework.beans.factory.access.BeanFactoryLocator;
+import org.springframework.beans.factory.access.BeanFactoryReference;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.access.DefaultLocatorFactory;
+
 /**
  * Helper methods for working with Spring beans.
  *

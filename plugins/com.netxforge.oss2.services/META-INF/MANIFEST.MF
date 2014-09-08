@@ -12,4 +12,6 @@ Require-Bundle: com.netxforge.oss2.model;bundle-version="1.0.0",
  com.netxforge.oss2.icmp;bundle-version="1.0.0",
  com.netxforge.oss2.core.utils;bundle-version="1.0.0",
  com.netxforge.oss2.core;bundle-version="1.0.0",
- com.netxforge.oss2.config;bundle-version="1.0.0"
+ com.netxforge.oss2.config;bundle-version="1.0.0",
+ org.codehaus.castor;bundle-version="1.1.2",
+ org.springframework.core;bundle-version="3.0.7"

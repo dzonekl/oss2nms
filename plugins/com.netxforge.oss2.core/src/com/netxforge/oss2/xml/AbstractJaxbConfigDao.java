@@ -29,9 +29,9 @@
 package com.netxforge.oss2.xml;
 
 
-import org.opennms.core.utils.FileReloadCallback;
-import org.opennms.core.utils.FileReloadContainer;
-import org.opennms.core.utils.ThreadCategory;
+import com.netxforge.oss2.core.utilsII.FileReloadCallback;
+import com.netxforge.oss2.core.utilsII.FileReloadContainer;
+import com.netxforge.oss2.core.utilsII.ThreadCategory;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.core.io.Resource;
 import org.springframework.util.Assert;

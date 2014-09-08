@@ -28,6 +28,9 @@
 
 package com.netxforge.oss2.daemon;
 
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
 
 /**
  * <p>SpringServiceDaemon interface.</p>

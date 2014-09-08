@@ -11,5 +11,10 @@ Export-Package: com.netxforge.oss2.core.fiber,
  com.netxforge.oss2.core.utils.xml.bind,
  com.netxforge.oss2.core.utilsII
 Require-Bundle: org.slf4j.api;bundle-version="1.7.2",
- org.apache.log4j;bundle-version="1.2.15",
- org.apache.commons.io;bundle-version="2.0.1"
+ log4j;bundle-version="1.2.13",
+ org.apache.commons.io;bundle-version="2.0.1",
+ dnsjava;bundle-version="2.1.1",
+ org.springframework.core;bundle-version="3.0.7",
+ org.springframework.beans;bundle-version="3.0.7",
+ org.springframework.context;bundle-version="3.0.7",
+ org.springframework.transaction;bundle-version="3.0.7"

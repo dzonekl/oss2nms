@@ -30,6 +30,8 @@ package com.netxforge.oss2.core.utilsII;
 
 import java.io.IOException;
 
+import org.springframework.core.io.Resource;
+
 /**
  * Supporting interface for {@link FileReloadContainer} for performing a
  * reload callback.

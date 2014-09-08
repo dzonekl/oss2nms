@@ -37,7 +37,7 @@ import java.util.NoSuchElementException;
 
 import com.netxforge.oss2.core.utils.ByteArrayComparator;
 import com.netxforge.oss2.core.utils.InetAddressUtils;
-import com.netxforge.oss2.core.utils.ThreadCategory;
+import com.netxforge.oss2.core.utilsII.ThreadCategory;
 
 /**
  * <P>

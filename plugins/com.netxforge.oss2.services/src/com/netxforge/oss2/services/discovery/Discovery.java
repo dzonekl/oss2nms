@@ -47,7 +47,7 @@ import org.exolab.castor.xml.ValidationException;
 
 // DB Stuff....
 import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
+import com.netxforge.oss2.core.utilsII.DBUtils;
 
 import com.netxforge.oss2.EventConstants;
 import com.netxforge.oss2.core.utils.InetAddressUtils;
@@ -69,7 +69,7 @@ import com.netxforge.oss2.xml.event.Event;
 import com.netxforge.oss2.xml.event.Parm;
 
 
-//import org.springframework.util.Assert;
+import org.springframework.util.Assert;
 
 /**
  * This class is the main interface to the OpenNMS discovery service. The class

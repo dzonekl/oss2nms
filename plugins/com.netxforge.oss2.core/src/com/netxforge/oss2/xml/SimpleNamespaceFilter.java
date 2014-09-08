@@ -28,7 +28,7 @@
 
 package com.netxforge.oss2.xml;
 
-import org.opennms.core.utils.LogUtils;
+import com.netxforge.oss2.core.utilsII.LogUtils;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.AttributesImpl;

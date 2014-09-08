@@ -43,6 +43,8 @@ import org.xbill.DNS.Record;
 import org.xbill.DNS.TextParseException;
 import org.xbill.DNS.Type;
 
+import com.netxforge.oss2.core.utilsII.LogUtils;
+
 /**
  * <p>Abstract InetAddressUtils class.</p>
  *

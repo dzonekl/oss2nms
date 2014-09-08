@@ -30,6 +30,9 @@ package com.netxforge.oss2.daemon;
 
 import java.lang.reflect.UndeclaredThrowableException;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import com.netxforge.oss2.core.fiber.Fiber;
 import com.netxforge.oss2.core.utilsII.BeanUtils;
 import com.netxforge.oss2.core.utilsII.ThreadCategory;
