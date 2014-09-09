@@ -5,7 +5,8 @@ Bundle-SymbolicName: com.netxforge.oss2.core
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: NetXForge
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: com.netxforge.oss2.daemon
+Export-Package: com.netxforge.oss2.daemon,
+ com.netxforge.oss2.xml
 Require-Bundle: org.slf4j.api;bundle-version="1.7.2",
  org.codehaus.castor;bundle-version="1.1.2",
  com.netxforge.oss2.model;bundle-version="1.0.0",

@@ -7,10 +7,11 @@ Bundle-Vendor: NetXForge
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: com.netxforge.oss2.model;bundle-version="1.0.0",
  com.netxforge.oss2.core.utils;bundle-version="1.0.0",
- org.apache.commons.io;bundle-version="2.0.1",
  com.netxforge.oss2.config.model;bundle-version="1.0.0",
+ org.apache.commons.io;bundle-version="2.0.1",
  org.codehaus.castor;bundle-version="1.1.2",
  org.springframework.core;bundle-version="3.0.7",
  org.springframework.transaction;bundle-version="3.0.7",
- org.apache.commons.lang;bundle-version="2.6.0"
+ org.apache.commons.lang;bundle-version="2.6.0",
+ com.netxforge.oss2.core;bundle-version="1.0.0"
 Export-Package: com.netxforge.oss2.config

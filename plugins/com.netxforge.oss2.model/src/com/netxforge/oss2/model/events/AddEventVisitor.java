@@ -29,12 +29,13 @@
 package com.netxforge.oss2.model.events;
 
 
-import org.opennms.core.utils.LogUtils;
-import org.opennms.netmgt.model.AbstractEntityVisitor;
-import org.opennms.netmgt.model.OnmsIpInterface;
-import org.opennms.netmgt.model.OnmsMonitoredService;
-import org.opennms.netmgt.model.OnmsNode;
-import org.opennms.netmgt.xml.event.Event;
+import com.netxforge.oss2.core.utilsII.LogUtils;
+import com.netxforge.oss2.model.AbstractEntityVisitor;
+import com.netxforge.oss2.model.OnmsIpInterface;
+import com.netxforge.oss2.model.OnmsMonitoredService;
+import com.netxforge.oss2.model.OnmsNode;
+import com.netxforge.oss2.xml.event.Event;
+
 public class AddEventVisitor extends AbstractEntityVisitor {
     private static final String m_eventSource = "Provisiond";
 	private final EventForwarder m_eventForwarder;

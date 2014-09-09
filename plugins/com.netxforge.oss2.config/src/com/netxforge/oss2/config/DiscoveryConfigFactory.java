@@ -50,29 +50,25 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 import org.apache.commons.io.IOUtils;
-
 import org.exolab.castor.xml.MarshalException;
 import org.exolab.castor.xml.Marshaller;
 import org.exolab.castor.xml.ValidationException;
-
-import com.netxforge.oss2.core.utils.ConfigFileConstants;
-import com.netxforge.oss2.core.utils.FilteringIterator;
-import com.netxforge.oss2.core.utils.InetAddressUtils;
-import com.netxforge.oss2.core.utils.IteratorIterator;
-import com.netxforge.oss2.core.utilsII.LogUtils;
-import org.opennms.core.xml.CastorUtils;
+// MIGRATE SPRING STUFF. 
+import org.springframework.core.io.FileSystemResource;
 
 import com.netxforge.oss2.config.discovery.DiscoveryConfiguration;
 import com.netxforge.oss2.config.discovery.ExcludeRange;
 import com.netxforge.oss2.config.discovery.IncludeRange;
 import com.netxforge.oss2.config.discovery.IncludeUrl;
 import com.netxforge.oss2.config.discovery.Specific;
+import com.netxforge.oss2.core.utils.ConfigFileConstants;
+import com.netxforge.oss2.core.utils.FilteringIterator;
+import com.netxforge.oss2.core.utils.InetAddressUtils;
+import com.netxforge.oss2.core.utils.IteratorIterator;
+import com.netxforge.oss2.core.utilsII.LogUtils;
 import com.netxforge.oss2.model.discovery.IPPollAddress;
 import com.netxforge.oss2.model.discovery.IPPollRange;
-
-
-// MIGRATE SPRING STUFF. 
-import org.springframework.core.io.FileSystemResource;
+import com.netxforge.oss2.xml.CastorUtils;
 
 /**
  * This is the singleton class used to load the configuration for the OpenNMS

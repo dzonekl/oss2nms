@@ -40,20 +40,20 @@ import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import org.opennms.core.utils.LogUtils;
-import org.opennms.core.utils.ThreadCategory;
+import com.netxforge.oss2.core.utilsII.LogUtils;
+import com.netxforge.oss2.core.utilsII.ThreadCategory;
 import com.netxforge.oss2.model.events.annotations.EventExceptionHandler;
 import com.netxforge.oss2.model.events.annotations.EventHandler;
 import com.netxforge.oss2.model.events.annotations.EventListener;
 import com.netxforge.oss2.model.events.annotations.EventPostProcessor;
 import com.netxforge.oss2.model.events.annotations.EventPreProcessor;
-import org.opennms.netmgt.xml.event.Event;
+import com.netxforge.oss2.xml.event.Event;
 
-//import org.springframework.beans.factory.DisposableBean;
-//import org.springframework.beans.factory.InitializingBean;
-//import org.springframework.core.annotation.AnnotationUtils;
-//import org.springframework.util.Assert;
-//import org.springframework.util.ClassUtils;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.core.annotation.AnnotationUtils;
+import org.springframework.util.Assert;
+import org.springframework.util.ClassUtils;
 
 /**
  * AnnotationBasedEventListenerAdapter

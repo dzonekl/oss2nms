@@ -43,8 +43,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.netmgt.xml.event.Event;
-import org.opennms.netmgt.xml.event.Parm;
+import com.netxforge.oss2.xml.event.Event;
+import com.netxforge.oss2.xml.event.Parm;
 
 @XmlRootElement(name="ack")  //hmmm
 @Entity
@@ -108,7 +108,7 @@ public class OnmsAcknowledgment {
     /**
      * <p>Constructor for OnmsAcknowledgment.</p>
      *
-     * @param e a {@link org.opennms.netmgt.xml.event.Event} object.
+     * @param e a {@link com.netxforge.oss2.xml.event.Event} object.
      * @throws java.text.ParseException if any.
      */
     public OnmsAcknowledgment(final Event e) throws ParseException {
@@ -146,7 +146,7 @@ public class OnmsAcknowledgment {
     /**
      * <p>Constructor for OnmsAcknowledgment.</p>
      *
-     * @param a a {@link org.opennms.netmgt.model.Acknowledgeable} object.
+     * @param a a {@link com.netxforge.oss2.model.Acknowledgeable} object.
      */
     public OnmsAcknowledgment(final Acknowledgeable a) {
         this(a, "admin", new Date());
@@ -165,7 +165,7 @@ public class OnmsAcknowledgment {
     /**
      * <p>Constructor for OnmsAcknowledgment.</p>
      *
-     * @param a a {@link org.opennms.netmgt.model.Acknowledgeable} object.
+     * @param a a {@link com.netxforge.oss2.model.Acknowledgeable} object.
      * @param user a {@link java.lang.String} object.
      */
     public OnmsAcknowledgment(final Acknowledgeable a, String user) {
@@ -175,7 +175,7 @@ public class OnmsAcknowledgment {
     /**
      * <p>Constructor for OnmsAcknowledgment.</p>
      *
-     * @param a a {@link org.opennms.netmgt.model.Acknowledgeable} object.
+     * @param a a {@link com.netxforge.oss2.model.Acknowledgeable} object.
      * @param user a {@link java.lang.String} object.
      * @param ackTime a {@link java.util.Date} object.
      */
@@ -257,7 +257,7 @@ public class OnmsAcknowledgment {
     /**
      * <p>getAckType</p>
      *
-     * @return a {@link org.opennms.netmgt.model.AckType} object.
+     * @return a {@link com.netxforge.oss2.model.AckType} object.
      */
     @Column(name="ackType", nullable=false)
     public AckType getAckType() {
@@ -267,7 +267,7 @@ public class OnmsAcknowledgment {
     /**
      * <p>setAckType</p>
      *
-     * @param ackType a {@link org.opennms.netmgt.model.AckType} object.
+     * @param ackType a {@link com.netxforge.oss2.model.AckType} object.
      */
     public void setAckType(AckType ackType) {
         m_ackType = ackType;
@@ -295,7 +295,7 @@ public class OnmsAcknowledgment {
     /**
      * <p>getAckAction</p>
      *
-     * @return a {@link org.opennms.netmgt.model.AckAction} object.
+     * @return a {@link com.netxforge.oss2.model.AckAction} object.
      */
     @Column(name="ackAction", nullable=false)
     public AckAction getAckAction() {
@@ -305,7 +305,7 @@ public class OnmsAcknowledgment {
     /**
      * <p>setAckAction</p>
      *
-     * @param ackAction a {@link org.opennms.netmgt.model.AckAction} object.
+     * @param ackAction a {@link com.netxforge.oss2.model.AckAction} object.
      */
     public void setAckAction(AckAction ackAction) {
         m_ackAction = ackAction;

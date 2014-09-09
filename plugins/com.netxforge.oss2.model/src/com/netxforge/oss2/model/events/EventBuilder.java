@@ -49,10 +49,10 @@ import com.netxforge.oss2.xml.event.Snmp;
 import com.netxforge.oss2.xml.event.Value;
 
 // Spring dependencies. 
-//import org.springframework.beans.BeanWrapper;
-//import org.springframework.beans.BeansException;
-//import org.springframework.beans.PropertyAccessorFactory;
-//import org.springframework.util.StringUtils;
+import org.springframework.beans.BeanWrapper;
+import org.springframework.beans.BeansException;
+import org.springframework.beans.PropertyAccessorFactory;
+import org.springframework.util.StringUtils;
 
 /**
  * <p>

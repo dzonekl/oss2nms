@@ -30,9 +30,9 @@ package com.netxforge.oss2.model;
 
 import java.util.Date;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.LogUtils;
-import org.opennms.netmgt.model.OnmsArpInterface.StatusType;
+import com.netxforge.oss2.core.utils.InetAddressUtils;
+import com.netxforge.oss2.core.utilsII.LogUtils;
+import com.netxforge.oss2.model.OnmsArpInterface.StatusType;
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.PropertyAccessorFactory;
