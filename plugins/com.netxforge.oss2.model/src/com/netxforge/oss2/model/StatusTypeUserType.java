@@ -36,7 +36,7 @@ import java.sql.SQLException;
 import org.hibernate.Hibernate;
 import org.hibernate.HibernateException;
 import org.hibernate.usertype.UserType;
-import org.opennms.netmgt.model.OnmsArpInterface.StatusType;
+import com.netxforge.oss2.model.OnmsArpInterface.StatusType;
 
 public class StatusTypeUserType implements UserType {
 

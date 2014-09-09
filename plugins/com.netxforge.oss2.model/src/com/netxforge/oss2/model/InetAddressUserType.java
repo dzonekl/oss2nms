@@ -37,8 +37,8 @@ import java.sql.SQLException;
 import org.hibernate.Hibernate;
 import org.hibernate.HibernateException;
 import org.hibernate.usertype.UserType;
-import org.opennms.core.utils.InetAddressComparator;
-import org.opennms.core.utils.InetAddressUtils;
+import com.netxforge.oss2.core.utils.InetAddressComparator;
+import com.netxforge.oss2.core.utils.InetAddressUtils;
 
 public class InetAddressUserType implements UserType {
 

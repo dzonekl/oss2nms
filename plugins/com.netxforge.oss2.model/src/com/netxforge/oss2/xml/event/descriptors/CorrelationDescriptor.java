@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Correlation;
+import com.netxforge.oss2.xml.event.Correlation;
 
 /**
  * Class CorrelationDescriptor.
@@ -403,7 +403,7 @@ import org.opennms.netmgt.xml.event.Correlation;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Correlation.class;
+        return com.netxforge.oss2.xml.event.Correlation.class;
     }
 
     /**

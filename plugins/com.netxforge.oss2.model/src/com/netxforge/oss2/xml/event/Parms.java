@@ -69,7 +69,7 @@ public class Parms implements Serializable {
      * A varbind from the trap
      */
 	@XmlElement(name="parm", required=true)
-    private java.util.List<org.opennms.netmgt.xml.event.Parm> _parmList;
+    private java.util.List<com.netxforge.oss2.xml.event.Parm> _parmList;
 
 
       //----------------/
@@ -94,7 +94,7 @@ public class Parms implements Serializable {
      * given is outside the bounds of the collection
      */
     public void addParm(
-            final org.opennms.netmgt.xml.event.Parm vParm)
+            final com.netxforge.oss2.xml.event.Parm vParm)
     throws java.lang.IndexOutOfBoundsException {
         this._parmList.add(vParm);
     }
@@ -109,7 +109,7 @@ public class Parms implements Serializable {
      */
     public void addParm(
             final int index,
-            final org.opennms.netmgt.xml.event.Parm vParm)
+            final com.netxforge.oss2.xml.event.Parm vParm)
     throws java.lang.IndexOutOfBoundsException {
         this._parmList.add(index, vParm);
     }
@@ -120,7 +120,7 @@ public class Parms implements Serializable {
      * @return an Enumeration over all possible elements of this
      * collection
      */
-    public java.util.Enumeration<org.opennms.netmgt.xml.event.Parm> enumerateParm(
+    public java.util.Enumeration<com.netxforge.oss2.xml.event.Parm> enumerateParm(
     ) {
         return java.util.Collections.enumeration(this._parmList);
     }
@@ -131,10 +131,10 @@ public class Parms implements Serializable {
      * @param index
      * @throws java.lang.IndexOutOfBoundsException if the index
      * given is outside the bounds of the collection
-     * @return the value of the org.opennms.netmgt.xml.event.Parm
+     * @return the value of the com.netxforge.oss2.core.xml.event.Parm
      * at the given index
      */
-    public org.opennms.netmgt.xml.event.Parm getParm(
+    public com.netxforge.oss2.xml.event.Parm getParm(
             final int index)
     throws java.lang.IndexOutOfBoundsException {
         // check bounds for index
@@ -142,7 +142,7 @@ public class Parms implements Serializable {
             throw new IndexOutOfBoundsException("getParm: Index value '" + index + "' not in range [0.." + (this._parmList.size() - 1) + "]");
         }
         
-        return (org.opennms.netmgt.xml.event.Parm) _parmList.get(index);
+        return (com.netxforge.oss2.xml.event.Parm) _parmList.get(index);
     }
 
     /**
@@ -154,10 +154,10 @@ public class Parms implements Serializable {
      * 
      * @return this collection as an Array
      */
-    public org.opennms.netmgt.xml.event.Parm[] getParm(
+    public com.netxforge.oss2.xml.event.Parm[] getParm(
     ) {
-        org.opennms.netmgt.xml.event.Parm[] array = new org.opennms.netmgt.xml.event.Parm[0];
-        return (org.opennms.netmgt.xml.event.Parm[]) this._parmList.toArray(array);
+        com.netxforge.oss2.xml.event.Parm[] array = new com.netxforge.oss2.xml.event.Parm[0];
+        return (com.netxforge.oss2.xml.event.Parm[]) this._parmList.toArray(array);
     }
 
     /**
@@ -170,7 +170,7 @@ public class Parms implements Serializable {
      * 
      * @return a reference to the Vector backing this class
      */
-    public java.util.List<org.opennms.netmgt.xml.event.Parm> getParmCollection(
+    public java.util.List<com.netxforge.oss2.xml.event.Parm> getParmCollection(
     ) {
         return this._parmList;
     }
@@ -191,7 +191,7 @@ public class Parms implements Serializable {
      * @return an Iterator over all possible elements in this
      * collection
      */
-    public java.util.Iterator<org.opennms.netmgt.xml.event.Parm> iterateParm(
+    public java.util.Iterator<com.netxforge.oss2.xml.event.Parm> iterateParm(
     ) {
         return this._parmList.iterator();
     }
@@ -210,7 +210,7 @@ public class Parms implements Serializable {
      * @return true if the object was removed from the collection.
      */
     public boolean removeParm(
-            final org.opennms.netmgt.xml.event.Parm vParm) {
+            final com.netxforge.oss2.xml.event.Parm vParm) {
         boolean removed = _parmList.remove(vParm);
         return removed;
     }
@@ -221,10 +221,10 @@ public class Parms implements Serializable {
      * @param index
      * @return the element removed from the collection
      */
-    public org.opennms.netmgt.xml.event.Parm removeParmAt(
+    public com.netxforge.oss2.xml.event.Parm removeParmAt(
             final int index) {
         java.lang.Object obj = this._parmList.remove(index);
-        return (org.opennms.netmgt.xml.event.Parm) obj;
+        return (com.netxforge.oss2.xml.event.Parm) obj;
     }
 
     /**
@@ -237,7 +237,7 @@ public class Parms implements Serializable {
      */
     public void setParm(
             final int index,
-            final org.opennms.netmgt.xml.event.Parm vParm)
+            final com.netxforge.oss2.xml.event.Parm vParm)
     throws java.lang.IndexOutOfBoundsException {
         // check bounds for index
         if (index < 0 || index >= this._parmList.size()) {
@@ -253,7 +253,7 @@ public class Parms implements Serializable {
      * @param vParmArray
      */
     public void setParm(
-            final org.opennms.netmgt.xml.event.Parm[] vParmArray) {
+            final com.netxforge.oss2.xml.event.Parm[] vParmArray) {
         //-- copy array
         _parmList.clear();
         
@@ -269,7 +269,7 @@ public class Parms implements Serializable {
      * @param vParmList the Vector to copy.
      */
     public void setParm(
-            final java.util.List<org.opennms.netmgt.xml.event.Parm> vParmList) {
+            final java.util.List<com.netxforge.oss2.xml.event.Parm> vParmList) {
         // copy vector
         this._parmList.clear();
         
@@ -284,7 +284,7 @@ public class Parms implements Serializable {
      * @param parmList the Vector to set.
      */
     public void setParmCollection(
-            final java.util.List<org.opennms.netmgt.xml.event.Parm> parmList) {
+            final java.util.List<com.netxforge.oss2.xml.event.Parm> parmList) {
         this._parmList = parmList;
     }
 

@@ -65,12 +65,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 import org.hibernate.annotations.Filter;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.netmgt.EventConstants;
-import org.opennms.netmgt.model.events.AddEventVisitor;
-import org.opennms.netmgt.model.events.DeleteEventVisitor;
-import org.opennms.netmgt.model.events.EventBuilder;
-import org.opennms.netmgt.model.events.EventForwarder;
+import com.netxforge.oss2.core.utils.InetAddressUtils;
+import com.netxforge.oss2.EventConstants;
+import com.netxforge.oss2.model.events.AddEventVisitor;
+import com.netxforge.oss2.model.events.DeleteEventVisitor;
+import com.netxforge.oss2.model.events.EventBuilder;
+import com.netxforge.oss2.model.events.EventForwarder;
 import org.springframework.core.style.ToStringCreator;
 
 
@@ -171,7 +171,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>Constructor for OnmsNode.</p>
      *
-     * @param distPoller a {@link org.opennms.netmgt.model.OnmsDistPoller} object.
+     * @param distPoller a {@link com.netxforge.oss2.model.OnmsDistPoller} object.
      */
     public OnmsNode(final OnmsDistPoller distPoller) {
         m_distPoller = distPoller;
@@ -258,7 +258,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
      * that should be reflected as a subcomponent or "child", this field reflects
      * the nodeID of the chassis/physical node/"parent" device.
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     @XmlTransient
     @ManyToOne(fetch=FetchType.LAZY)
@@ -270,7 +270,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>setParent</p>
      *
-     * @param parent a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param parent a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public void setParent(OnmsNode parent) {
         m_parent = parent;
@@ -570,7 +570,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * Distributed Poller responsible for this node
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsDistPoller} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsDistPoller} object.
      */
     @XmlTransient
     @ManyToOne(fetch=FetchType.LAZY)
@@ -582,16 +582,16 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>setDistPoller</p>
      *
-     * @param distpoller a {@link org.opennms.netmgt.model.OnmsDistPoller} object.
+     * @param distpoller a {@link com.netxforge.oss2.model.OnmsDistPoller} object.
      */
-    public void setDistPoller(org.opennms.netmgt.model.OnmsDistPoller distpoller) {
+    public void setDistPoller(com.netxforge.oss2.model.OnmsDistPoller distpoller) {
         m_distPoller = distpoller;
     }
     
     /**
      * The assert record associated with this node
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsAssetRecord} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsAssetRecord} object.
      */
     @OneToOne(mappedBy="node", cascade = CascadeType.ALL, fetch=FetchType.LAZY)
     public OnmsAssetRecord getAssetRecord() {
@@ -601,7 +601,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>setAssetRecord</p>
      *
-     * @param asset a {@link org.opennms.netmgt.model.OnmsAssetRecord} object.
+     * @param asset a {@link com.netxforge.oss2.model.OnmsAssetRecord} object.
      */
     public void setAssetRecord(OnmsAssetRecord asset) {
         m_assetRecord = asset;
@@ -610,7 +610,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>getPathElement</p>
      *
-     * @return a {@link org.opennms.netmgt.model.PathElement} object.
+     * @return a {@link com.netxforge.oss2.model.PathElement} object.
      */
     @XmlTransient
     @Embedded
@@ -625,7 +625,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>setPathElement</p>
      *
-     * @param pathElement a {@link org.opennms.netmgt.model.PathElement} object.
+     * @param pathElement a {@link com.netxforge.oss2.model.PathElement} object.
      */
     public void setPathElement(PathElement pathElement) {
     	m_pathElement = pathElement;
@@ -658,7 +658,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>addIpInterface</p>
      *
-     * @param iface a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @param iface a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     public void addIpInterface(OnmsIpInterface iface) {
     	iface.setNode(this);
@@ -710,7 +710,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     }
     
     /**
-     * @param iface a {@link org.opennms.netmgt.model.OnmsArpInterface} object.
+     * @param iface a {@link com.netxforge.oss2.model.OnmsArpInterface} object.
      */
     public void addArpInterfaceBySource(OnmsArpInterface iface) {
         iface.setNode(this);
@@ -740,7 +740,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>addArpInterface</p>
      *
-     * @param iface a {@link org.opennms.netmgt.model.OnmsArpInterface} object.
+     * @param iface a {@link com.netxforge.oss2.model.OnmsArpInterface} object.
      */
     public void addArpInterface(OnmsArpInterface iface) {
         iface.setNode(this);
@@ -775,7 +775,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>addCategory</p>
      *
-     * @param category a {@link org.opennms.netmgt.model.OnmsCategory} object.
+     * @param category a {@link com.netxforge.oss2.model.OnmsCategory} object.
      * @return a boolean.
      */
     public boolean addCategory(OnmsCategory category) {
@@ -785,7 +785,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>removeCategory</p>
      *
-     * @param category a {@link org.opennms.netmgt.model.OnmsCategory} object.
+     * @param category a {@link com.netxforge.oss2.model.OnmsCategory} object.
      * @return a boolean.
      */
     public boolean removeCategory(OnmsCategory category) {
@@ -847,7 +847,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
 	/**
 	 * <p>addSnmpInterface</p>
 	 *
-	 * @param snmpIface a {@link org.opennms.netmgt.model.OnmsSnmpInterface} object.
+	 * @param snmpIface a {@link com.netxforge.oss2.model.OnmsSnmpInterface} object.
 	 */
 	public void addSnmpInterface(OnmsSnmpInterface snmpIface) {
     	snmpIface.setNode(this);
@@ -874,7 +874,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
      * <p>getSnmpInterfaceWithIfIndex</p>
      *
      * @param ifIndex a int.
-     * @return a {@link org.opennms.netmgt.model.OnmsSnmpInterface} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsSnmpInterface} object.
      */
     @Transient
     public OnmsSnmpInterface getSnmpInterfaceWithIfIndex(int ifIndex) {
@@ -890,7 +890,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
      * <p>getIpInterfaceByIpAddress</p>
      * 
      * @param ipAddress a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     public OnmsIpInterface getIpInterfaceByIpAddress(String ipAddress) {
         return getIpInterfaceByIpAddress(InetAddressUtils.getInetAddress(ipAddress));
@@ -900,7 +900,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
      * <p>getIpInterfaceByIpAddress</p>
      *
      * @param ipAddress a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     public OnmsIpInterface getIpInterfaceByIpAddress(InetAddress ipAddress) {
         for (OnmsIpInterface iface : getIpInterfaces()) {
@@ -914,7 +914,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>compareTo</p>
      *
-     * @param o a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param o a {@link com.netxforge.oss2.model.OnmsNode} object.
      * @return a int.
      */
     public int compareTo(OnmsNode o) {
@@ -937,7 +937,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>getPrimaryInterface</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     @Transient
 	public OnmsIpInterface getPrimaryInterface() {
@@ -953,7 +953,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
      * <p>getInterfaceWithService</p>
      *
      * @param svcName a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     @Transient
 	public OnmsIpInterface getInterfaceWithService(String svcName) {
@@ -968,7 +968,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>getCriticalInterface</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     @Transient
     public OnmsIpInterface getCriticalInterface() {
@@ -985,7 +985,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>mergeAgentAttributes</p>
      *
-     * @param scannedNode a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param scannedNode a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public void mergeAgentAttributes(OnmsNode scannedNode) {
         if (hasNewValue(scannedNode.getSysContact(), getSysContact())) {
@@ -1012,7 +1012,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>mergeNodeAttributes</p>
      *
-     * @param scannedNode a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param scannedNode a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public void mergeNodeAttributes(OnmsNode scannedNode, EventForwarder eventForwarder) {
         if (hasNewValue(scannedNode.getLabel(), getLabel())) {
@@ -1070,7 +1070,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>mergeAdditionalCategories</p>
      *
-     * @param scannedNode a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param scannedNode a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public void mergeAdditionalCategories(OnmsNode scannedNode) {
         getCategories().addAll(scannedNode.getCategories());
@@ -1079,7 +1079,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>mergeSnmpInterfaces</p>
      *
-     * @param scannedNode a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param scannedNode a {@link com.netxforge.oss2.model.OnmsNode} object.
      * @param deleteMissing a boolean.
      */
     public void mergeSnmpInterfaces(OnmsNode scannedNode, boolean deleteMissing) {
@@ -1128,8 +1128,8 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>mergeIpInterfaces</p>
      *
-     * @param scannedNode a {@link org.opennms.netmgt.model.OnmsNode} object.
-     * @param eventForwarder a {@link org.opennms.netmgt.model.events.EventForwarder} object.
+     * @param scannedNode a {@link com.netxforge.oss2.model.OnmsNode} object.
+     * @param eventForwarder a {@link com.netxforge.oss2.model.events.EventForwarder} object.
      * @param deleteMissing a boolean.
      */
     public void mergeIpInterfaces(OnmsNode scannedNode, EventForwarder eventForwarder, boolean deleteMissing) {
@@ -1200,7 +1200,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>mergeCategorySet</p>
      *
-     * @param scannedNode a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param scannedNode a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public void mergeCategorySet(OnmsNode scannedNode) {
         if (!getCategories().equals(scannedNode.getCategories())) {
@@ -1211,7 +1211,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * Truly merges the node's assert record
      *
-     * @param scannedNode a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param scannedNode a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public void mergeAssets(OnmsNode scannedNode) {
         this.getAssetRecord().mergeRecord(scannedNode.getAssetRecord());
@@ -1220,7 +1220,7 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * Simply replaces the current asset record with the new record
      *
-     * @param scannedNode a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param scannedNode a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public void replaceCurrentAssetRecord(OnmsNode scannedNode) {
         scannedNode.getAssetRecord().setId(this.getAssetRecord().getId());
@@ -1231,8 +1231,8 @@ public class OnmsNode extends OnmsEntity implements Serializable,
     /**
      * <p>mergeNode</p>
      *
-     * @param scannedNode a {@link org.opennms.netmgt.model.OnmsNode} object.
-     * @param eventForwarder a {@link org.opennms.netmgt.model.events.EventForwarder} object.
+     * @param scannedNode a {@link com.netxforge.oss2.model.OnmsNode} object.
+     * @param eventForwarder a {@link com.netxforge.oss2.model.events.EventForwarder} object.
      * @param deleteMissing a boolean.
      */
     public void mergeNode(OnmsNode scannedNode, EventForwarder eventForwarder, boolean deleteMissing) {

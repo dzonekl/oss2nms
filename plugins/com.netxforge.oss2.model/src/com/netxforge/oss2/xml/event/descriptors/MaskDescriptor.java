@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Mask;
+import com.netxforge.oss2.xml.event.Mask;
 
 /**
  * Class MaskDescriptor.
@@ -99,7 +99,7 @@ import org.opennms.netmgt.xml.event.Mask;
         //-- initialize element descriptors
         
         //-- _maskelementList
-        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(org.opennms.netmgt.xml.event.Maskelement.class, "_maskelementList", "maskelement", org.exolab.castor.xml.NodeType.Element);
+        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(com.netxforge.oss2.xml.event.Maskelement.class, "_maskelementList", "maskelement", org.exolab.castor.xml.NodeType.Element);
         handler = new org.exolab.castor.xml.XMLFieldHandler() {
             @Override
             public java.lang.Object getValue( java.lang.Object object ) 
@@ -114,7 +114,7 @@ import org.opennms.netmgt.xml.event.Mask;
             {
                 try {
                     Mask target = (Mask) object;
-                    target.addMaskelement( (org.opennms.netmgt.xml.event.Maskelement) value);
+                    target.addMaskelement( (com.netxforge.oss2.xml.event.Maskelement) value);
                 } catch (java.lang.Exception ex) {
                     throw new IllegalStateException(ex.toString());
                 }
@@ -130,10 +130,10 @@ import org.opennms.netmgt.xml.event.Mask;
             @Override
             @SuppressWarnings("unused")
             public java.lang.Object newInstance(java.lang.Object parent) {
-                return new org.opennms.netmgt.xml.event.Maskelement();
+                return new com.netxforge.oss2.xml.event.Maskelement();
             }
         };
-        desc.setSchemaType("org.opennms.netmgt.xml.event.Maskelement");
+        desc.setSchemaType("com.netxforge.oss2.core.xml.event.Maskelement");
         desc.setHandler(handler);
         desc.setNameSpaceURI("http://xmlns.opennms.org/xsd/event");
         desc.setRequired(true);
@@ -185,7 +185,7 @@ import org.opennms.netmgt.xml.event.Mask;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Mask.class;
+        return com.netxforge.oss2.xml.event.Mask.class;
     }
 
     /**

@@ -57,7 +57,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.hibernate.annotations.Filter;
 import org.hibernate.annotations.Type;
-import org.opennms.core.xml.bind.InetAddressXmlAdapter;
+import com.netxforge.oss2.core.utils.xml.bind.InetAddressXmlAdapter;
 import org.springframework.core.style.ToStringCreator;
 
 
@@ -127,10 +127,10 @@ public class OnmsNotification implements Acknowledgeable, Serializable {
      * @param respondTime a {@link java.util.Date} object.
      * @param answeredBy a {@link java.lang.String} object.
      * @param ipAddress a {@link java.lang.String} object.
-     * @param serviceType a {@link org.opennms.netmgt.model.OnmsServiceType} object.
+     * @param serviceType a {@link com.netxforge.oss2.model.OnmsServiceType} object.
      * @param queueId a {@link java.lang.String} object.
-     * @param event a {@link org.opennms.netmgt.model.OnmsEvent} object.
-     * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param event a {@link com.netxforge.oss2.model.OnmsEvent} object.
+     * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
      * @param usersNotified a {@link java.util.Set} object.
      * @param notifConfigName a {@link java.lang.String} object.
      */
@@ -162,8 +162,8 @@ public class OnmsNotification implements Acknowledgeable, Serializable {
      *
      * @param notifyId a {@link java.lang.Integer} object.
      * @param textMsg a {@link java.lang.String} object.
-     * @param event a {@link org.opennms.netmgt.model.OnmsEvent} object.
-     * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param event a {@link com.netxforge.oss2.model.OnmsEvent} object.
+     * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
      * @param usersNotified a {@link java.util.Set} object.
      */
     public OnmsNotification(Integer notifyId, String textMsg, OnmsEvent event, OnmsNode node, Set<OnmsUserNotification> usersNotified) {
@@ -328,7 +328,7 @@ public class OnmsNotification implements Acknowledgeable, Serializable {
      */
     @Column(name="interfaceId")
     @XmlElement(name="ipAddress")
-    @Type(type="org.opennms.netmgt.model.InetAddressUserType")
+    @Type(type="com.netxforge.oss2.model.InetAddressUserType")
     @XmlJavaTypeAdapter(InetAddressXmlAdapter.class)
     public InetAddress getIpAddress() {
     	return m_ipAddress;
@@ -346,7 +346,7 @@ public class OnmsNotification implements Acknowledgeable, Serializable {
     /**
      * <p>getServiceType</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsServiceType} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsServiceType} object.
      */
     @ManyToOne
     @JoinColumn(name="serviceId")
@@ -357,7 +357,7 @@ public class OnmsNotification implements Acknowledgeable, Serializable {
     /**
      * <p>setServiceType</p>
      *
-     * @param serviceType a {@link org.opennms.netmgt.model.OnmsServiceType} object.
+     * @param serviceType a {@link com.netxforge.oss2.model.OnmsServiceType} object.
      */
     public void setServiceType(OnmsServiceType serviceType) {
         m_serviceType = serviceType;
@@ -385,7 +385,7 @@ public class OnmsNotification implements Acknowledgeable, Serializable {
     /**
      * <p>getEvent</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsEvent} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsEvent} object.
      */
     @XmlTransient
     @ManyToOne(fetch=FetchType.LAZY)
@@ -397,7 +397,7 @@ public class OnmsNotification implements Acknowledgeable, Serializable {
     /**
      * <p>setEvent</p>
      *
-     * @param event a {@link org.opennms.netmgt.model.OnmsEvent} object.
+     * @param event a {@link com.netxforge.oss2.model.OnmsEvent} object.
      */
     public void setEvent(OnmsEvent event) {
         m_event = event;
@@ -441,7 +441,7 @@ public class OnmsNotification implements Acknowledgeable, Serializable {
     /**
      * <p>getNode</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     @XmlTransient
     @ManyToOne
@@ -467,7 +467,7 @@ public class OnmsNotification implements Acknowledgeable, Serializable {
     /**
      * <p>setNode</p>
      *
-     * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public void setNode(OnmsNode node) {
         m_node = node;
@@ -536,7 +536,7 @@ public class OnmsNotification implements Acknowledgeable, Serializable {
     /**
      * <p>getType</p>
      *
-     * @return a {@link org.opennms.netmgt.model.AckType} object.
+     * @return a {@link com.netxforge.oss2.model.AckType} object.
      */
     @Transient
     public AckType getType() {

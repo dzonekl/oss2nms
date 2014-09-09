@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Maskelement;
+import com.netxforge.oss2.xml.event.Maskelement;
 
 /**
  * Class MaskelementDescriptor.
@@ -234,7 +234,7 @@ import org.opennms.netmgt.xml.event.Maskelement;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Maskelement.class;
+        return com.netxforge.oss2.xml.event.Maskelement.class;
     }
 
     /**

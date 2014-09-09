@@ -29,6 +29,7 @@
 package com.netxforge.oss2.model.events.snmp;
 
 import com.netxforge.oss2.EventConstants;
+import com.netxforge.oss2.core.snmp.SnmpValue;
 import com.netxforge.oss2.xml.event.Parm;
 import com.netxforge.oss2.xml.event.Value;
 

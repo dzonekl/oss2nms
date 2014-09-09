@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Autoaction;
+import com.netxforge.oss2.xml.event.Autoaction;
 
 /**
  * Class AutoactionDescriptor.
@@ -217,7 +217,7 @@ import org.opennms.netmgt.xml.event.Autoaction;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Autoaction.class;
+        return com.netxforge.oss2.xml.event.Autoaction.class;
     }
 
     /**

@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Tticket;
+import com.netxforge.oss2.xml.event.Tticket;
 
 /**
  * Class TticketDescriptor.
@@ -217,7 +217,7 @@ import org.opennms.netmgt.xml.event.Tticket;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Tticket.class;
+        return com.netxforge.oss2.xml.event.Tticket.class;
     }
 
     /**

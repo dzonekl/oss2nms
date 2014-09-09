@@ -55,8 +55,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.apache.commons.lang.builder.CompareToBuilder;
 import org.hibernate.annotations.Type;
 
-import org.opennms.netmgt.model.OnmsArpInterface.StatusType;
-import org.opennms.netmgt.xml.bind.StatusTypeXmlAdapter;
+import com.netxforge.oss2.model.OnmsArpInterface.StatusType;
+import com.netxforge.oss2.xml.bind.StatusTypeXmlAdapter;
 
 @XmlRootElement(name = "link")
 @Entity
@@ -186,7 +186,7 @@ public class DataLinkInterface  implements Serializable, Comparable<DataLinkInte
     }
 
     @XmlAttribute(name="status")
-    @Type(type="org.opennms.netmgt.model.StatusTypeUserType")
+    @Type(type="com.netxforge.oss2.model.StatusTypeUserType")
     @XmlJavaTypeAdapter(StatusTypeXmlAdapter.class)
     public StatusType getStatus() {
         return m_status;
@@ -226,7 +226,7 @@ public class DataLinkInterface  implements Serializable, Comparable<DataLinkInte
     /**
      * <p>compareTo</p>
      *
-     * @param o a {@link org.opennms.netmgt.model.DataLinkInterface} object.
+     * @param o a {@link com.netxforge.oss2.model.DataLinkInterface} object.
      * @return a int.
      */
     public int compareTo(final DataLinkInterface o) {

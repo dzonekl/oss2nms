@@ -74,7 +74,7 @@ public class Mask implements Serializable {
      * The mask element
      */
 	@XmlElement(name="maskelement", required=true, nillable = false)
-    private java.util.List<org.opennms.netmgt.xml.event.Maskelement> _maskelementList;
+    private java.util.List<com.netxforge.oss2.xml.event.Maskelement> _maskelementList;
 
 
       //----------------/
@@ -83,7 +83,7 @@ public class Mask implements Serializable {
 
     public Mask() {
         super();
-        this._maskelementList = new java.util.ArrayList<org.opennms.netmgt.xml.event.Maskelement>();
+        this._maskelementList = new java.util.ArrayList<com.netxforge.oss2.xml.event.Maskelement>();
     }
 
 
@@ -99,7 +99,7 @@ public class Mask implements Serializable {
      * given is outside the bounds of the collection
      */
     public void addMaskelement(
-            final org.opennms.netmgt.xml.event.Maskelement vMaskelement)
+            final com.netxforge.oss2.xml.event.Maskelement vMaskelement)
     throws java.lang.IndexOutOfBoundsException {
         this._maskelementList.add(vMaskelement);
     }
@@ -114,7 +114,7 @@ public class Mask implements Serializable {
      */
     public void addMaskelement(
             final int index,
-            final org.opennms.netmgt.xml.event.Maskelement vMaskelement)
+            final com.netxforge.oss2.xml.event.Maskelement vMaskelement)
     throws java.lang.IndexOutOfBoundsException {
         this._maskelementList.add(index, vMaskelement);
     }
@@ -125,7 +125,7 @@ public class Mask implements Serializable {
      * @return an Enumeration over all possible elements of this
      * collection
      */
-    public java.util.Enumeration<org.opennms.netmgt.xml.event.Maskelement> enumerateMaskelement(
+    public java.util.Enumeration<com.netxforge.oss2.xml.event.Maskelement> enumerateMaskelement(
     ) {
         return java.util.Collections.enumeration(this._maskelementList);
     }
@@ -137,9 +137,9 @@ public class Mask implements Serializable {
      * @throws java.lang.IndexOutOfBoundsException if the index
      * given is outside the bounds of the collection
      * @return the value of the
-     * org.opennms.netmgt.xml.event.Maskelement at the given index
+     * com.netxforge.oss2.core.xml.event.Maskelement at the given index
      */
-    public org.opennms.netmgt.xml.event.Maskelement getMaskelement(
+    public com.netxforge.oss2.xml.event.Maskelement getMaskelement(
             final int index)
     throws java.lang.IndexOutOfBoundsException {
         // check bounds for index
@@ -147,7 +147,7 @@ public class Mask implements Serializable {
             throw new IndexOutOfBoundsException("getMaskelement: Index value '" + index + "' not in range [0.." + (this._maskelementList.size() - 1) + "]");
         }
         
-        return (org.opennms.netmgt.xml.event.Maskelement) _maskelementList.get(index);
+        return (com.netxforge.oss2.xml.event.Maskelement) _maskelementList.get(index);
     }
 
     /**
@@ -159,10 +159,10 @@ public class Mask implements Serializable {
      * 
      * @return this collection as an Array
      */
-    public org.opennms.netmgt.xml.event.Maskelement[] getMaskelement(
+    public com.netxforge.oss2.xml.event.Maskelement[] getMaskelement(
     ) {
-        org.opennms.netmgt.xml.event.Maskelement[] array = new org.opennms.netmgt.xml.event.Maskelement[0];
-        return (org.opennms.netmgt.xml.event.Maskelement[]) this._maskelementList.toArray(array);
+        com.netxforge.oss2.xml.event.Maskelement[] array = new com.netxforge.oss2.xml.event.Maskelement[0];
+        return (com.netxforge.oss2.xml.event.Maskelement[]) this._maskelementList.toArray(array);
     }
 
     /**
@@ -172,7 +172,7 @@ public class Mask implements Serializable {
      * 
      * @return a reference to the Vector backing this class
      */
-    public java.util.List<org.opennms.netmgt.xml.event.Maskelement> getMaskelementCollection(
+    public java.util.List<com.netxforge.oss2.xml.event.Maskelement> getMaskelementCollection(
     ) {
         return this._maskelementList;
     }
@@ -193,7 +193,7 @@ public class Mask implements Serializable {
      * @return an Iterator over all possible elements in this
      * collection
      */
-    public java.util.Iterator<org.opennms.netmgt.xml.event.Maskelement> iterateMaskelement(
+    public java.util.Iterator<com.netxforge.oss2.xml.event.Maskelement> iterateMaskelement(
     ) {
         return this._maskelementList.iterator();
     }
@@ -212,7 +212,7 @@ public class Mask implements Serializable {
      * @return true if the object was removed from the collection.
      */
     public boolean removeMaskelement(
-            final org.opennms.netmgt.xml.event.Maskelement vMaskelement) {
+            final com.netxforge.oss2.xml.event.Maskelement vMaskelement) {
         boolean removed = _maskelementList.remove(vMaskelement);
         return removed;
     }
@@ -223,10 +223,10 @@ public class Mask implements Serializable {
      * @param index
      * @return the element removed from the collection
      */
-    public org.opennms.netmgt.xml.event.Maskelement removeMaskelementAt(
+    public com.netxforge.oss2.xml.event.Maskelement removeMaskelementAt(
             final int index) {
         java.lang.Object obj = this._maskelementList.remove(index);
-        return (org.opennms.netmgt.xml.event.Maskelement) obj;
+        return (com.netxforge.oss2.xml.event.Maskelement) obj;
     }
 
     /**
@@ -239,7 +239,7 @@ public class Mask implements Serializable {
      */
     public void setMaskelement(
             final int index,
-            final org.opennms.netmgt.xml.event.Maskelement vMaskelement)
+            final com.netxforge.oss2.xml.event.Maskelement vMaskelement)
     throws java.lang.IndexOutOfBoundsException {
         // check bounds for index
         if (index < 0 || index >= this._maskelementList.size()) {
@@ -255,7 +255,7 @@ public class Mask implements Serializable {
      * @param vMaskelementArray
      */
     public void setMaskelement(
-            final org.opennms.netmgt.xml.event.Maskelement[] vMaskelementArray) {
+            final com.netxforge.oss2.xml.event.Maskelement[] vMaskelementArray) {
         //-- copy array
         _maskelementList.clear();
         
@@ -271,7 +271,7 @@ public class Mask implements Serializable {
      * @param vMaskelementList the Vector to copy.
      */
     public void setMaskelement(
-            final java.util.List<org.opennms.netmgt.xml.event.Maskelement> vMaskelementList) {
+            final java.util.List<com.netxforge.oss2.xml.event.Maskelement> vMaskelementList) {
         // copy vector
         this._maskelementList.clear();
         
@@ -286,7 +286,7 @@ public class Mask implements Serializable {
      * @param maskelementList the Vector to set.
      */
     public void setMaskelementCollection(
-            final java.util.List<org.opennms.netmgt.xml.event.Maskelement> maskelementList) {
+            final java.util.List<com.netxforge.oss2.xml.event.Maskelement> maskelementList) {
         this._maskelementList = maskelementList;
     }
 

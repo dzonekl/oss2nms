@@ -68,7 +68,7 @@ public class Events implements Serializable {
      * Field _eventList.
      */
 	@XmlElement(name="event")
-    private java.util.List<org.opennms.netmgt.xml.event.Event> _eventList;
+    private java.util.List<com.netxforge.oss2.xml.event.Event> _eventList;
 
 
       //----------------/
@@ -77,7 +77,7 @@ public class Events implements Serializable {
 
     public Events() {
         super();
-        this._eventList = new java.util.ArrayList<org.opennms.netmgt.xml.event.Event>();
+        this._eventList = new java.util.ArrayList<com.netxforge.oss2.xml.event.Event>();
     }
 
 
@@ -93,7 +93,7 @@ public class Events implements Serializable {
      * given is outside the bounds of the collection
      */
     public void addEvent(
-            final org.opennms.netmgt.xml.event.Event vEvent)
+            final com.netxforge.oss2.xml.event.Event vEvent)
     throws java.lang.IndexOutOfBoundsException {
         this._eventList.add(vEvent);
     }
@@ -108,7 +108,7 @@ public class Events implements Serializable {
      */
     public void addEvent(
             final int index,
-            final org.opennms.netmgt.xml.event.Event vEvent)
+            final com.netxforge.oss2.xml.event.Event vEvent)
     throws java.lang.IndexOutOfBoundsException {
         this._eventList.add(index, vEvent);
     }
@@ -119,7 +119,7 @@ public class Events implements Serializable {
      * @return an Enumeration over all possible elements of this
      * collection
      */
-    public java.util.Enumeration<org.opennms.netmgt.xml.event.Event> enumerateEvent(
+    public java.util.Enumeration<com.netxforge.oss2.xml.event.Event> enumerateEvent(
     ) {
         return java.util.Collections.enumeration(this._eventList);
     }
@@ -130,17 +130,17 @@ public class Events implements Serializable {
      * @param index
      * @throws java.lang.IndexOutOfBoundsException if the index
      * given is outside the bounds of the collection
-     * @return the value of the org.opennms.netmgt.xml.event.Event
+     * @return the value of the com.netxforge.oss2.core.xml.event.Event
      * at the given index
      */
-    public org.opennms.netmgt.xml.event.Event getEvent(final int index)
+    public com.netxforge.oss2.xml.event.Event getEvent(final int index)
     throws java.lang.IndexOutOfBoundsException {
         // check bounds for index
         if (index < 0 || index >= this._eventList.size()) {
             throw new IndexOutOfBoundsException("getEvent: Index value '" + index + "' not in range [0.." + (this._eventList.size() - 1) + "]");
         }
         
-        return (org.opennms.netmgt.xml.event.Event) _eventList.get(index);
+        return (com.netxforge.oss2.xml.event.Event) _eventList.get(index);
     }
 
     /**
@@ -152,10 +152,10 @@ public class Events implements Serializable {
      * 
      * @return this collection as an Array
      */
-    public org.opennms.netmgt.xml.event.Event[] getEvent(
+    public com.netxforge.oss2.xml.event.Event[] getEvent(
     ) {
-        org.opennms.netmgt.xml.event.Event[] array = new org.opennms.netmgt.xml.event.Event[0];
-        return (org.opennms.netmgt.xml.event.Event[]) this._eventList.toArray(array);
+        com.netxforge.oss2.xml.event.Event[] array = new com.netxforge.oss2.xml.event.Event[0];
+        return (com.netxforge.oss2.xml.event.Event[]) this._eventList.toArray(array);
     }
 
     /**
@@ -165,7 +165,7 @@ public class Events implements Serializable {
      * 
      * @return a reference to the Vector backing this class
      */
-    public java.util.List<org.opennms.netmgt.xml.event.Event> getEventCollection(
+    public java.util.List<com.netxforge.oss2.xml.event.Event> getEventCollection(
     ) {
         return this._eventList;
     }
@@ -186,7 +186,7 @@ public class Events implements Serializable {
      * @return an Iterator over all possible elements in this
      * collection
      */
-    public java.util.Iterator<org.opennms.netmgt.xml.event.Event> iterateEvent(
+    public java.util.Iterator<com.netxforge.oss2.xml.event.Event> iterateEvent(
     ) {
         return this._eventList.iterator();
     }
@@ -205,7 +205,7 @@ public class Events implements Serializable {
      * @return true if the object was removed from the collection.
      */
     public boolean removeEvent(
-            final org.opennms.netmgt.xml.event.Event vEvent) {
+            final com.netxforge.oss2.xml.event.Event vEvent) {
         boolean removed = _eventList.remove(vEvent);
         return removed;
     }
@@ -216,10 +216,10 @@ public class Events implements Serializable {
      * @param index
      * @return the element removed from the collection
      */
-    public org.opennms.netmgt.xml.event.Event removeEventAt(
+    public com.netxforge.oss2.xml.event.Event removeEventAt(
             final int index) {
         java.lang.Object obj = this._eventList.remove(index);
-        return (org.opennms.netmgt.xml.event.Event) obj;
+        return (com.netxforge.oss2.xml.event.Event) obj;
     }
 
     /**
@@ -232,7 +232,7 @@ public class Events implements Serializable {
      */
     public void setEvent(
             final int index,
-            final org.opennms.netmgt.xml.event.Event vEvent)
+            final com.netxforge.oss2.xml.event.Event vEvent)
     throws java.lang.IndexOutOfBoundsException {
         // check bounds for index
         if (index < 0 || index >= this._eventList.size()) {
@@ -248,7 +248,7 @@ public class Events implements Serializable {
      * @param vEventArray
      */
     public void setEvent(
-            final org.opennms.netmgt.xml.event.Event[] vEventArray) {
+            final com.netxforge.oss2.xml.event.Event[] vEventArray) {
         //-- copy array
         _eventList.clear();
         
@@ -264,7 +264,7 @@ public class Events implements Serializable {
      * @param vEventList the Vector to copy.
      */
     public void setEvent(
-            final java.util.List<org.opennms.netmgt.xml.event.Event> vEventList) {
+            final java.util.List<com.netxforge.oss2.xml.event.Event> vEventList) {
         // copy vector
         this._eventList.clear();
         
@@ -279,7 +279,7 @@ public class Events implements Serializable {
      * @param eventList the Vector to set.
      */
     public void setEventCollection(
-            final java.util.List<org.opennms.netmgt.xml.event.Event> eventList) {
+            final java.util.List<com.netxforge.oss2.xml.event.Event> eventList) {
         this._eventList = eventList;
     }
 

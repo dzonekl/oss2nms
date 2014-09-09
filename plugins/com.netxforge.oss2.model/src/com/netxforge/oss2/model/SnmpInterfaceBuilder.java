@@ -30,8 +30,8 @@ package com.netxforge.oss2.model;
 
 import java.net.InetAddress;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.netmgt.model.NetworkBuilder.InterfaceBuilder;
+import com.netxforge.oss2.core.utils.InetAddressUtils;
+import com.netxforge.oss2.model.NetworkBuilder.InterfaceBuilder;
 
 /**
  * <p>SnmpInterfaceBuilder class.</p>
@@ -43,7 +43,7 @@ public class SnmpInterfaceBuilder {
     /**
      * <p>Constructor for SnmpInterfaceBuilder.</p>
      *
-     * @param snmpIf a {@link org.opennms.netmgt.model.OnmsSnmpInterface} object.
+     * @param snmpIf a {@link com.netxforge.oss2.model.OnmsSnmpInterface} object.
      */
     public SnmpInterfaceBuilder(OnmsSnmpInterface snmpIf) {
         m_snmpIf = snmpIf;
@@ -53,7 +53,7 @@ public class SnmpInterfaceBuilder {
      * <p>setIfSpeed</p>
      *
      * @param ifSpeed a long.
-     * @return a {@link org.opennms.netmgt.model.SnmpInterfaceBuilder} object.
+     * @return a {@link com.netxforge.oss2.model.SnmpInterfaceBuilder} object.
      */
     public SnmpInterfaceBuilder setIfSpeed(long ifSpeed) {
         m_snmpIf.setIfSpeed(new Long(ifSpeed));
@@ -64,7 +64,7 @@ public class SnmpInterfaceBuilder {
      * <p>setIfDescr</p>
      *
      * @param ifDescr a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.model.SnmpInterfaceBuilder} object.
+     * @return a {@link com.netxforge.oss2.model.SnmpInterfaceBuilder} object.
      */
     public SnmpInterfaceBuilder setIfDescr(String ifDescr) {
         m_snmpIf.setIfDescr(ifDescr);
@@ -75,7 +75,7 @@ public class SnmpInterfaceBuilder {
      * <p>setIfAlias</p>
      *
      * @param ifAlias a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.model.SnmpInterfaceBuilder} object.
+     * @return a {@link com.netxforge.oss2.model.SnmpInterfaceBuilder} object.
      */
     public SnmpInterfaceBuilder setIfAlias(String ifAlias) {
         m_snmpIf.setIfAlias(ifAlias);
@@ -86,7 +86,7 @@ public class SnmpInterfaceBuilder {
      * <p>setIfName</p>
      *
      * @param ifName a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.model.SnmpInterfaceBuilder} object.
+     * @return a {@link com.netxforge.oss2.model.SnmpInterfaceBuilder} object.
      */
     public SnmpInterfaceBuilder setIfName(String ifName) {
         m_snmpIf.setIfName(ifName);
@@ -97,7 +97,7 @@ public class SnmpInterfaceBuilder {
      * <p>setIfType</p>
      *
      * @param ifType a {@link java.lang.Integer} object.
-     * @return a {@link org.opennms.netmgt.model.SnmpInterfaceBuilder} object.
+     * @return a {@link com.netxforge.oss2.model.SnmpInterfaceBuilder} object.
      */
     public SnmpInterfaceBuilder setIfType(Integer ifType) {
         m_snmpIf.setIfType(ifType);
@@ -107,7 +107,7 @@ public class SnmpInterfaceBuilder {
     /**
      * <p>getSnmpInterface</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsSnmpInterface} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsSnmpInterface} object.
      */
     public OnmsSnmpInterface getSnmpInterface() {
         return m_snmpIf;
@@ -117,7 +117,7 @@ public class SnmpInterfaceBuilder {
      * <p>setIfOperStatus</p>
      *
      * @param ifOperStatus a {@link java.lang.Integer} object.
-     * @return a {@link org.opennms.netmgt.model.SnmpInterfaceBuilder} object.
+     * @return a {@link com.netxforge.oss2.model.SnmpInterfaceBuilder} object.
      */
     public SnmpInterfaceBuilder setIfOperStatus(Integer ifOperStatus) {
         m_snmpIf.setIfOperStatus(ifOperStatus);
@@ -128,7 +128,7 @@ public class SnmpInterfaceBuilder {
      * <p>setCollectionEnabled</p>
      *
      * @param collect a boolean.
-     * @return a {@link org.opennms.netmgt.model.SnmpInterfaceBuilder} object.
+     * @return a {@link com.netxforge.oss2.model.SnmpInterfaceBuilder} object.
      */
     public SnmpInterfaceBuilder setCollectionEnabled(boolean collect) {
         m_snmpIf.setCollectionEnabled(collect);
@@ -139,7 +139,7 @@ public class SnmpInterfaceBuilder {
      * <p>setPhysAddr</p>
      *
      * @param physAddr a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.model.SnmpInterfaceBuilder} object.
+     * @return a {@link com.netxforge.oss2.model.SnmpInterfaceBuilder} object.
      */
     public SnmpInterfaceBuilder setPhysAddr(String physAddr) {
         m_snmpIf.setPhysAddr(physAddr);
@@ -150,7 +150,7 @@ public class SnmpInterfaceBuilder {
      * <p>setPhysAddr</p>
      *
      * @param physAddr a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.model.SnmpInterfaceBuilder} object.
+     * @return a {@link com.netxforge.oss2.model.SnmpInterfaceBuilder} object.
      */
     public SnmpInterfaceBuilder setNetMask(InetAddress netmask) {
         if (netmask != null )

@@ -36,10 +36,10 @@ import java.util.List;
 import com.netxforge.oss2.EventConstants;
 import com.netxforge.oss2.core.utilsII.LogUtils;
 
-import org.opennms.netmgt.model.OnmsIpInterface;
-import org.opennms.netmgt.model.OnmsMonitoredService;
-import org.opennms.netmgt.model.OnmsNode;
-import org.opennms.netmgt.model.OnmsSeverity;
+import com.netxforge.oss2.model.OnmsIpInterface;
+import com.netxforge.oss2.model.OnmsMonitoredService;
+import com.netxforge.oss2.model.OnmsNode;
+import com.netxforge.oss2.model.OnmsSeverity;
 
 import com.netxforge.oss2.xml.event.AlarmData;
 import com.netxforge.oss2.xml.event.Event;
@@ -103,7 +103,7 @@ public class EventBuilder {
 	 * </p>
 	 * 
 	 * @param event
-	 *            a {@link org.opennms.netmgt.xml.event.Event} object.
+	 *            a {@link com.netxforge.oss2.core.xml.event.Event} object.
 	 */
 	public EventBuilder(final Event event) {
 		this(event, new Date());
@@ -115,7 +115,7 @@ public class EventBuilder {
 	 * </p>
 	 * 
 	 * @param event
-	 *            a {@link org.opennms.netmgt.xml.event.Event} object.
+	 *            a {@link com.netxforge.oss2.core.xml.event.Event} object.
 	 * @param date
 	 *            a {@link java.util.Date} object.
 	 */
@@ -130,7 +130,7 @@ public class EventBuilder {
 	 * getEvent
 	 * </p>
 	 * 
-	 * @return a {@link org.opennms.netmgt.xml.event.Event} object.
+	 * @return a {@link com.netxforge.oss2.core.xml.event.Event} object.
 	 */
 	public Event getEvent() {
 		return m_event;
@@ -148,7 +148,7 @@ public class EventBuilder {
 	 * 
 	 * @param date
 	 *            a {@link java.util.Date} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setTime(final Date date) {
 		m_event.setTime(EventConstants.formatToString(date));
@@ -162,7 +162,7 @@ public class EventBuilder {
 	 * 
 	 * @param date
 	 *            a {@link java.util.Date} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setCreationTime(final Date date) {
 		m_event.setCreationTime(EventConstants.formatToString(date));
@@ -176,7 +176,7 @@ public class EventBuilder {
 	 * 
 	 * @param source
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setSource(final String source) {
 		m_event.setSource(source);
@@ -191,7 +191,7 @@ public class EventBuilder {
 	 * 
 	 * @param severity
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setSeverity(final String severity) {
 		m_event.setSeverity(OnmsSeverity.get(severity).getLabel());
@@ -205,7 +205,7 @@ public class EventBuilder {
 	 * 
 	 * @param nodeid
 	 *            a long.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setNodeid(long nodeid) {
 		m_event.setNodeid(nodeid);
@@ -219,7 +219,7 @@ public class EventBuilder {
 	 * 
 	 * @param hostname
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setHost(final String hostname) {
 		m_event.setHost(hostname);
@@ -233,7 +233,7 @@ public class EventBuilder {
 	 * 
 	 * @param ipAddress
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setInterface(final InetAddress ipAddress) {
 		m_event.setInterfaceAddress(ipAddress);
@@ -247,7 +247,7 @@ public class EventBuilder {
 	 * 
 	 * @param ipAddress
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setIfIndex(final int ifIndex) {
 		m_event.setIfIndex(ifIndex);
@@ -261,7 +261,7 @@ public class EventBuilder {
 	 * 
 	 * @param serviceName
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setService(final String serviceName) {
 		m_event.setService(serviceName);
@@ -277,7 +277,7 @@ public class EventBuilder {
 	 *            a {@link java.lang.String} object.
 	 * @param val
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder addParam(final String parmName, final String val) {
 		return addParam(parmName, val, null, null);
@@ -322,7 +322,7 @@ public class EventBuilder {
 	 *            a {@link java.lang.String} object.
 	 * @param val
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder addParam(final String parmName, final boolean val) {
 		if (parmName != null) {
@@ -348,7 +348,7 @@ public class EventBuilder {
 	 *            a {@link java.lang.String} object.
 	 * @param val
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setParam(final String parmName, final String val) {
 		if (m_event.getParmCollection().size() < 1) {
@@ -376,7 +376,7 @@ public class EventBuilder {
 	 *            a {@link java.lang.String} object.
 	 * @param val
 	 *            a long.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder addParam(final String parmName, final double val) {
 		return addParam(parmName, Double.toString(val));
@@ -391,7 +391,7 @@ public class EventBuilder {
 	 *            a {@link java.lang.String} object.
 	 * @param val
 	 *            a long.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder addParam(final String parmName, final long val) {
 		return addParam(parmName, Long.toString(val));
@@ -406,7 +406,7 @@ public class EventBuilder {
 	 *            a {@link java.lang.String} object.
 	 * @param val
 	 *            a int.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder addParam(final String parmName, final int val) {
 		return addParam(parmName, Integer.toString(val));
@@ -421,7 +421,7 @@ public class EventBuilder {
 	 *            a {@link java.lang.String} object.
 	 * @param ch
 	 *            a char.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder addParam(final String parmName, final char ch) {
 		return addParam(parmName, Character.toString(ch));
@@ -436,7 +436,7 @@ public class EventBuilder {
 	 *            a {@link java.lang.String} object.
 	 * @param vals
 	 *            a {@link java.util.Collection} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder addParam(final String parmName,
 			final Collection<String> vals) {
@@ -451,8 +451,8 @@ public class EventBuilder {
 	 * </p>
 	 * 
 	 * @param alarmData
-	 *            a {@link org.opennms.netmgt.xml.event.AlarmData} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 *            a {@link com.netxforge.oss2.core.xml.event.AlarmData} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setAlarmData(final AlarmData alarmData) {
 		if (alarmData != null) {
@@ -467,8 +467,8 @@ public class EventBuilder {
 	 * </p>
 	 * 
 	 * @param node
-	 *            a {@link org.opennms.netmgt.model.OnmsNode} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 *            a {@link com.netxforge.oss2.model.OnmsNode} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setNode(final OnmsNode node) {
 		if (node != null) {
@@ -483,8 +483,8 @@ public class EventBuilder {
 	 * </p>
 	 * 
 	 * @param iface
-	 *            a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 *            a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setIpInterface(final OnmsIpInterface iface) {
 		if (iface != null) {
@@ -502,9 +502,9 @@ public class EventBuilder {
 	 * </p>
 	 * 
 	 * @param monitoredService
-	 *            a {@link org.opennms.netmgt.model.OnmsMonitoredService}
+	 *            a {@link com.netxforge.oss2.model.OnmsMonitoredService}
 	 *            object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setMonitoredService(
 			final OnmsMonitoredService monitoredService) {
@@ -523,7 +523,7 @@ public class EventBuilder {
 	 * 
 	 * @param version
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setSnmpVersion(final String version) {
 		ensureSnmp();
@@ -551,7 +551,7 @@ public class EventBuilder {
 	 * 
 	 * @param enterprise
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setEnterpriseId(final String enterprise) {
 		ensureSnmp();
@@ -566,7 +566,7 @@ public class EventBuilder {
 	 * 
 	 * @param generic
 	 *            a int.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setGeneric(final int generic) {
 		ensureSnmp();
@@ -581,7 +581,7 @@ public class EventBuilder {
 	 * 
 	 * @param specific
 	 *            a int.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setSpecific(final int specific) {
 		ensureSnmp();
@@ -596,7 +596,7 @@ public class EventBuilder {
 	 * 
 	 * @param snmpHost
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setSnmpHost(final String snmpHost) {
 		m_event.setSnmphost(snmpHost);
@@ -652,7 +652,7 @@ public class EventBuilder {
 	 * 
 	 * @param dest
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setLogDest(final String dest) {
 		ensureLogmsg();
@@ -667,7 +667,7 @@ public class EventBuilder {
 	 * 
 	 * @param content
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setLogMessage(final String content) {
 		ensureLogmsg();
@@ -682,7 +682,7 @@ public class EventBuilder {
 	 * 
 	 * @param descr
 	 *            a {@link java.lang.String} object.
-	 * @return a {@link org.opennms.netmgt.model.events.EventBuilder} object.
+	 * @return a {@link com.netxforge.oss2.model.events.EventBuilder} object.
 	 */
 	public EventBuilder setDescription(final String descr) {
 		m_event.setDescr(descr);

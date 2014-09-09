@@ -31,4 +31,6 @@ location "http://p2.netxforge.com/oss2/mvn.p2" {
 	org.apache.commons.lang lazy
 	dnsjava lazy
 	javax.persistence.api lazy
+	aopalliance lazy
+	junit lazy
 }

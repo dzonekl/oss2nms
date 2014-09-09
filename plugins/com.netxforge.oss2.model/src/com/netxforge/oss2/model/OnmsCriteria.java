@@ -338,11 +338,13 @@ public class OnmsCriteria {
             return new OnmsCriteria.OnmsDetachedCriteria(entityName, alias);
         }
         
-        public static OnmsCriteria.OnmsDetachedCriteria forClass(Class clazz) {
+        @SuppressWarnings("rawtypes")
+		public static OnmsCriteria.OnmsDetachedCriteria forClass(Class clazz) {
             return new OnmsCriteria.OnmsDetachedCriteria(clazz.getName());
         }
         
-        public static OnmsCriteria.OnmsDetachedCriteria forClass(Class clazz, String alias) {
+        @SuppressWarnings("rawtypes")
+		public static OnmsCriteria.OnmsDetachedCriteria forClass(Class clazz, String alias) {
             return new OnmsCriteria.OnmsDetachedCriteria(clazz.getName() , alias);
         }
         

@@ -28,6 +28,8 @@
 
 package com.netxforge.oss2.model;
 
+import com.netxforge.oss2.core.daemon.ServiceDaemonMBean;
+
 
 public interface MockServiceDaemonMBean extends ServiceDaemonMBean {
 

@@ -60,11 +60,11 @@ import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.hibernate.annotations.Type;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.xml.bind.InetAddressXmlAdapter;
-import org.opennms.netmgt.model.events.AddEventVisitor;
-import org.opennms.netmgt.model.events.DeleteEventVisitor;
-import org.opennms.netmgt.model.events.EventForwarder;
+import com.netxforge.oss2.core.utils.InetAddressUtils;
+import com.netxforge.oss2.core.utils.xml.bind.InetAddressXmlAdapter;
+import com.netxforge.oss2.model.events.AddEventVisitor;
+import com.netxforge.oss2.model.events.DeleteEventVisitor;
+import com.netxforge.oss2.model.events.EventForwarder;
 import org.springframework.core.style.ToStringCreator;
 
 /**
@@ -105,7 +105,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
      * minimal constructor
      * @deprecated Use the {@link InetAddress} version instead.
      * @param ipAddr a {@link java.lang.String} object.
-     * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public OnmsIpInterface(String ipAddr, OnmsNode node) {
         this(InetAddressUtils.getInetAddress(ipAddr), node);
@@ -115,7 +115,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
      * minimal constructor
      *
      * @param ipAddr a {@link java.lang.String} object.
-     * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public OnmsIpInterface(InetAddress ipAddr, OnmsNode node) {
         m_ipAddress = ipAddr;
@@ -293,7 +293,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>getIsSnmpPrimary</p>
      *
-     * @return a {@link org.opennms.netmgt.model.PrimaryType} object.
+     * @return a {@link com.netxforge.oss2.model.PrimaryType} object.
      */
     @Column(name="isSnmpPrimary", length=1)
     @XmlTransient
@@ -304,7 +304,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>setIsSnmpPrimary</p>
      *
-     * @param issnmpprimary a {@link org.opennms.netmgt.model.PrimaryType} object.
+     * @param issnmpprimary a {@link com.netxforge.oss2.model.PrimaryType} object.
      */
     public void setIsSnmpPrimary(PrimaryType issnmpprimary) {
         m_isSnmpPrimary = issnmpprimary;
@@ -323,7 +323,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>getNode</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     @ManyToOne(optional=false, fetch=FetchType.LAZY)
     @JoinColumn(name="nodeId")
@@ -336,9 +336,9 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>setNode</p>
      *
-     * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
-    public void setNode(org.opennms.netmgt.model.OnmsNode node) {
+    public void setNode(com.netxforge.oss2.model.OnmsNode node) {
         m_node = node;
     }
 
@@ -369,7 +369,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * The SnmpInterface associated with this interface if any
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsSnmpInterface} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsSnmpInterface} object.
      */
     @XmlElement(name = "snmpInterface")
     @ManyToOne(optional=true, fetch=FetchType.LAZY)
@@ -382,7 +382,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>setSnmpInterface</p>
      *
-     * @param snmpInterface a {@link org.opennms.netmgt.model.OnmsSnmpInterface} object.
+     * @param snmpInterface a {@link com.netxforge.oss2.model.OnmsSnmpInterface} object.
      */
     public void setSnmpInterface(OnmsSnmpInterface snmpInterface) {
         m_snmpInterface = snmpInterface;
@@ -421,7 +421,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
      */
     @Column(name="ipAddr")
     @XmlElement(name="ipAddress")
-    @Type(type="org.opennms.netmgt.model.InetAddressUserType")
+    @Type(type="com.netxforge.oss2.model.InetAddressUserType")
     @XmlJavaTypeAdapter(InetAddressXmlAdapter.class)
     public InetAddress getIpAddress() {
         return m_ipAddress;
@@ -464,7 +464,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
      * <p>getMonitoredServiceByServiceType</p>
      *
      * @param svcName a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.model.OnmsMonitoredService} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsMonitoredService} object.
      */
     public OnmsMonitoredService getMonitoredServiceByServiceType(String svcName) {
         for (OnmsMonitoredService monSvc : getMonitoredServices()) {
@@ -478,7 +478,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>mergeInterfaceAttributes</p>
      *
-     * @param scannedIface a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @param scannedIface a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     public void mergeInterfaceAttributes(OnmsIpInterface scannedIface) {
         
@@ -503,8 +503,8 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>hasNewCollectionTypeValue</p>
      *
-     * @param newVal a {@link org.opennms.netmgt.model.PrimaryType} object.
-     * @param existingVal a {@link org.opennms.netmgt.model.PrimaryType} object.
+     * @param newVal a {@link com.netxforge.oss2.model.PrimaryType} object.
+     * @param existingVal a {@link com.netxforge.oss2.model.PrimaryType} object.
      * @return a boolean.
      */
     protected static boolean hasNewCollectionTypeValue(PrimaryType newVal, PrimaryType existingVal) {
@@ -515,8 +515,8 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>mergeMonitoredServices</p>
      *
-     * @param scannedIface a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
-     * @param eventForwarder a {@link org.opennms.netmgt.model.events.EventForwarder} object.
+     * @param scannedIface a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
+     * @param eventForwarder a {@link com.netxforge.oss2.model.events.EventForwarder} object.
      * @param deleteMissing a boolean.
      */
     public void mergeMonitoredServices(OnmsIpInterface scannedIface, EventForwarder eventForwarder, boolean deleteMissing) {
@@ -561,7 +561,7 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>updateSnmpInterface</p>
      *
-     * @param scannedIface a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @param scannedIface a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     public void updateSnmpInterface(OnmsIpInterface scannedIface) {
         
@@ -589,8 +589,8 @@ public class OnmsIpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>mergeInterface</p>
      *
-     * @param scannedIface a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
-     * @param eventForwarder a {@link org.opennms.netmgt.model.events.EventForwarder} object.
+     * @param scannedIface a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
+     * @param eventForwarder a {@link com.netxforge.oss2.model.events.EventForwarder} object.
      * @param deleteMissing a boolean.
      */
     public void mergeInterface(OnmsIpInterface scannedIface, EventForwarder eventForwarder, boolean deleteMissing) {

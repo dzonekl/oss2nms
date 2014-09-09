@@ -28,7 +28,7 @@
 
 package com.netxforge.oss2.model;
 
-import static org.opennms.core.utils.InetAddressUtils.toInteger;
+import static com.netxforge.oss2.core.utils.InetAddressUtils.toInteger;
 
 import java.io.Serializable;
 import java.math.BigInteger;
@@ -131,8 +131,8 @@ Comparable<OnmsMonitoredService> {
     /**
      * <p>Constructor for OnmsMonitoredService.</p>
      *
-     * @param ipIf a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
-     * @param serviceType a {@link org.opennms.netmgt.model.OnmsServiceType} object.
+     * @param ipIf a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
+     * @param serviceType a {@link com.netxforge.oss2.model.OnmsServiceType} object.
      */
     public OnmsMonitoredService(OnmsIpInterface ipIf, OnmsServiceType serviceType) {
         m_ipInterface = ipIf;
@@ -325,7 +325,7 @@ Comparable<OnmsMonitoredService> {
     /**
      * <p>getIpInterface</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     @XmlIDREF
     @XmlElement(name="ipInterfaceId")
@@ -338,7 +338,7 @@ Comparable<OnmsMonitoredService> {
     /**
      * <p>setIpInterface</p>
      *
-     * @param ipInterface a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @param ipInterface a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     public void setIpInterface(OnmsIpInterface ipInterface) {
         m_ipInterface = ipInterface;
@@ -358,7 +358,7 @@ Comparable<OnmsMonitoredService> {
     /**
      * <p>getServiceType</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsServiceType} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsServiceType} object.
      */
     @ManyToOne(optional=false)
     @JoinColumn(name="serviceId")
@@ -369,7 +369,7 @@ Comparable<OnmsMonitoredService> {
     /**
      * <p>setServiceType</p>
      *
-     * @param service a {@link org.opennms.netmgt.model.OnmsServiceType} object.
+     * @param service a {@link com.netxforge.oss2.model.OnmsServiceType} object.
      */
     public void setServiceType(OnmsServiceType service) {
         m_serviceType = service;
@@ -490,7 +490,7 @@ Comparable<OnmsMonitoredService> {
     /**
      * <p>addApplication</p>
      *
-     * @param application a {@link org.opennms.netmgt.model.OnmsApplication} object.
+     * @param application a {@link com.netxforge.oss2.model.OnmsApplication} object.
      * @return a boolean.
      */
     public boolean addApplication(OnmsApplication application) {
@@ -500,7 +500,7 @@ Comparable<OnmsMonitoredService> {
     /**
      * <p>removeApplication</p>
      *
-     * @param application a {@link org.opennms.netmgt.model.OnmsApplication} object.
+     * @param application a {@link com.netxforge.oss2.model.OnmsApplication} object.
      * @return a boolean.
      */
     public boolean removeApplication(OnmsApplication application) {
@@ -510,7 +510,7 @@ Comparable<OnmsMonitoredService> {
     /**
      * <p>compareTo</p>
      *
-     * @param o a {@link org.opennms.netmgt.model.OnmsMonitoredService} object.
+     * @param o a {@link com.netxforge.oss2.model.OnmsMonitoredService} object.
      * @return a int.
      */
     public int compareTo(OnmsMonitoredService o) {
@@ -534,7 +534,7 @@ Comparable<OnmsMonitoredService> {
     /**
      * <p>mergeServiceAttributes</p>
      *
-     * @param scanned a {@link org.opennms.netmgt.model.OnmsMonitoredService} object.
+     * @param scanned a {@link com.netxforge.oss2.model.OnmsMonitoredService} object.
      */
     public void mergeServiceAttributes(OnmsMonitoredService scanned) {
 

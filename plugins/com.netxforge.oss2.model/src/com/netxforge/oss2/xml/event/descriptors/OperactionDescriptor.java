@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Operaction;
+import com.netxforge.oss2.xml.event.Operaction;
 
 /**
  * Class OperactionDescriptor.
@@ -261,7 +261,7 @@ import org.opennms.netmgt.xml.event.Operaction;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Operaction.class;
+        return com.netxforge.oss2.xml.event.Operaction.class;
     }
 
     /**

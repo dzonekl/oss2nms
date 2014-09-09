@@ -92,10 +92,10 @@
 			</plugin>
 		</plugins>
 	</build>
-	<!-- <modules>
+	<modules>
 		<module> ../../plugins/ </module>
 		<module>
 		../../features/
 		</module>
-	</modules> -->
+	</modules>
 </project>

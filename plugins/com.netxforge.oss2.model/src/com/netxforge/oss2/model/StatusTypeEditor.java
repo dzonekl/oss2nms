@@ -30,7 +30,7 @@ package com.netxforge.oss2.model;
 
 import java.beans.PropertyEditorSupport;
 
-import org.opennms.netmgt.model.OnmsArpInterface.StatusType;
+import com.netxforge.oss2.model.OnmsArpInterface.StatusType;
 
 public class StatusTypeEditor extends PropertyEditorSupport {
 

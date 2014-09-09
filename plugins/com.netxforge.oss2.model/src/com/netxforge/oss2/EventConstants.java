@@ -36,10 +36,9 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
+import com.netxforge.oss2.core.snmp.SnmpObjId;
+import com.netxforge.oss2.core.snmp.SnmpValue;
 import com.netxforge.oss2.core.utils.Base64;
-
-import org.opennms.netmgt.snmp.SnmpObjId;
-import org.opennms.netmgt.snmp.SnmpValue;
 
 /**
  * This class holds all OpenNMS events related constants - the UEI's, parm

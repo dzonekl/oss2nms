@@ -28,13 +28,13 @@
 
 package com.netxforge.oss2.model.events;
 
-import org.opennms.core.utils.LogUtils;
-import org.opennms.netmgt.model.AbstractEntityVisitor;
-import org.opennms.netmgt.model.OnmsIpInterface;
-import org.opennms.netmgt.model.OnmsMonitoredService;
-import org.opennms.netmgt.model.OnmsNode;
-import org.opennms.netmgt.model.OnmsSnmpInterface;
-import org.opennms.netmgt.xml.event.Event;
+import com.netxforge.oss2.core.utilsII.LogUtils;
+import com.netxforge.oss2.model.AbstractEntityVisitor;
+import com.netxforge.oss2.model.OnmsIpInterface;
+import com.netxforge.oss2.model.OnmsMonitoredService;
+import com.netxforge.oss2.model.OnmsNode;
+import com.netxforge.oss2.model.OnmsSnmpInterface;
+import com.netxforge.oss2.xml.event.Event;
 
 /**
  * <p>UpdateEventVisitor class.</p>
@@ -50,7 +50,7 @@ public class UpdateEventVisitor extends AbstractEntityVisitor {
     /**
      * <p>Constructor for UpdateEventVisitor.</p>
      *
-     * @param eventForwarder a {@link org.opennms.netmgt.model.events.EventForwarder} object.
+     * @param eventForwarder a {@link com.netxforge.oss2.model.events.EventForwarder} object.
      */
     public UpdateEventVisitor(EventForwarder eventForwarder) {
         m_eventForwarder = eventForwarder;
@@ -77,7 +77,7 @@ public class UpdateEventVisitor extends AbstractEntityVisitor {
     
     /** {@inheritDoc} */
     @Override
-    public void visitSnmpInterface(org.opennms.netmgt.model.OnmsEntity snmpIface) {
+    public void visitSnmpInterface(com.netxforge.oss2.model.OnmsEntity snmpIface) {
         //TODO decide what to do here and when to do it
     }
 

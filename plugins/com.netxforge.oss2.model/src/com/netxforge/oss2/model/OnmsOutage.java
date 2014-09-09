@@ -52,7 +52,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.hibernate.annotations.Filter;
 import org.hibernate.annotations.Type;
-import org.opennms.core.xml.bind.InetAddressXmlAdapter;
+import com.netxforge.oss2.core.utils.xml.bind.InetAddressXmlAdapter;
 import org.springframework.core.style.ToStringCreator;
 
 
@@ -101,9 +101,9 @@ public class OnmsOutage implements Serializable {
      *
      * @param ifLostService a {@link java.util.Date} object.
      * @param ifRegainedService a {@link java.util.Date} object.
-     * @param eventBySvcRegainedEvent a {@link org.opennms.netmgt.model.OnmsEvent} object.
-     * @param eventBySvcLostEvent a {@link org.opennms.netmgt.model.OnmsEvent} object.
-     * @param monitoredService a {@link org.opennms.netmgt.model.OnmsMonitoredService} object.
+     * @param eventBySvcRegainedEvent a {@link com.netxforge.oss2.model.OnmsEvent} object.
+     * @param eventBySvcLostEvent a {@link com.netxforge.oss2.model.OnmsEvent} object.
+     * @param monitoredService a {@link com.netxforge.oss2.model.OnmsMonitoredService} object.
      * @param suppressTime a {@link java.util.Date} object.
      * @param suppressedBy a {@link java.lang.String} object.
      */
@@ -128,8 +128,8 @@ public class OnmsOutage implements Serializable {
      * minimal constructor
      *
      * @param ifLostService a {@link java.util.Date} object.
-     * @param eventBySvcLostEvent a {@link org.opennms.netmgt.model.OnmsEvent} object.
-     * @param monitoredService a {@link org.opennms.netmgt.model.OnmsMonitoredService} object.
+     * @param eventBySvcLostEvent a {@link com.netxforge.oss2.model.OnmsEvent} object.
+     * @param monitoredService a {@link com.netxforge.oss2.model.OnmsMonitoredService} object.
      */
     public OnmsOutage(Date ifLostService, OnmsEvent eventBySvcLostEvent, OnmsMonitoredService monitoredService) {
         m_ifLostService = ifLostService;
@@ -164,7 +164,7 @@ public class OnmsOutage implements Serializable {
     /**
      * <p>getMonitoredService</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsMonitoredService} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsMonitoredService} object.
      */
     @ManyToOne
     @JoinColumn(name="ifserviceId")
@@ -175,7 +175,7 @@ public class OnmsOutage implements Serializable {
     /**
      * <p>setMonitoredService</p>
      *
-     * @param monitoredService a {@link org.opennms.netmgt.model.OnmsMonitoredService} object.
+     * @param monitoredService a {@link com.netxforge.oss2.model.OnmsMonitoredService} object.
      */
     public void setMonitoredService(OnmsMonitoredService monitoredService) {
         m_monitoredService = monitoredService;
@@ -206,7 +206,7 @@ public class OnmsOutage implements Serializable {
     /**
      * <p>getServiceLostEvent</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsEvent} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsEvent} object.
      */
     @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="svcLostEventId")
@@ -217,7 +217,7 @@ public class OnmsOutage implements Serializable {
     /**
      * <p>setServiceLostEvent</p>
      *
-     * @param svcLostEvent a {@link org.opennms.netmgt.model.OnmsEvent} object.
+     * @param svcLostEvent a {@link com.netxforge.oss2.model.OnmsEvent} object.
      */
     public void setServiceLostEvent(OnmsEvent svcLostEvent) {
         m_serviceLostEvent = svcLostEvent;
@@ -248,7 +248,7 @@ public class OnmsOutage implements Serializable {
     /**
      * <p>getServiceRegainedEvent</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsEvent} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsEvent} object.
      */
     @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="svcRegainedEventId")
@@ -259,7 +259,7 @@ public class OnmsOutage implements Serializable {
     /**
      * <p>setServiceRegainedEvent</p>
      *
-     * @param svcRegainedEvent a {@link org.opennms.netmgt.model.OnmsEvent} object.
+     * @param svcRegainedEvent a {@link com.netxforge.oss2.model.OnmsEvent} object.
      */
     public void setServiceRegainedEvent(OnmsEvent svcRegainedEvent) {
         m_serviceRegainedEvent = svcRegainedEvent;
@@ -323,7 +323,7 @@ public class OnmsOutage implements Serializable {
      */
     @Transient
     @XmlElement(name="ipAddress")
-    @Type(type="org.opennms.netmgt.model.InetAddressUserType")
+    @Type(type="com.netxforge.oss2.model.InetAddressUserType")
     @XmlJavaTypeAdapter(InetAddressXmlAdapter.class)
     public InetAddress getIpAddress() {
         return getMonitoredService().getIpAddress();

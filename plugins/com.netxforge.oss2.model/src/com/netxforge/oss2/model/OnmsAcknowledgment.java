@@ -108,7 +108,7 @@ public class OnmsAcknowledgment {
     /**
      * <p>Constructor for OnmsAcknowledgment.</p>
      *
-     * @param e a {@link com.netxforge.oss2.xml.event.Event} object.
+     * @param e a {@link com.netxforge.oss2.core.xml.event.Event} object.
      * @throws java.text.ParseException if any.
      */
     public OnmsAcknowledgment(final Event e) throws ParseException {

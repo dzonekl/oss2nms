@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Header;
+import com.netxforge.oss2.xml.event.Header;
 
 /**
  * Class HeaderDescriptor.
@@ -316,7 +316,7 @@ import org.opennms.netmgt.xml.event.Header;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Header.class;
+        return com.netxforge.oss2.xml.event.Header.class;
     }
 
     /**

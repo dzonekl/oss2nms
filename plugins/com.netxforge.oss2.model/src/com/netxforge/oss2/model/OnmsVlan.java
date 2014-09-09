@@ -56,7 +56,7 @@ import javax.xml.bind.annotation.XmlTransient;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-import org.opennms.netmgt.model.OnmsArpInterface.StatusType;
+import com.netxforge.oss2.model.OnmsArpInterface.StatusType;
 
 @XmlRootElement(name = "vlan")
 @Entity
@@ -477,7 +477,7 @@ public class OnmsVlan {
     /**
      * <p>getNode</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     @ManyToOne(optional=false, fetch=FetchType.LAZY)
     @JoinColumn(name="nodeId")
@@ -490,7 +490,7 @@ public class OnmsVlan {
     /**
      * <p>setNode</p>
      *
-     * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public void setNode(final OnmsNode node) {
         m_node = node;

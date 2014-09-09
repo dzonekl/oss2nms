@@ -68,13 +68,13 @@ public class Log implements Serializable {
      * Field _header.
      */
 	@XmlElement(name="header", required=false)
-    private org.opennms.netmgt.xml.event.Header _header;
+    private com.netxforge.oss2.xml.event.Header _header;
 
     /**
      * Field _events.
      */
 	@XmlElement(name="events", required=true)
-    private org.opennms.netmgt.xml.event.Events _events;
+    private com.netxforge.oss2.xml.event.Events _events;
 
 
       //----------------/
@@ -95,7 +95,7 @@ public class Log implements Serializable {
      * 
      * @return the value of field 'Events'.
      */
-    public org.opennms.netmgt.xml.event.Events getEvents(
+    public com.netxforge.oss2.xml.event.Events getEvents(
     ) {
         return this._events;
     }
@@ -105,7 +105,7 @@ public class Log implements Serializable {
      * 
      * @return the value of field 'Header'.
      */
-    public org.opennms.netmgt.xml.event.Header getHeader(
+    public com.netxforge.oss2.xml.event.Header getHeader(
     ) {
         return this._header;
     }
@@ -116,7 +116,7 @@ public class Log implements Serializable {
      * @param events the value of field 'events'.
      */
     public void setEvents(
-            final org.opennms.netmgt.xml.event.Events events) {
+            final com.netxforge.oss2.xml.event.Events events) {
         this._events = events;
     }
 
@@ -126,7 +126,7 @@ public class Log implements Serializable {
      * @param header the value of field 'header'.
      */
     public void setHeader(
-            final org.opennms.netmgt.xml.event.Header header) {
+            final com.netxforge.oss2.xml.event.Header header) {
         this._header = header;
     }
 

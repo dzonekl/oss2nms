@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NMS Product
+Bundle-SymbolicName: com.netxforge.oss2.poc.product;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: NetXForge
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.netxforge.oss2.poc.app;bundle-version="1.0.0"

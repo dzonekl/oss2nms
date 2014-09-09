@@ -29,10 +29,10 @@
 package com.netxforge.oss2.model.events;
 
 
-import org.opennms.netmgt.model.AbstractEntityVisitor;
-import org.opennms.netmgt.model.OnmsIpInterface;
-import org.opennms.netmgt.model.OnmsMonitoredService;
-import org.opennms.netmgt.model.OnmsNode;
+import com.netxforge.oss2.model.AbstractEntityVisitor;
+import com.netxforge.oss2.model.OnmsIpInterface;
+import com.netxforge.oss2.model.OnmsMonitoredService;
+import com.netxforge.oss2.model.OnmsNode;
 
 public class DeleteEventVisitor extends AbstractEntityVisitor {
     private final EventForwarder m_eventForwarder;
@@ -41,7 +41,7 @@ public class DeleteEventVisitor extends AbstractEntityVisitor {
 	/**
 	 * <p>Constructor for DeleteEventVisitor.</p>
 	 *
-	 * @param eventForwarder a {@link org.opennms.netmgt.model.events.EventForwarder} object.
+	 * @param eventForwarder a {@link com.netxforge.oss2.model.events.EventForwarder} object.
 	 */
 	public DeleteEventVisitor(EventForwarder eventForwarder) {
 	    m_eventForwarder = eventForwarder;

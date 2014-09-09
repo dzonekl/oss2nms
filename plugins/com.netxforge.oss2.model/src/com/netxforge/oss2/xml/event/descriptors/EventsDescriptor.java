@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Events;
+import com.netxforge.oss2.xml.event.Events;
 
 /**
  * Class EventsDescriptor.
@@ -99,7 +99,7 @@ import org.opennms.netmgt.xml.event.Events;
         //-- initialize element descriptors
         
         //-- _eventList
-        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(org.opennms.netmgt.xml.event.Event.class, "_eventList", "event", org.exolab.castor.xml.NodeType.Element);
+        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(com.netxforge.oss2.xml.event.Event.class, "_eventList", "event", org.exolab.castor.xml.NodeType.Element);
         handler = new org.exolab.castor.xml.XMLFieldHandler() {
             @Override
             public java.lang.Object getValue( java.lang.Object object ) 
@@ -114,7 +114,7 @@ import org.opennms.netmgt.xml.event.Events;
             {
                 try {
                     Events target = (Events) object;
-                    target.addEvent( (org.opennms.netmgt.xml.event.Event) value);
+                    target.addEvent( (com.netxforge.oss2.xml.event.Event) value);
                 } catch (java.lang.Exception ex) {
                     throw new IllegalStateException(ex.toString());
                 }
@@ -130,10 +130,10 @@ import org.opennms.netmgt.xml.event.Events;
             @Override
             @SuppressWarnings("unused")
             public java.lang.Object newInstance(java.lang.Object parent) {
-                return new org.opennms.netmgt.xml.event.Event();
+                return new com.netxforge.oss2.xml.event.Event();
             }
         };
-        desc.setSchemaType("org.opennms.netmgt.xml.event.Event");
+        desc.setSchemaType("com.netxforge.oss2.core.xml.event.Event");
         desc.setHandler(handler);
         desc.setNameSpaceURI("http://xmlns.opennms.org/xsd/event");
         desc.setRequired(true);
@@ -185,7 +185,7 @@ import org.opennms.netmgt.xml.event.Events;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Events.class;
+        return com.netxforge.oss2.xml.event.Events.class;
     }
 
     /**

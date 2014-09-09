@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Value;
+import com.netxforge.oss2.xml.event.Value;
 
 /**
  * Class ValueDescriptor.
@@ -260,7 +260,7 @@ import org.opennms.netmgt.xml.event.Value;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Value.class;
+        return com.netxforge.oss2.xml.event.Value.class;
     }
 
     /**

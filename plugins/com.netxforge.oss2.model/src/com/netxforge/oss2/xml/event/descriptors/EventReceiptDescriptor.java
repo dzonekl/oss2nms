@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.EventReceipt;
+import com.netxforge.oss2.xml.event.EventReceipt;
 
 /**
  * Class EventReceiptDescriptor.
@@ -189,7 +189,7 @@ import org.opennms.netmgt.xml.event.EventReceipt;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.EventReceipt.class;
+        return com.netxforge.oss2.xml.event.EventReceipt.class;
     }
 
     /**

@@ -55,7 +55,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
-import org.opennms.netmgt.model.OnmsArpInterface.StatusType;
+import com.netxforge.oss2.model.OnmsArpInterface.StatusType;
 
 /**
  * <p>AtInterface class.</p>

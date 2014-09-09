@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="OpenNMS" uid="OpenNMS" id="com.netxforge.oss2.poc.product.opennms" application="com.netxforge.oss2.poc.app.opennms" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-console 8811 -noExit -consoleLog</programArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="com.netxforge.oss2.poc.feature" version="1.0.0.qualifier"/>
+   </features>
+
+
+</product>

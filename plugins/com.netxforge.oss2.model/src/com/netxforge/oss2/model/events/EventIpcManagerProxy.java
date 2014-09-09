@@ -33,7 +33,7 @@ import java.util.List;
 
 import com.netxforge.oss2.xml.event.Event;
 import com.netxforge.oss2.xml.event.Log;
-//import org.springframework.util.Assert;
+import org.springframework.util.Assert;
 
 /**
  * Late initializing proxy to another EventIpcManager object.

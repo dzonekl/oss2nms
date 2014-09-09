@@ -55,10 +55,10 @@ import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.hibernate.annotations.Type;
-import org.opennms.core.utils.AlphaNumeric;
-import org.opennms.core.utils.RrdLabelUtils;
-import org.opennms.core.utils.ThreadCategory;
-import org.opennms.core.xml.bind.InetAddressXmlAdapter;
+import com.netxforge.oss2.core.utils.AlphaNumeric;
+import com.netxforge.oss2.core.utils.RrdLabelUtils;
+import com.netxforge.oss2.core.utilsII.ThreadCategory;
+import com.netxforge.oss2.core.utils.xml.bind.InetAddressXmlAdapter;
 import org.springframework.core.style.ToStringCreator;
 
 /**
@@ -120,7 +120,7 @@ public class OnmsSnmpInterface extends OnmsEntity implements Serializable {
 
     /**
      * <p>Constructor for OnmsSnmpInterface.</p>
-     * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
      * @param ifIndex a int.
      */
     public OnmsSnmpInterface(OnmsNode node, int ifIndex) {
@@ -129,7 +129,7 @@ public class OnmsSnmpInterface extends OnmsEntity implements Serializable {
 
     /**
      * <p>Constructor for OnmsSnmpInterface.</p>
-     * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
      * @param ifIndex a {@link java.lang.Integer} object.
      */
     public OnmsSnmpInterface(OnmsNode node, Integer ifIndex) {
@@ -175,7 +175,7 @@ public class OnmsSnmpInterface extends OnmsEntity implements Serializable {
      * @return a {@link java.lang.String} object.
      */
     @Column(name = "snmpIpAdEntNetMask")
-    @Type(type="org.opennms.netmgt.model.InetAddressUserType")
+    @Type(type="com.netxforge.oss2.model.InetAddressUserType")
     @XmlJavaTypeAdapter(InetAddressXmlAdapter.class)
     public InetAddress getNetMask() {
         return m_netMask;
@@ -500,7 +500,7 @@ public class OnmsSnmpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>getNode</p>
      *
-     * @return a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @return a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     @XmlIDREF
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
@@ -513,7 +513,7 @@ public class OnmsSnmpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>setNode</p>
      *
-     * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+     * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
      */
     public void setNode(OnmsNode node) {
         m_node = node;
@@ -676,7 +676,7 @@ public class OnmsSnmpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>addIpInterface</p>
      *
-     * @param iface a {@link org.opennms.netmgt.model.OnmsIpInterface} object.
+     * @param iface a {@link com.netxforge.oss2.model.OnmsIpInterface} object.
      */
     public void addIpInterface(OnmsIpInterface iface) {
         m_ipInterfaces.add(iface);
@@ -685,7 +685,7 @@ public class OnmsSnmpInterface extends OnmsEntity implements Serializable {
     /**
      * <p>mergeSnmpInterfaceAttributes</p>
      *
-     * @param scannedSnmpIface a {@link org.opennms.netmgt.model.OnmsSnmpInterface} object.
+     * @param scannedSnmpIface a {@link com.netxforge.oss2.model.OnmsSnmpInterface} object.
      */
     public void mergeSnmpInterfaceAttributes(OnmsSnmpInterface scannedSnmpIface) {
         

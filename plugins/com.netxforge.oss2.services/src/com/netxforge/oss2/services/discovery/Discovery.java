@@ -46,14 +46,13 @@ import org.exolab.castor.xml.MarshalException;
 import org.exolab.castor.xml.ValidationException;
 
 // DB Stuff....
-import org.opennms.core.db.DataSourceFactory;
-import com.netxforge.oss2.core.utilsII.DBUtils;
+//import org.opennms.core.db.DataSourceFactory;
 
+import com.netxforge.oss2.core.daemon.AbstractServiceDaemon;
+import com.netxforge.oss2.core.utilsII.DBUtils;
 import com.netxforge.oss2.EventConstants;
 import com.netxforge.oss2.core.utils.InetAddressUtils;
-
 import com.netxforge.oss2.config.DiscoveryConfigFactory;
-import com.netxforge.oss2.daemon.AbstractServiceDaemon;
 
 //import org.opennms.netmgt.eventd.EventIpcManagerFactory;
 
@@ -67,7 +66,6 @@ import com.netxforge.oss2.model.events.annotations.EventHandler;
 import com.netxforge.oss2.model.events.annotations.EventListener;
 import com.netxforge.oss2.xml.event.Event;
 import com.netxforge.oss2.xml.event.Parm;
-
 
 import org.springframework.util.Assert;
 
@@ -321,29 +319,33 @@ public class Discovery extends AbstractServiceDaemon {
     	 * in there
     	 */
     	Set<String> newAlreadyDiscovered = Collections.synchronizedSet(new HashSet<String>());
-    	Connection conn = null;
-        final DBUtils d = new DBUtils(getClass());
-
-    	try {
-    		conn = DataSourceFactory.getInstance().getConnection();
-    		d.watch(conn);
-    		PreparedStatement stmt = conn.prepareStatement(ALL_IP_ADDRS_SQL);
-    		d.watch(stmt);
-    		ResultSet rs = stmt.executeQuery();
-    		d.watch(rs);
-    		if (rs != null) {
-    			while (rs.next()) {
-    				newAlreadyDiscovered.add(rs.getString(1));
-    			}
-    		} else {
-    			log().warn("Got null ResultSet from query for all IP addresses");
-    		}
-    		m_alreadyDiscovered = newAlreadyDiscovered;
-    	} catch (SQLException sqle) {
-    		log().warn("Caught SQLException while trying to query for all IP addresses: " + sqle.getMessage());
-    	} finally {
-    	    d.cleanUp();
-    	}
+    	
+    	
+    	
+    	
+//    	Connection conn = null;
+//        final DBUtils d = new DBUtils(getClass());
+//
+//    	try {
+//    		conn = DataSourceFactory.getInstance().getConnection();
+//    		d.watch(conn);
+//    		PreparedStatement stmt = conn.prepareStatement(ALL_IP_ADDRS_SQL);
+//    		d.watch(stmt);
+//    		ResultSet rs = stmt.executeQuery();
+//    		d.watch(rs);
+//    		if (rs != null) {
+//    			while (rs.next()) {
+//    				newAlreadyDiscovered.add(rs.getString(1));
+//    			}
+//    		} else {
+//    			log().warn("Got null ResultSet from query for all IP addresses");
+//    		}
+//    		m_alreadyDiscovered = newAlreadyDiscovered;
+//    	} catch (SQLException sqle) {
+//    		log().warn("Caught SQLException while trying to query for all IP addresses: " + sqle.getMessage());
+//    	} finally {
+//    	    d.cleanUp();
+//    	}
     	log().info("syncAlreadyDiscovered initialized list of managed IP addresses with " + m_alreadyDiscovered.size() + " members");
     }
 

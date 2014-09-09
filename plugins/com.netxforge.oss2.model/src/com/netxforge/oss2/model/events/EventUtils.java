@@ -28,34 +28,34 @@
 
 package com.netxforge.oss2.model.events;
 
-import static org.opennms.core.utils.InetAddressUtils.str;
-import static org.opennms.netmgt.EventConstants.INTERFACE_DELETED_EVENT_UEI;
-import static org.opennms.netmgt.EventConstants.NODE_ADDED_EVENT_UEI;
-import static org.opennms.netmgt.EventConstants.NODE_DELETED_EVENT_UEI;
-import static org.opennms.netmgt.EventConstants.NODE_GAINED_INTERFACE_EVENT_UEI;
-import static org.opennms.netmgt.EventConstants.NODE_GAINED_SERVICE_EVENT_UEI;
-import static org.opennms.netmgt.EventConstants.NODE_UPDATED_EVENT_UEI;
-import static org.opennms.netmgt.EventConstants.PARM_IP_HOSTNAME;
-import static org.opennms.netmgt.EventConstants.PARM_NODE_LABEL;
-import static org.opennms.netmgt.EventConstants.PARM_NODE_LABEL_SOURCE;
-import static org.opennms.netmgt.EventConstants.PARM_NODE_SYSDESCRIPTION;
-import static org.opennms.netmgt.EventConstants.PARM_NODE_SYSNAME;
-import static org.opennms.netmgt.EventConstants.SERVICE_DELETED_EVENT_UEI;
+import static com.netxforge.oss2.core.utils.InetAddressUtils.str;
+import static com.netxforge.oss2.EventConstants.INTERFACE_DELETED_EVENT_UEI;
+import static com.netxforge.oss2.EventConstants.NODE_ADDED_EVENT_UEI;
+import static com.netxforge.oss2.EventConstants.NODE_DELETED_EVENT_UEI;
+import static com.netxforge.oss2.EventConstants.NODE_GAINED_INTERFACE_EVENT_UEI;
+import static com.netxforge.oss2.EventConstants.NODE_GAINED_SERVICE_EVENT_UEI;
+import static com.netxforge.oss2.EventConstants.NODE_UPDATED_EVENT_UEI;
+import static com.netxforge.oss2.EventConstants.PARM_IP_HOSTNAME;
+import static com.netxforge.oss2.EventConstants.PARM_NODE_LABEL;
+import static com.netxforge.oss2.EventConstants.PARM_NODE_LABEL_SOURCE;
+import static com.netxforge.oss2.EventConstants.PARM_NODE_SYSDESCRIPTION;
+import static com.netxforge.oss2.EventConstants.PARM_NODE_SYSNAME;
+import static com.netxforge.oss2.EventConstants.SERVICE_DELETED_EVENT_UEI;
 
 import java.net.InetAddress;
 import java.util.Collection;
 import java.util.Date;
 import java.util.Iterator;
 
-import org.opennms.core.utils.ThreadCategory;
-import org.opennms.netmgt.xml.event.Autoaction;
-import org.opennms.netmgt.xml.event.Event;
-import org.opennms.netmgt.xml.event.Forward;
-import org.opennms.netmgt.xml.event.Operaction;
-import org.opennms.netmgt.xml.event.Parm;
-import org.opennms.netmgt.xml.event.Script;
-import org.opennms.netmgt.xml.event.Snmp;
-import org.opennms.netmgt.xml.event.Value;
+import com.netxforge.oss2.core.utilsII.ThreadCategory;
+import com.netxforge.oss2.xml.event.Autoaction;
+import com.netxforge.oss2.xml.event.Event;
+import com.netxforge.oss2.xml.event.Forward;
+import com.netxforge.oss2.xml.event.Operaction;
+import com.netxforge.oss2.xml.event.Parm;
+import com.netxforge.oss2.xml.event.Script;
+import com.netxforge.oss2.xml.event.Snmp;
+import com.netxforge.oss2.xml.event.Value;
 
 /**
  * <p>Abstract EventUtils class.</p>
@@ -72,7 +72,7 @@ public abstract class EventUtils {
      * @param nodeId a int.
      * @param nodeLabel a {@link java.lang.String} object.
      * @param labelSource a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.xml.event.Event} object.
+     * @return a {@link com.netxforge.oss2.core.xml.event.Event} object.
      */
     public static Event createNodeAddedEvent(String source, int nodeId, String nodeLabel, String labelSource) {
         
@@ -94,7 +94,7 @@ public abstract class EventUtils {
      * @param source a {@link java.lang.String} object.
      * @param nodeId a int.
      * @param ifaddr a {@link java.net.InetAddress} object.
-     * @return a {@link org.opennms.netmgt.xml.event.Event} object.
+     * @return a {@link com.netxforge.oss2.core.xml.event.Event} object.
      */
     public static Event createNodeGainedInterfaceEvent(String source, int nodeId, InetAddress ifaddr) {
         
@@ -119,7 +119,7 @@ public abstract class EventUtils {
      * @param labelSource a {@link java.lang.String} object.
      * @param sysName a {@link java.lang.String} object.
      * @param sysDescr a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.xml.event.Event} object.
+     * @return a {@link com.netxforge.oss2.core.xml.event.Event} object.
      */
     public static Event createNodeGainedServiceEvent(String source, int nodeId, InetAddress ifaddr, String service, String nodeLabel, String labelSource, String sysName, String sysDescr) {
         
@@ -158,7 +158,7 @@ public abstract class EventUtils {
      *            the Host server name.
      * @param nodeLabel
      *            the node label of the deleted node.
-     * @return a {@link org.opennms.netmgt.xml.event.Event} object.
+     * @return a {@link com.netxforge.oss2.core.xml.event.Event} object.
      */
     public static Event createNodeDeletedEvent(String source, int nodeId, String hostName, String nodeLabel) {
         
@@ -335,7 +335,7 @@ public abstract class EventUtils {
      * @param nodeId a {@link java.lang.Integer} object.
      * @param nodeLabel a {@link java.lang.String} object.
      * @param labelSource a {@link java.lang.String} object.
-     * @return a {@link org.opennms.netmgt.xml.event.Event} object.
+     * @return a {@link com.netxforge.oss2.core.xml.event.Event} object.
      */
     public static Event createNodeUpdatedEvent(String source, Integer nodeId, String nodeLabel, String labelSource) {
         debug("CreateNodeUpdatedEvent: nodedId: %d", nodeId);
@@ -349,7 +349,7 @@ public abstract class EventUtils {
     /**
      * <p>toString</p>
      *
-     * @param event a {@link org.opennms.netmgt.xml.event.Event} object.
+     * @param event a {@link com.netxforge.oss2.core.xml.event.Event} object.
      * @return a {@link java.lang.String} object.
      */
     public static String toString(Event event) {
@@ -480,7 +480,7 @@ public abstract class EventUtils {
     /**
      * <p>toString</p>
      *
-     * @param value a {@link org.opennms.netmgt.xml.event.Value} object.
+     * @param value a {@link com.netxforge.oss2.core.xml.event.Value} object.
      * @return a {@link java.lang.String} object.
      */
     public static String toString(Value value) {
@@ -490,7 +490,7 @@ public abstract class EventUtils {
     /**
      * <p>toString</p>
      *
-     * @param snmp a {@link org.opennms.netmgt.xml.event.Snmp} object.
+     * @param snmp a {@link com.netxforge.oss2.core.xml.event.Snmp} object.
      * @return a {@link java.lang.String} object.
      */
     public static String toString(Snmp snmp) {

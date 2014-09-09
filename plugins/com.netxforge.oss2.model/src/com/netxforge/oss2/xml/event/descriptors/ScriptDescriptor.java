@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Script;
+import com.netxforge.oss2.xml.event.Script;
 
 /**
  * Class ScriptDescriptor.
@@ -218,7 +218,7 @@ import org.opennms.netmgt.xml.event.Script;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Script.class;
+        return com.netxforge.oss2.xml.event.Script.class;
     }
 
     /**

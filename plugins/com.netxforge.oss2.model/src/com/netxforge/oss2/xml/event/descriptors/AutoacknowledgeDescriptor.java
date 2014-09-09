@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Autoacknowledge;
+import com.netxforge.oss2.xml.event.Autoacknowledge;
 
 /**
  * Class AutoacknowledgeDescriptor.
@@ -217,7 +217,7 @@ import org.opennms.netmgt.xml.event.Autoacknowledge;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Autoacknowledge.class;
+        return com.netxforge.oss2.xml.event.Autoacknowledge.class;
     }
 
     /**

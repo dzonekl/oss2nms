@@ -54,8 +54,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.hibernate.annotations.Type;
-import org.opennms.core.xml.bind.InetAddressXmlAdapter;
-import org.opennms.netmgt.model.OnmsArpInterface.StatusType;
+
+import com.netxforge.oss2.core.utils.xml.bind.InetAddressXmlAdapter;
+import com.netxforge.oss2.model.OnmsArpInterface.StatusType;
 
 /**
  * <p>AtInterface class.</p>

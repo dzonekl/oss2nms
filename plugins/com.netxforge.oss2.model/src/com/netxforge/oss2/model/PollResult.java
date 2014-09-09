@@ -28,6 +28,8 @@
 
 package com.netxforge.oss2.model;
 
+import com.netxforge.oss2.core.api.PollStatus;
+
 /**
  * <p>PollResult class.</p>
  */
@@ -75,7 +77,7 @@ public class PollResult {
 	/**
 	 * <p>getMonitoredService</p>
 	 *
-	 * @return a {@link org.opennms.netmgt.model.OnmsMonitoredService} object.
+	 * @return a {@link com.netxforge.oss2.model.OnmsMonitoredService} object.
 	 */
 	public OnmsMonitoredService getMonitoredService() {
 		return m_monitoredService;
@@ -84,7 +86,7 @@ public class PollResult {
 	/**
 	 * <p>setMonitoredService</p>
 	 *
-	 * @param monitoredService a {@link org.opennms.netmgt.model.OnmsMonitoredService} object.
+	 * @param monitoredService a {@link com.netxforge.oss2.model.OnmsMonitoredService} object.
 	 */
 	public void setMonitoredService(OnmsMonitoredService monitoredService) {
 		m_monitoredService = monitoredService;
@@ -93,7 +95,7 @@ public class PollResult {
 	/**
 	 * <p>getStatus</p>
 	 *
-	 * @return a {@link org.opennms.netmgt.model.PollStatus} object.
+	 * @return a {@link com.netxforge.oss2.model.PollStatus} object.
 	 */
 	public PollStatus getStatus() {
 		return m_status;
@@ -102,7 +104,7 @@ public class PollResult {
 	/**
 	 * <p>setStatus</p>
 	 *
-	 * @param status a {@link org.opennms.netmgt.model.PollStatus} object.
+	 * @param status a {@link com.netxforge.oss2.model.PollStatus} object.
 	 */
 	public void setStatus(PollStatus status) {
 		m_status = status;
@@ -111,7 +113,7 @@ public class PollResult {
 	/**
 	 * <p>getDemandPoll</p>
 	 *
-	 * @return a {@link org.opennms.netmgt.model.DemandPoll} object.
+	 * @return a {@link com.netxforge.oss2.model.DemandPoll} object.
 	 */
 	public DemandPoll getDemandPoll() {
 		return m_demandPoll;
@@ -120,7 +122,7 @@ public class PollResult {
 	/**
 	 * <p>setDemandPoll</p>
 	 *
-	 * @param poll a {@link org.opennms.netmgt.model.DemandPoll} object.
+	 * @param poll a {@link com.netxforge.oss2.model.DemandPoll} object.
 	 */
 	public void setDemandPoll(DemandPoll poll) {
 		this.m_demandPoll = poll;

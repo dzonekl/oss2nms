@@ -30,13 +30,13 @@ package com.netxforge.oss2.xml.event;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
-import org.opennms.core.utils.LogUtils;
+import com.netxforge.oss2.core.utilsII.LogUtils;
 
 
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the org.opennms.xmlns.xsd.event package. 
+ * generated in the com.netxforge.oss2.xmlns.xsd.event package. 
  * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 

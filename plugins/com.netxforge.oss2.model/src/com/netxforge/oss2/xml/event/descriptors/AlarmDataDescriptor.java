@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.AlarmData;
+import com.netxforge.oss2.xml.event.AlarmData;
 
 /**
  * Class AlarmDataDescriptor.
@@ -404,7 +404,7 @@ import org.opennms.netmgt.xml.event.AlarmData;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.AlarmData.class;
+        return com.netxforge.oss2.xml.event.AlarmData.class;
     }
 
     /**

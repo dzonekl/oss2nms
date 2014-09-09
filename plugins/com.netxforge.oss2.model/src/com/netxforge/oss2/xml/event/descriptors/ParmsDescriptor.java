@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Parms;
+import com.netxforge.oss2.xml.event.Parms;
 
 /**
  * Class ParmsDescriptor.
@@ -99,7 +99,7 @@ import org.opennms.netmgt.xml.event.Parms;
         //-- initialize element descriptors
         
         //-- _parmList
-        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(org.opennms.netmgt.xml.event.Parm.class, "_parmList", "parm", org.exolab.castor.xml.NodeType.Element);
+        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(com.netxforge.oss2.xml.event.Parm.class, "_parmList", "parm", org.exolab.castor.xml.NodeType.Element);
         handler = new org.exolab.castor.xml.XMLFieldHandler() {
             @Override
             public java.lang.Object getValue( java.lang.Object object ) 
@@ -114,7 +114,7 @@ import org.opennms.netmgt.xml.event.Parms;
             {
                 try {
                     Parms target = (Parms) object;
-                    target.addParm( (org.opennms.netmgt.xml.event.Parm) value);
+                    target.addParm( (com.netxforge.oss2.xml.event.Parm) value);
                 } catch (java.lang.Exception ex) {
                     throw new IllegalStateException(ex.toString());
                 }
@@ -130,10 +130,10 @@ import org.opennms.netmgt.xml.event.Parms;
             @Override
             @SuppressWarnings("unused")
             public java.lang.Object newInstance(java.lang.Object parent) {
-                return new org.opennms.netmgt.xml.event.Parm();
+                return new com.netxforge.oss2.xml.event.Parm();
             }
         };
-        desc.setSchemaType("org.opennms.netmgt.xml.event.Parm");
+        desc.setSchemaType("com.netxforge.oss2.core.xml.event.Parm");
         desc.setHandler(handler);
         desc.setNameSpaceURI("http://xmlns.opennms.org/xsd/event");
         desc.setRequired(true);
@@ -185,7 +185,7 @@ import org.opennms.netmgt.xml.event.Parms;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Parms.class;
+        return com.netxforge.oss2.xml.event.Parms.class;
     }
 
     /**

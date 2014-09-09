@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NMS App
+Bundle-SymbolicName: com.netxforge.oss2.poc.app;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: NetXForge
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.9.100"
+Export-Package: com.netxforge.oss2.poc.app

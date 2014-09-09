@@ -56,8 +56,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.hibernate.annotations.Filter;
 import org.hibernate.annotations.Type;
-import org.opennms.core.xml.bind.InetAddressXmlAdapter;
 import org.springframework.core.style.ToStringCreator;
+
+import com.netxforge.oss2.core.utils.xml.bind.InetAddressXmlAdapter;
 
 /**
  * <p>OnmsEvent class.</p>
@@ -176,7 +177,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	private OnmsAlarm m_alarm;
 
 	/** persistent field */
-	private org.opennms.netmgt.model.OnmsNode m_node;
+	private com.netxforge.oss2.model.OnmsNode m_node;
 
 	/** persistent field */
 	private Set<OnmsNotification> m_notifications = new HashSet<OnmsNotification>();
@@ -196,9 +197,9 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	 * @param eventhost a {@link java.lang.String} object.
 	 * @param eventsource a {@link java.lang.String} object.
 	 * @param ipaddr a {@link java.lang.String} object.
-	 * @param distPoller a {@link org.opennms.netmgt.model.OnmsDistPoller} object.
+	 * @param distPoller a {@link com.netxforge.oss2.model.OnmsDistPoller} object.
 	 * @param eventsnmphost a {@link java.lang.String} object.
-	 * @param service a {@link org.opennms.netmgt.model.OnmsServiceType} object.
+	 * @param service a {@link com.netxforge.oss2.model.OnmsServiceType} object.
 	 * @param eventsnmp a {@link java.lang.String} object.
 	 * @param eventparms a {@link java.lang.String} object.
 	 * @param eventcreatetime a {@link java.util.Date} object.
@@ -222,8 +223,8 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	 * @param eventdisplay a {@link java.lang.String} object.
 	 * @param eventackuser a {@link java.lang.String} object.
 	 * @param eventacktime a {@link java.util.Date} object.
-	 * @param alarm a {@link org.opennms.netmgt.model.OnmsAlarm} object.
-	 * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+	 * @param alarm a {@link com.netxforge.oss2.model.OnmsAlarm} object.
+	 * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
 	 * @param notifications a {@link java.util.Set} object.
 	 * @param outagesBySvcregainedeventid a {@link java.util.Set} object.
 	 * @param outagesBySvclosteventid a {@link java.util.Set} object.
@@ -240,7 +241,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 			String eventtticket, Integer eventtticketstate,
 			String eventforward, String eventmouseovertext, String eventlog,
 			String eventdisplay, String eventackuser, Date eventacktime,
-			OnmsAlarm alarm, org.opennms.netmgt.model.OnmsNode node,
+			OnmsAlarm alarm, com.netxforge.oss2.model.OnmsNode node,
 			Set<OnmsNotification> notifications, Set<OnmsOutage> outagesBySvcregainedeventid,
 			Set<OnmsOutage> outagesBySvclosteventid) {
 		m_eventId = eventid;
@@ -295,12 +296,12 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	 * @param eventuei a {@link java.lang.String} object.
 	 * @param eventtime a {@link java.util.Date} object.
 	 * @param eventsource a {@link java.lang.String} object.
-	 * @param distPoller a {@link org.opennms.netmgt.model.OnmsDistPoller} object.
+	 * @param distPoller a {@link com.netxforge.oss2.model.OnmsDistPoller} object.
 	 * @param eventcreatetime a {@link java.util.Date} object.
 	 * @param eventseverity a {@link java.lang.Integer} object.
 	 * @param eventlog a {@link java.lang.String} object.
 	 * @param eventdisplay a {@link java.lang.String} object.
-	 * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+	 * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
 	 * @param notifications a {@link java.util.Set} object.
 	 * @param outagesBySvcregainedeventid a {@link java.util.Set} object.
 	 * @param outagesBySvclosteventid a {@link java.util.Set} object.
@@ -309,7 +310,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	public OnmsEvent(Integer eventid, String eventuei, Date eventtime,
 			String eventsource, OnmsDistPoller distPoller, Date eventcreatetime,
 			Integer eventseverity, String eventlog, String eventdisplay,
-			org.opennms.netmgt.model.OnmsNode node, Set<OnmsNotification> notifications,
+			com.netxforge.oss2.model.OnmsNode node, Set<OnmsNotification> notifications,
 			Set<OnmsOutage> outagesBySvcregainedeventid, Set<OnmsOutage> outagesBySvclosteventid,
 			Set<OnmsAlarm> alarms) {
 		m_eventId = eventid;
@@ -438,7 +439,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	 */
 	@Column(name="ipAddr")
 	@XmlElement(name="ipAddress")
-	@Type(type="org.opennms.netmgt.model.InetAddressUserType")
+	@Type(type="com.netxforge.oss2.model.InetAddressUserType")
 	@XmlJavaTypeAdapter(InetAddressXmlAdapter.class)
 	public InetAddress getIpAddr() {
 		return m_ipAddr;
@@ -456,7 +457,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	/**
 	 * <p>getDistPoller</p>
 	 *
-	 * @return a {@link org.opennms.netmgt.model.OnmsDistPoller} object.
+	 * @return a {@link com.netxforge.oss2.model.OnmsDistPoller} object.
 	 */
 	@XmlTransient
 	@ManyToOne(fetch=FetchType.LAZY)
@@ -468,7 +469,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	/**
 	 * <p>setDistPoller</p>
 	 *
-	 * @param distPoller a {@link org.opennms.netmgt.model.OnmsDistPoller} object.
+	 * @param distPoller a {@link com.netxforge.oss2.model.OnmsDistPoller} object.
 	 */
 	public void setDistPoller(OnmsDistPoller distPoller) {
 		m_distPoller = distPoller;
@@ -497,7 +498,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	/**
 	 * <p>getServiceType</p>
 	 *
-	 * @return a {@link org.opennms.netmgt.model.OnmsServiceType} object.
+	 * @return a {@link com.netxforge.oss2.model.OnmsServiceType} object.
 	 */
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="serviceId", nullable=true)
@@ -508,7 +509,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	/**
 	 * <p>setServiceType</p>
 	 *
-	 * @param serviceType a {@link org.opennms.netmgt.model.OnmsServiceType} object.
+	 * @param serviceType a {@link com.netxforge.oss2.model.OnmsServiceType} object.
 	 */
 	public void setServiceType(OnmsServiceType serviceType) {
 		m_serviceType = serviceType;
@@ -1000,7 +1001,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	/**
 	 * <p>getAlarm</p>
 	 *
-	 * @return a {@link org.opennms.netmgt.model.OnmsAlarm} object.
+	 * @return a {@link com.netxforge.oss2.model.OnmsAlarm} object.
 	 */
 	@XmlTransient
 	@ManyToOne(fetch=FetchType.LAZY)
@@ -1012,7 +1013,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	/**
 	 * <p>setAlarm</p>
 	 *
-	 * @param alarm a {@link org.opennms.netmgt.model.OnmsAlarm} object.
+	 * @param alarm a {@link com.netxforge.oss2.model.OnmsAlarm} object.
 	 */
 	public void setAlarm(OnmsAlarm alarm) {
 		m_alarm = alarm;
@@ -1021,7 +1022,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	/**
 	 * <p>getNode</p>
 	 *
-	 * @return a {@link org.opennms.netmgt.model.OnmsNode} object.
+	 * @return a {@link com.netxforge.oss2.model.OnmsNode} object.
 	 */
 	@XmlIDREF
 	@XmlElement(name="nodeId")
@@ -1041,7 +1042,7 @@ public class OnmsEvent extends OnmsEntity implements Serializable {
 	/**
 	 * <p>setNode</p>
 	 *
-	 * @param node a {@link org.opennms.netmgt.model.OnmsNode} object.
+	 * @param node a {@link com.netxforge.oss2.model.OnmsNode} object.
 	 */
 	public void setNode(OnmsNode node) {
 		m_node = node;

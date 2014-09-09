@@ -66,9 +66,9 @@ import com.netxforge.oss2.core.utils.FilteringIterator;
 import com.netxforge.oss2.core.utils.InetAddressUtils;
 import com.netxforge.oss2.core.utils.IteratorIterator;
 import com.netxforge.oss2.core.utilsII.LogUtils;
+import com.netxforge.oss2.core.xml.CastorUtils;
 import com.netxforge.oss2.model.discovery.IPPollAddress;
 import com.netxforge.oss2.model.discovery.IPPollRange;
-import com.netxforge.oss2.xml.CastorUtils;
 
 /**
  * This is the singleton class used to load the configuration for the OpenNMS

@@ -2,7 +2,7 @@ package com.netxforge.oss2.xml.bind;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-import org.opennms.netmgt.model.OnmsArpInterface.StatusType;
+import com.netxforge.oss2.model.OnmsArpInterface.StatusType;
 
 /**
  * StatusTypeXmlAdapter

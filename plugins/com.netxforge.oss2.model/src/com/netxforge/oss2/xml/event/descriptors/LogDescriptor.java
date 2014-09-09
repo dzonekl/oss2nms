@@ -39,7 +39,7 @@ package com.netxforge.oss2.xml.event.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.opennms.netmgt.xml.event.Log;
+import com.netxforge.oss2.xml.event.Log;
 
 /**
  * Class LogDescriptor.
@@ -99,7 +99,7 @@ import org.opennms.netmgt.xml.event.Log;
         //-- initialize element descriptors
         
         //-- _header
-        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(org.opennms.netmgt.xml.event.Header.class, "_header", "header", org.exolab.castor.xml.NodeType.Element);
+        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(com.netxforge.oss2.xml.event.Header.class, "_header", "header", org.exolab.castor.xml.NodeType.Element);
         handler = new org.exolab.castor.xml.XMLFieldHandler() {
             @Override
             public java.lang.Object getValue( java.lang.Object object ) 
@@ -114,7 +114,7 @@ import org.opennms.netmgt.xml.event.Log;
             {
                 try {
                     Log target = (Log) object;
-                    target.setHeader( (org.opennms.netmgt.xml.event.Header) value);
+                    target.setHeader( (com.netxforge.oss2.xml.event.Header) value);
                 } catch (java.lang.Exception ex) {
                     throw new IllegalStateException(ex.toString());
                 }
@@ -122,10 +122,10 @@ import org.opennms.netmgt.xml.event.Log;
             @Override
             @SuppressWarnings("unused")
             public java.lang.Object newInstance(java.lang.Object parent) {
-                return new org.opennms.netmgt.xml.event.Header();
+                return new com.netxforge.oss2.xml.event.Header();
             }
         };
-        desc.setSchemaType("org.opennms.netmgt.xml.event.Header");
+        desc.setSchemaType("com.netxforge.oss2.core.xml.event.Header");
         desc.setHandler(handler);
         desc.setNameSpaceURI("http://xmlns.opennms.org/xsd/event");
         desc.setMultivalued(false);
@@ -138,7 +138,7 @@ import org.opennms.netmgt.xml.event.Log;
         }
         desc.setValidator(fieldValidator);
         //-- _events
-        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(org.opennms.netmgt.xml.event.Events.class, "_events", "events", org.exolab.castor.xml.NodeType.Element);
+        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(com.netxforge.oss2.xml.event.Events.class, "_events", "events", org.exolab.castor.xml.NodeType.Element);
         handler = new org.exolab.castor.xml.XMLFieldHandler() {
             @Override
             public java.lang.Object getValue( java.lang.Object object ) 
@@ -153,7 +153,7 @@ import org.opennms.netmgt.xml.event.Log;
             {
                 try {
                     Log target = (Log) object;
-                    target.setEvents( (org.opennms.netmgt.xml.event.Events) value);
+                    target.setEvents( (com.netxforge.oss2.xml.event.Events) value);
                 } catch (java.lang.Exception ex) {
                     throw new IllegalStateException(ex.toString());
                 }
@@ -161,10 +161,10 @@ import org.opennms.netmgt.xml.event.Log;
             @Override
             @SuppressWarnings("unused")
             public java.lang.Object newInstance(java.lang.Object parent) {
-                return new org.opennms.netmgt.xml.event.Events();
+                return new com.netxforge.oss2.xml.event.Events();
             }
         };
-        desc.setSchemaType("org.opennms.netmgt.xml.event.Events");
+        desc.setSchemaType("com.netxforge.oss2.core.xml.event.Events");
         desc.setHandler(handler);
         desc.setNameSpaceURI("http://xmlns.opennms.org/xsd/event");
         desc.setRequired(true);
@@ -216,7 +216,7 @@ import org.opennms.netmgt.xml.event.Log;
     @Override()
     public java.lang.Class<?> getJavaClass(
     ) {
-        return org.opennms.netmgt.xml.event.Log.class;
+        return com.netxforge.oss2.xml.event.Log.class;
     }
 
     /**
