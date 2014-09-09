@@ -1,0 +1,9 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.snmpinterfacepoller.IncludeRange=com.netxforge.oss2.config.snmpinterfacepoller.descriptors.IncludeRangeDescriptor
+com.netxforge.oss2.config.snmpinterfacepoller.NodeOutage=com.netxforge.oss2.config.snmpinterfacepoller.descriptors.NodeOutageDescriptor
+com.netxforge.oss2.config.snmpinterfacepoller.Package=com.netxforge.oss2.config.snmpinterfacepoller.descriptors.PackageDescriptor
+com.netxforge.oss2.config.snmpinterfacepoller.Filter=com.netxforge.oss2.config.snmpinterfacepoller.descriptors.FilterDescriptor
+com.netxforge.oss2.config.snmpinterfacepoller.SnmpInterfacePollerConfiguration=com.netxforge.oss2.config.snmpinterfacepoller.descriptors.SnmpInterfacePollerConfigurationDescriptor
+com.netxforge.oss2.config.snmpinterfacepoller.ExcludeRange=com.netxforge.oss2.config.snmpinterfacepoller.descriptors.ExcludeRangeDescriptor
+com.netxforge.oss2.config.snmpinterfacepoller.Interface=com.netxforge.oss2.config.snmpinterfacepoller.descriptors.InterfaceDescriptor
+com.netxforge.oss2.config.snmpinterfacepoller.CriticalService=com.netxforge.oss2.config.snmpinterfacepoller.descriptors.CriticalServiceDescriptor

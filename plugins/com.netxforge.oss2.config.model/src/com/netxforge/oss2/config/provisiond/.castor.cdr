@@ -1,0 +1,3 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.provisiond.ProvisiondConfiguration=com.netxforge.oss2.config.provisiond.descriptors.ProvisiondConfigurationDescriptor
+com.netxforge.oss2.config.provisiond.RequisitionDef=com.netxforge.oss2.config.provisiond.descriptors.RequisitionDefDescriptor

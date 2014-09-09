@@ -1,0 +1,6 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.xmlrpcd.ExternalServers=com.netxforge.oss2.config.xmlrpcd.descriptors.ExternalServersDescriptor
+com.netxforge.oss2.config.xmlrpcd.XmlrpcdConfiguration=com.netxforge.oss2.config.xmlrpcd.descriptors.XmlrpcdConfigurationDescriptor
+com.netxforge.oss2.config.xmlrpcd.XmlrpcServer=com.netxforge.oss2.config.xmlrpcd.descriptors.XmlrpcServerDescriptor
+com.netxforge.oss2.config.xmlrpcd.SubscribedEvent=com.netxforge.oss2.config.xmlrpcd.descriptors.SubscribedEventDescriptor
+com.netxforge.oss2.config.xmlrpcd.Subscription=com.netxforge.oss2.config.xmlrpcd.descriptors.SubscriptionDescriptor

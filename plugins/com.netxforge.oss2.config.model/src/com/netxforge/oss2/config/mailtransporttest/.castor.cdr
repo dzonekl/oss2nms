@@ -1,0 +1,12 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.mailtransporttest.MailTransportTest=com.netxforge.oss2.config.mailtransporttest.descriptors.MailTransportTestDescriptor
+com.netxforge.oss2.config.mailtransporttest.ReadmailTest=com.netxforge.oss2.config.mailtransporttest.descriptors.ReadmailTestDescriptor
+com.netxforge.oss2.config.mailtransporttest.ReadmailProtocol=com.netxforge.oss2.config.mailtransporttest.descriptors.ReadmailProtocolDescriptor
+com.netxforge.oss2.config.mailtransporttest.SendmailMessage=com.netxforge.oss2.config.mailtransporttest.descriptors.SendmailMessageDescriptor
+com.netxforge.oss2.config.mailtransporttest.SendmailTest=com.netxforge.oss2.config.mailtransporttest.descriptors.SendmailTestDescriptor
+com.netxforge.oss2.config.mailtransporttest.ReadmailHost=com.netxforge.oss2.config.mailtransporttest.descriptors.ReadmailHostDescriptor
+com.netxforge.oss2.config.mailtransporttest.MailTest=com.netxforge.oss2.config.mailtransporttest.descriptors.MailTestDescriptor
+com.netxforge.oss2.config.mailtransporttest.SendmailHost=com.netxforge.oss2.config.mailtransporttest.descriptors.SendmailHostDescriptor
+com.netxforge.oss2.config.mailtransporttest.SendmailProtocol=com.netxforge.oss2.config.mailtransporttest.descriptors.SendmailProtocolDescriptor
+com.netxforge.oss2.config.mailtransporttest.UserAuth=com.netxforge.oss2.config.mailtransporttest.descriptors.UserAuthDescriptor
+com.netxforge.oss2.config.mailtransporttest.JavamailProperty=com.netxforge.oss2.config.mailtransporttest.descriptors.JavamailPropertyDescriptor

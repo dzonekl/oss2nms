@@ -1,0 +1,12 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.httpdatacollection.Attributes=com.netxforge.oss2.config.httpdatacollection.descriptors.AttributesDescriptor
+com.netxforge.oss2.config.httpdatacollection.Parameter=com.netxforge.oss2.config.httpdatacollection.descriptors.ParameterDescriptor
+com.netxforge.oss2.config.httpdatacollection.Uris=com.netxforge.oss2.config.httpdatacollection.descriptors.UrisDescriptor
+com.netxforge.oss2.config.httpdatacollection.Rrd=com.netxforge.oss2.config.httpdatacollection.descriptors.RrdDescriptor
+com.netxforge.oss2.config.httpdatacollection.Post=com.netxforge.oss2.config.httpdatacollection.descriptors.PostDescriptor
+com.netxforge.oss2.config.httpdatacollection.Attrib=com.netxforge.oss2.config.httpdatacollection.descriptors.AttribDescriptor
+com.netxforge.oss2.config.httpdatacollection.Parameters=com.netxforge.oss2.config.httpdatacollection.descriptors.ParametersDescriptor
+com.netxforge.oss2.config.httpdatacollection.Url=com.netxforge.oss2.config.httpdatacollection.descriptors.UrlDescriptor
+com.netxforge.oss2.config.httpdatacollection.HttpDatacollectionConfig=com.netxforge.oss2.config.httpdatacollection.descriptors.HttpDatacollectionConfigDescriptor
+com.netxforge.oss2.config.httpdatacollection.HttpCollection=com.netxforge.oss2.config.httpdatacollection.descriptors.HttpCollectionDescriptor
+com.netxforge.oss2.config.httpdatacollection.Uri=com.netxforge.oss2.config.httpdatacollection.descriptors.UriDescriptor

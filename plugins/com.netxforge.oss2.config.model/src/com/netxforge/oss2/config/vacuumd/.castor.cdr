@@ -1,0 +1,15 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.vacuumd.ActionEvents=com.netxforge.oss2.config.vacuumd.descriptors.ActionEventsDescriptor
+com.netxforge.oss2.config.vacuumd.Action=com.netxforge.oss2.config.vacuumd.descriptors.ActionDescriptor
+com.netxforge.oss2.config.vacuumd.Automations=com.netxforge.oss2.config.vacuumd.descriptors.AutomationsDescriptor
+com.netxforge.oss2.config.vacuumd.Uei=com.netxforge.oss2.config.vacuumd.descriptors.UeiDescriptor
+com.netxforge.oss2.config.vacuumd.Statement=com.netxforge.oss2.config.vacuumd.descriptors.StatementDescriptor
+com.netxforge.oss2.config.vacuumd.Triggers=com.netxforge.oss2.config.vacuumd.descriptors.TriggersDescriptor
+com.netxforge.oss2.config.vacuumd.Automation=com.netxforge.oss2.config.vacuumd.descriptors.AutomationDescriptor
+com.netxforge.oss2.config.vacuumd.AutoEvents=com.netxforge.oss2.config.vacuumd.descriptors.AutoEventsDescriptor
+com.netxforge.oss2.config.vacuumd.Assignment=com.netxforge.oss2.config.vacuumd.descriptors.AssignmentDescriptor
+com.netxforge.oss2.config.vacuumd.ActionEvent=com.netxforge.oss2.config.vacuumd.descriptors.ActionEventDescriptor
+com.netxforge.oss2.config.vacuumd.VacuumdConfiguration=com.netxforge.oss2.config.vacuumd.descriptors.VacuumdConfigurationDescriptor
+com.netxforge.oss2.config.vacuumd.AutoEvent=com.netxforge.oss2.config.vacuumd.descriptors.AutoEventDescriptor
+com.netxforge.oss2.config.vacuumd.Trigger=com.netxforge.oss2.config.vacuumd.descriptors.TriggerDescriptor
+com.netxforge.oss2.config.vacuumd.Actions=com.netxforge.oss2.config.vacuumd.descriptors.ActionsDescriptor

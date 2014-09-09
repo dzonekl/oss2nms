@@ -1,0 +1,9 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.capsd.IpManagement=com.netxforge.oss2.config.capsd.descriptors.IpManagementDescriptor
+com.netxforge.oss2.config.capsd.ProtocolPlugin=com.netxforge.oss2.config.capsd.descriptors.ProtocolPluginDescriptor
+com.netxforge.oss2.config.capsd.SmbAuth=com.netxforge.oss2.config.capsd.descriptors.SmbAuthDescriptor
+com.netxforge.oss2.config.capsd.Range=com.netxforge.oss2.config.capsd.descriptors.RangeDescriptor
+com.netxforge.oss2.config.capsd.CapsdConfiguration=com.netxforge.oss2.config.capsd.descriptors.CapsdConfigurationDescriptor
+com.netxforge.oss2.config.capsd.ProtocolConfiguration=com.netxforge.oss2.config.capsd.descriptors.ProtocolConfigurationDescriptor
+com.netxforge.oss2.config.capsd.Property=com.netxforge.oss2.config.capsd.descriptors.PropertyDescriptor
+com.netxforge.oss2.config.capsd.SmbConfig=com.netxforge.oss2.config.capsd.descriptors.SmbConfigDescriptor

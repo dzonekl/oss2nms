@@ -1,0 +1,9 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.surveillanceViews.Rows=com.netxforge.oss2.config.surveillanceViews.descriptors.RowsDescriptor
+com.netxforge.oss2.config.surveillanceViews.Views=com.netxforge.oss2.config.surveillanceViews.descriptors.ViewsDescriptor
+com.netxforge.oss2.config.surveillanceViews.SurveillanceViewConfiguration=com.netxforge.oss2.config.surveillanceViews.descriptors.SurveillanceViewConfigurationDescriptor
+com.netxforge.oss2.config.surveillanceViews.View=com.netxforge.oss2.config.surveillanceViews.descriptors.ViewDescriptor
+com.netxforge.oss2.config.surveillanceViews.ColumnDef=com.netxforge.oss2.config.surveillanceViews.descriptors.ColumnDefDescriptor
+com.netxforge.oss2.config.surveillanceViews.RowDef=com.netxforge.oss2.config.surveillanceViews.descriptors.RowDefDescriptor
+com.netxforge.oss2.config.surveillanceViews.Columns=com.netxforge.oss2.config.surveillanceViews.descriptors.ColumnsDescriptor
+com.netxforge.oss2.config.surveillanceViews.Category=com.netxforge.oss2.config.surveillanceViews.descriptors.CategoryDescriptor

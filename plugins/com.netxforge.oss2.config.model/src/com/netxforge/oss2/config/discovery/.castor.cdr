@@ -1,0 +1,6 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.discovery.DiscoveryConfiguration=com.netxforge.oss2.config.discovery.descriptors.DiscoveryConfigurationDescriptor
+com.netxforge.oss2.config.discovery.Specific=com.netxforge.oss2.config.discovery.descriptors.SpecificDescriptor
+com.netxforge.oss2.config.discovery.IncludeUrl=com.netxforge.oss2.config.discovery.descriptors.IncludeUrlDescriptor
+com.netxforge.oss2.config.discovery.ExcludeRange=com.netxforge.oss2.config.discovery.descriptors.ExcludeRangeDescriptor
+com.netxforge.oss2.config.discovery.IncludeRange=com.netxforge.oss2.config.discovery.descriptors.IncludeRangeDescriptor

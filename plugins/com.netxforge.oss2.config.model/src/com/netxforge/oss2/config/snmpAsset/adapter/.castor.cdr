@@ -1,0 +1,7 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.snmpAsset.adapter.MibObj=com.netxforge.oss2.config.snmpAsset.adapter.descriptors.MibObjDescriptor
+com.netxforge.oss2.config.snmpAsset.adapter.MibObjs=com.netxforge.oss2.config.snmpAsset.adapter.descriptors.MibObjsDescriptor
+com.netxforge.oss2.config.snmpAsset.adapter.AssetField=com.netxforge.oss2.config.snmpAsset.adapter.descriptors.AssetFieldDescriptor
+com.netxforge.oss2.config.snmpAsset.adapter.PackageChoice=com.netxforge.oss2.config.snmpAsset.adapter.descriptors.PackageChoiceDescriptor
+com.netxforge.oss2.config.snmpAsset.adapter.Package=com.netxforge.oss2.config.snmpAsset.adapter.descriptors.PackageDescriptor
+com.netxforge.oss2.config.snmpAsset.adapter.SnmpAssetAdapterConfiguration=com.netxforge.oss2.config.snmpAsset.adapter.descriptors.SnmpAssetAdapterConfigurationDescriptor

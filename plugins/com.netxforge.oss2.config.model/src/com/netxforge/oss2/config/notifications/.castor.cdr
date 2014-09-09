@@ -1,0 +1,6 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.notifications.Notifications=com.netxforge.oss2.config.notifications.descriptors.NotificationsDescriptor
+com.netxforge.oss2.config.notifications.Header=com.netxforge.oss2.config.notifications.descriptors.HeaderDescriptor
+com.netxforge.oss2.config.notifications.Notification=com.netxforge.oss2.config.notifications.descriptors.NotificationDescriptor
+com.netxforge.oss2.config.notifications.Parameter=com.netxforge.oss2.config.notifications.descriptors.ParameterDescriptor
+com.netxforge.oss2.config.notifications.Varbind=com.netxforge.oss2.config.notifications.descriptors.VarbindDescriptor

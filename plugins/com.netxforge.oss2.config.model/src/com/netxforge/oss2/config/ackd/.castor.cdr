@@ -1,0 +1,6 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.ackd.Parameter=com.netxforge.oss2.config.ackd.descriptors.ParameterDescriptor
+com.netxforge.oss2.config.ackd.Readers=com.netxforge.oss2.config.ackd.descriptors.ReadersDescriptor
+com.netxforge.oss2.config.ackd.Reader=com.netxforge.oss2.config.ackd.descriptors.ReaderDescriptor
+com.netxforge.oss2.config.ackd.AckdConfiguration=com.netxforge.oss2.config.ackd.descriptors.AckdConfigurationDescriptor
+com.netxforge.oss2.config.ackd.ReaderSchedule=com.netxforge.oss2.config.ackd.descriptors.ReaderScheduleDescriptor

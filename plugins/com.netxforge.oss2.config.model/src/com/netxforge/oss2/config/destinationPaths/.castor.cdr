@@ -1,0 +1,6 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.destinationPaths.Target=com.netxforge.oss2.config.destinationPaths.descriptors.TargetDescriptor
+com.netxforge.oss2.config.destinationPaths.Header=com.netxforge.oss2.config.destinationPaths.descriptors.HeaderDescriptor
+com.netxforge.oss2.config.destinationPaths.Path=com.netxforge.oss2.config.destinationPaths.descriptors.PathDescriptor
+com.netxforge.oss2.config.destinationPaths.Escalate=com.netxforge.oss2.config.destinationPaths.descriptors.EscalateDescriptor
+com.netxforge.oss2.config.destinationPaths.DestinationPaths=com.netxforge.oss2.config.destinationPaths.descriptors.DestinationPathsDescriptor

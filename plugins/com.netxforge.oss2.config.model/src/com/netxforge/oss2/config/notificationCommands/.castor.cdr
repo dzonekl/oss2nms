@@ -1,0 +1,5 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.notificationCommands.Command=com.netxforge.oss2.config.notificationCommands.descriptors.CommandDescriptor
+com.netxforge.oss2.config.notificationCommands.Header=com.netxforge.oss2.config.notificationCommands.descriptors.HeaderDescriptor
+com.netxforge.oss2.config.notificationCommands.NotificationCommands=com.netxforge.oss2.config.notificationCommands.descriptors.NotificationCommandsDescriptor
+com.netxforge.oss2.config.notificationCommands.Argument=com.netxforge.oss2.config.notificationCommands.descriptors.ArgumentDescriptor

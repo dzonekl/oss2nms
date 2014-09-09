@@ -1,0 +1,10 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.map.adapter.Filter=com.netxforge.oss2.config.map.adapter.descriptors.FilterDescriptor
+com.netxforge.oss2.config.map.adapter.Csubmap=com.netxforge.oss2.config.map.adapter.descriptors.CsubmapDescriptor
+com.netxforge.oss2.config.map.adapter.ExcludeRange=com.netxforge.oss2.config.map.adapter.descriptors.ExcludeRangeDescriptor
+com.netxforge.oss2.config.map.adapter.Celement=com.netxforge.oss2.config.map.adapter.descriptors.CelementDescriptor
+com.netxforge.oss2.config.map.adapter.Cmap=com.netxforge.oss2.config.map.adapter.descriptors.CmapDescriptor
+com.netxforge.oss2.config.map.adapter.IncludeRange=com.netxforge.oss2.config.map.adapter.descriptors.IncludeRangeDescriptor
+com.netxforge.oss2.config.map.adapter.MapsAdapterConfiguration=com.netxforge.oss2.config.map.adapter.descriptors.MapsAdapterConfigurationDescriptor
+com.netxforge.oss2.config.map.adapter.Package=com.netxforge.oss2.config.map.adapter.descriptors.PackageDescriptor
+com.netxforge.oss2.config.map.adapter.Cmaps=com.netxforge.oss2.config.map.adapter.descriptors.CmapsDescriptor

@@ -1,0 +1,7 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.statsd.Package=com.netxforge.oss2.config.statsd.descriptors.PackageDescriptor
+com.netxforge.oss2.config.statsd.PackageReport=com.netxforge.oss2.config.statsd.descriptors.PackageReportDescriptor
+com.netxforge.oss2.config.statsd.Report=com.netxforge.oss2.config.statsd.descriptors.ReportDescriptor
+com.netxforge.oss2.config.statsd.StatisticsDaemonConfiguration=com.netxforge.oss2.config.statsd.descriptors.StatisticsDaemonConfigurationDescriptor
+com.netxforge.oss2.config.statsd.Parameter=com.netxforge.oss2.config.statsd.descriptors.ParameterDescriptor
+com.netxforge.oss2.config.statsd.Filter=com.netxforge.oss2.config.statsd.descriptors.FilterDescriptor

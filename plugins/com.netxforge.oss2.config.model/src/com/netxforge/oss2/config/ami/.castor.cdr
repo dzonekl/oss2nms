@@ -1,0 +1,4 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.ami.Definition=com.netxforge.oss2.config.ami.descriptors.DefinitionDescriptor
+com.netxforge.oss2.config.ami.Range=com.netxforge.oss2.config.ami.descriptors.RangeDescriptor
+com.netxforge.oss2.config.ami.AmiConfig=com.netxforge.oss2.config.ami.descriptors.AmiConfigDescriptor

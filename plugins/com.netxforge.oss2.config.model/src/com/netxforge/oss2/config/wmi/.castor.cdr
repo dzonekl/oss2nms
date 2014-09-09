@@ -1,0 +1,10 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.wmi.WmiCollection=com.netxforge.oss2.config.wmi.descriptors.WmiCollectionDescriptor
+com.netxforge.oss2.config.wmi.WmiConfig=com.netxforge.oss2.config.wmi.descriptors.WmiConfigDescriptor
+com.netxforge.oss2.config.wmi.Attrib=com.netxforge.oss2.config.wmi.descriptors.AttribDescriptor
+com.netxforge.oss2.config.wmi.Wpms=com.netxforge.oss2.config.wmi.descriptors.WpmsDescriptor
+com.netxforge.oss2.config.wmi.Wpm=com.netxforge.oss2.config.wmi.descriptors.WpmDescriptor
+com.netxforge.oss2.config.wmi.Range=com.netxforge.oss2.config.wmi.descriptors.RangeDescriptor
+com.netxforge.oss2.config.wmi.Definition=com.netxforge.oss2.config.wmi.descriptors.DefinitionDescriptor
+com.netxforge.oss2.config.wmi.WmiDatacollectionConfig=com.netxforge.oss2.config.wmi.descriptors.WmiDatacollectionConfigDescriptor
+com.netxforge.oss2.config.wmi.Rrd=com.netxforge.oss2.config.wmi.descriptors.RrdDescriptor

@@ -1,0 +1,4 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.rws.StandbyUrl=com.netxforge.oss2.config.rws.descriptors.StandbyUrlDescriptor
+com.netxforge.oss2.config.rws.BaseUrl=com.netxforge.oss2.config.rws.descriptors.BaseUrlDescriptor
+com.netxforge.oss2.config.rws.RwsConfiguration=com.netxforge.oss2.config.rws.descriptors.RwsConfigurationDescriptor

@@ -1,0 +1,3 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.databaseReports.DatabaseReports=com.netxforge.oss2.config.databaseReports.descriptors.DatabaseReportsDescriptor
+com.netxforge.oss2.config.databaseReports.Report=com.netxforge.oss2.config.databaseReports.descriptors.ReportDescriptor

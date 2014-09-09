@@ -1,0 +1,4 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.reportd.Parameter=com.netxforge.oss2.config.reportd.descriptors.ParameterDescriptor
+com.netxforge.oss2.config.reportd.ReportdConfiguration=com.netxforge.oss2.config.reportd.descriptors.ReportdConfigurationDescriptor
+com.netxforge.oss2.config.reportd.Report=com.netxforge.oss2.config.reportd.descriptors.ReportDescriptor

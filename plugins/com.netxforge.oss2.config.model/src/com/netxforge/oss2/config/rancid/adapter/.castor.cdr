@@ -1,0 +1,12 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.rancid.adapter.Time=com.netxforge.oss2.config.rancid.adapter.descriptors.TimeDescriptor
+com.netxforge.oss2.config.rancid.adapter.BasicSchedule=com.netxforge.oss2.config.rancid.adapter.descriptors.BasicScheduleDescriptor
+com.netxforge.oss2.config.rancid.adapter.Policies=com.netxforge.oss2.config.rancid.adapter.descriptors.PoliciesDescriptor
+com.netxforge.oss2.config.rancid.adapter.IncludeRange=com.netxforge.oss2.config.rancid.adapter.descriptors.IncludeRangeDescriptor
+com.netxforge.oss2.config.rancid.adapter.PolicyManage=com.netxforge.oss2.config.rancid.adapter.descriptors.PolicyManageDescriptor
+com.netxforge.oss2.config.rancid.adapter.Package=com.netxforge.oss2.config.rancid.adapter.descriptors.PackageDescriptor
+com.netxforge.oss2.config.rancid.adapter.RancidConfiguration=com.netxforge.oss2.config.rancid.adapter.descriptors.RancidConfigurationDescriptor
+com.netxforge.oss2.config.rancid.adapter.Mapping=com.netxforge.oss2.config.rancid.adapter.descriptors.MappingDescriptor
+com.netxforge.oss2.config.rancid.adapter.Schedule=com.netxforge.oss2.config.rancid.adapter.descriptors.ScheduleDescriptor
+com.netxforge.oss2.config.rancid.adapter.Filter=com.netxforge.oss2.config.rancid.adapter.descriptors.FilterDescriptor
+com.netxforge.oss2.config.rancid.adapter.ExcludeRange=com.netxforge.oss2.config.rancid.adapter.descriptors.ExcludeRangeDescriptor

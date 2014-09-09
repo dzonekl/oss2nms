@@ -1,0 +1,8 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.translator.Mapping=com.netxforge.oss2.config.translator.descriptors.MappingDescriptor
+com.netxforge.oss2.config.translator.Translation=com.netxforge.oss2.config.translator.descriptors.TranslationDescriptor
+com.netxforge.oss2.config.translator.Assignment=com.netxforge.oss2.config.translator.descriptors.AssignmentDescriptor
+com.netxforge.oss2.config.translator.EventTranslationSpec=com.netxforge.oss2.config.translator.descriptors.EventTranslationSpecDescriptor
+com.netxforge.oss2.config.translator.Mappings=com.netxforge.oss2.config.translator.descriptors.MappingsDescriptor
+com.netxforge.oss2.config.translator.EventTranslatorConfiguration=com.netxforge.oss2.config.translator.descriptors.EventTranslatorConfigurationDescriptor
+com.netxforge.oss2.config.translator.Value=com.netxforge.oss2.config.translator.descriptors.ValueDescriptor

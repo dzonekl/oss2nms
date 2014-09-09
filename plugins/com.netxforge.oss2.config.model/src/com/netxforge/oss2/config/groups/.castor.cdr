@@ -1,0 +1,10 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.groups.Groupinfo=com.netxforge.oss2.config.groups.descriptors.GroupinfoDescriptor
+com.netxforge.oss2.config.groups.Roles=com.netxforge.oss2.config.groups.descriptors.RolesDescriptor
+com.netxforge.oss2.config.groups.Time=com.netxforge.oss2.config.groups.descriptors.TimeDescriptor
+com.netxforge.oss2.config.groups.Groups=com.netxforge.oss2.config.groups.descriptors.GroupsDescriptor
+com.netxforge.oss2.config.groups.Role=com.netxforge.oss2.config.groups.descriptors.RoleDescriptor
+com.netxforge.oss2.config.groups.Group=com.netxforge.oss2.config.groups.descriptors.GroupDescriptor
+com.netxforge.oss2.config.groups.BasicSchedule=com.netxforge.oss2.config.groups.descriptors.BasicScheduleDescriptor
+com.netxforge.oss2.config.groups.Schedule=com.netxforge.oss2.config.groups.descriptors.ScheduleDescriptor
+com.netxforge.oss2.config.groups.Header=com.netxforge.oss2.config.groups.descriptors.HeaderDescriptor

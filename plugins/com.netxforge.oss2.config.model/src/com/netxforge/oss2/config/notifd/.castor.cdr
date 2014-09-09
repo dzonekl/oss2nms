@@ -1,0 +1,6 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.notifd.NotifdConfiguration=com.netxforge.oss2.config.notifd.descriptors.NotifdConfigurationDescriptor
+com.netxforge.oss2.config.notifd.AutoAcknowledge=com.netxforge.oss2.config.notifd.descriptors.AutoAcknowledgeDescriptor
+com.netxforge.oss2.config.notifd.InitParams=com.netxforge.oss2.config.notifd.descriptors.InitParamsDescriptor
+com.netxforge.oss2.config.notifd.HandlerClass=com.netxforge.oss2.config.notifd.descriptors.HandlerClassDescriptor
+com.netxforge.oss2.config.notifd.Queue=com.netxforge.oss2.config.notifd.descriptors.QueueDescriptor

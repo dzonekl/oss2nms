@@ -1,0 +1,5 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.pagesequence.Parameter=com.netxforge.oss2.config.pagesequence.descriptors.ParameterDescriptor
+com.netxforge.oss2.config.pagesequence.SessionVariable=com.netxforge.oss2.config.pagesequence.descriptors.SessionVariableDescriptor
+com.netxforge.oss2.config.pagesequence.Page=com.netxforge.oss2.config.pagesequence.descriptors.PageDescriptor
+com.netxforge.oss2.config.pagesequence.PageSequence=com.netxforge.oss2.config.pagesequence.descriptors.PageSequenceDescriptor

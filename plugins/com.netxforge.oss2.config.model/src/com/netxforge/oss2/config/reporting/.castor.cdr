@@ -1,0 +1,7 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.reporting.DefaultTime=com.netxforge.oss2.config.reporting.descriptors.DefaultTimeDescriptor
+com.netxforge.oss2.config.reporting.StringParm=com.netxforge.oss2.config.reporting.descriptors.StringParmDescriptor
+com.netxforge.oss2.config.reporting.Parameters=com.netxforge.oss2.config.reporting.descriptors.ParametersDescriptor
+com.netxforge.oss2.config.reporting.IntParm=com.netxforge.oss2.config.reporting.descriptors.IntParmDescriptor
+com.netxforge.oss2.config.reporting.Time=com.netxforge.oss2.config.reporting.descriptors.TimeDescriptor
+com.netxforge.oss2.config.reporting.DateParm=com.netxforge.oss2.config.reporting.descriptors.DateParmDescriptor

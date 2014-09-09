@@ -1,0 +1,4 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.kscReports.ReportsList=com.netxforge.oss2.config.kscReports.descriptors.ReportsListDescriptor
+com.netxforge.oss2.config.kscReports.Report=com.netxforge.oss2.config.kscReports.descriptors.ReportDescriptor
+com.netxforge.oss2.config.kscReports.Graph=com.netxforge.oss2.config.kscReports.descriptors.GraphDescriptor

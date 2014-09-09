@@ -1,0 +1,13 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.poller.ExcludeRange=com.netxforge.oss2.config.poller.descriptors.ExcludeRangeDescriptor
+com.netxforge.oss2.config.poller.IncludeRange=com.netxforge.oss2.config.poller.descriptors.IncludeRangeDescriptor
+com.netxforge.oss2.config.poller.CriticalService=com.netxforge.oss2.config.poller.descriptors.CriticalServiceDescriptor
+com.netxforge.oss2.config.poller.PollerConfiguration=com.netxforge.oss2.config.poller.descriptors.PollerConfigurationDescriptor
+com.netxforge.oss2.config.poller.Parameter=com.netxforge.oss2.config.poller.descriptors.ParameterDescriptor
+com.netxforge.oss2.config.poller.Service=com.netxforge.oss2.config.poller.descriptors.ServiceDescriptor
+com.netxforge.oss2.config.poller.Filter=com.netxforge.oss2.config.poller.descriptors.FilterDescriptor
+com.netxforge.oss2.config.poller.NodeOutage=com.netxforge.oss2.config.poller.descriptors.NodeOutageDescriptor
+com.netxforge.oss2.config.poller.Package=com.netxforge.oss2.config.poller.descriptors.PackageDescriptor
+com.netxforge.oss2.config.poller.Rrd=com.netxforge.oss2.config.poller.descriptors.RrdDescriptor
+com.netxforge.oss2.config.poller.Monitor=com.netxforge.oss2.config.poller.descriptors.MonitorDescriptor
+com.netxforge.oss2.config.poller.Downtime=com.netxforge.oss2.config.poller.descriptors.DowntimeDescriptor

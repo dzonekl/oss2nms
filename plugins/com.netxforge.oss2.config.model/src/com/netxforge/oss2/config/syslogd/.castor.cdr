@@ -1,0 +1,13 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.syslogd.ProcessMatch=com.netxforge.oss2.config.syslogd.descriptors.ProcessMatchDescriptor
+com.netxforge.oss2.config.syslogd.UeiList=com.netxforge.oss2.config.syslogd.descriptors.UeiListDescriptor
+com.netxforge.oss2.config.syslogd.SyslogdConfiguration=com.netxforge.oss2.config.syslogd.descriptors.SyslogdConfigurationDescriptor
+com.netxforge.oss2.config.syslogd.Configuration=com.netxforge.oss2.config.syslogd.descriptors.ConfigurationDescriptor
+com.netxforge.oss2.config.syslogd.HostaddrMatch=com.netxforge.oss2.config.syslogd.descriptors.HostaddrMatchDescriptor
+com.netxforge.oss2.config.syslogd.HostnameMatch=com.netxforge.oss2.config.syslogd.descriptors.HostnameMatchDescriptor
+com.netxforge.oss2.config.syslogd.Match=com.netxforge.oss2.config.syslogd.descriptors.MatchDescriptor
+com.netxforge.oss2.config.syslogd.HideMatch=com.netxforge.oss2.config.syslogd.descriptors.HideMatchDescriptor
+com.netxforge.oss2.config.syslogd.SyslogdConfigurationGroup=com.netxforge.oss2.config.syslogd.descriptors.SyslogdConfigurationGroupDescriptor
+com.netxforge.oss2.config.syslogd.HideMessage=com.netxforge.oss2.config.syslogd.descriptors.HideMessageDescriptor
+com.netxforge.oss2.config.syslogd.ParameterAssignment=com.netxforge.oss2.config.syslogd.descriptors.ParameterAssignmentDescriptor
+com.netxforge.oss2.config.syslogd.UeiMatch=com.netxforge.oss2.config.syslogd.descriptors.UeiMatchDescriptor

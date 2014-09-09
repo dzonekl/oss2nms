@@ -1,0 +1,7 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.filter.Table=com.netxforge.oss2.config.filter.descriptors.TableDescriptor
+com.netxforge.oss2.config.filter.Join=com.netxforge.oss2.config.filter.descriptors.JoinDescriptor
+com.netxforge.oss2.config.filter.Column=com.netxforge.oss2.config.filter.descriptors.ColumnDescriptor
+com.netxforge.oss2.config.filter.DatabaseSchema=com.netxforge.oss2.config.filter.descriptors.DatabaseSchemaDescriptor
+com.netxforge.oss2.config.filter.Constraint=com.netxforge.oss2.config.filter.descriptors.ConstraintDescriptor
+com.netxforge.oss2.config.filter.Alias=com.netxforge.oss2.config.filter.descriptors.AliasDescriptor

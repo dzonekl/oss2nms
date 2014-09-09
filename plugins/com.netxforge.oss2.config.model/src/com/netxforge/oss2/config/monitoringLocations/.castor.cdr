@@ -1,0 +1,4 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.monitoringLocations.Locations=com.netxforge.oss2.config.monitoringLocations.descriptors.LocationsDescriptor
+com.netxforge.oss2.config.monitoringLocations.LocationDef=com.netxforge.oss2.config.monitoringLocations.descriptors.LocationDefDescriptor
+com.netxforge.oss2.config.monitoringLocations.MonitoringLocationsConfiguration=com.netxforge.oss2.config.monitoringLocations.descriptors.MonitoringLocationsConfigurationDescriptor

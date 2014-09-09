@@ -1,0 +1,7 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.service.Attribute=com.netxforge.oss2.config.service.descriptors.AttributeDescriptor
+com.netxforge.oss2.config.service.Invoke=com.netxforge.oss2.config.service.descriptors.InvokeDescriptor
+com.netxforge.oss2.config.service.ServiceConfiguration=com.netxforge.oss2.config.service.descriptors.ServiceConfigurationDescriptor
+com.netxforge.oss2.config.service.Value=com.netxforge.oss2.config.service.descriptors.ValueDescriptor
+com.netxforge.oss2.config.service.Argument=com.netxforge.oss2.config.service.descriptors.ArgumentDescriptor
+com.netxforge.oss2.config.service.Service=com.netxforge.oss2.config.service.descriptors.ServiceDescriptor

@@ -1,0 +1,9 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.collectd.IncludeRange=com.netxforge.oss2.config.collectd.descriptors.IncludeRangeDescriptor
+com.netxforge.oss2.config.collectd.CollectdConfiguration=com.netxforge.oss2.config.collectd.descriptors.CollectdConfigurationDescriptor
+com.netxforge.oss2.config.collectd.Collector=com.netxforge.oss2.config.collectd.descriptors.CollectorDescriptor
+com.netxforge.oss2.config.collectd.Parameter=com.netxforge.oss2.config.collectd.descriptors.ParameterDescriptor
+com.netxforge.oss2.config.collectd.Filter=com.netxforge.oss2.config.collectd.descriptors.FilterDescriptor
+com.netxforge.oss2.config.collectd.ExcludeRange=com.netxforge.oss2.config.collectd.descriptors.ExcludeRangeDescriptor
+com.netxforge.oss2.config.collectd.Service=com.netxforge.oss2.config.collectd.descriptors.ServiceDescriptor
+com.netxforge.oss2.config.collectd.Package=com.netxforge.oss2.config.collectd.descriptors.PackageDescriptor

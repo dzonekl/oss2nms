@@ -1,0 +1,2 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.eventd.EventdConfiguration=com.netxforge.oss2.config.eventd.descriptors.EventdConfigurationDescriptor

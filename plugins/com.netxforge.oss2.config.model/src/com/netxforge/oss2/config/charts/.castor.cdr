@@ -1,0 +1,17 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.charts.GridLines=com.netxforge.oss2.config.charts.descriptors.GridLinesDescriptor
+com.netxforge.oss2.config.charts.ImageSize=com.netxforge.oss2.config.charts.descriptors.ImageSizeDescriptor
+com.netxforge.oss2.config.charts.BarChart=com.netxforge.oss2.config.charts.descriptors.BarChartDescriptor
+com.netxforge.oss2.config.charts.SubTitle=com.netxforge.oss2.config.charts.descriptors.SubTitleDescriptor
+com.netxforge.oss2.config.charts.Red=com.netxforge.oss2.config.charts.descriptors.RedDescriptor
+com.netxforge.oss2.config.charts.Green=com.netxforge.oss2.config.charts.descriptors.GreenDescriptor
+com.netxforge.oss2.config.charts.VtSize=com.netxforge.oss2.config.charts.descriptors.VtSizeDescriptor
+com.netxforge.oss2.config.charts.JdbcDataSet=com.netxforge.oss2.config.charts.descriptors.JdbcDataSetDescriptor
+com.netxforge.oss2.config.charts.PlotBackgroundColor=com.netxforge.oss2.config.charts.descriptors.PlotBackgroundColorDescriptor
+com.netxforge.oss2.config.charts.ChartBackgroundColor=com.netxforge.oss2.config.charts.descriptors.ChartBackgroundColorDescriptor
+com.netxforge.oss2.config.charts.HzSize=com.netxforge.oss2.config.charts.descriptors.HzSizeDescriptor
+com.netxforge.oss2.config.charts.Rgb=com.netxforge.oss2.config.charts.descriptors.RgbDescriptor
+com.netxforge.oss2.config.charts.Title=com.netxforge.oss2.config.charts.descriptors.TitleDescriptor
+com.netxforge.oss2.config.charts.SeriesDef=com.netxforge.oss2.config.charts.descriptors.SeriesDefDescriptor
+com.netxforge.oss2.config.charts.ChartConfiguration=com.netxforge.oss2.config.charts.descriptors.ChartConfigurationDescriptor
+com.netxforge.oss2.config.charts.Blue=com.netxforge.oss2.config.charts.descriptors.BlueDescriptor

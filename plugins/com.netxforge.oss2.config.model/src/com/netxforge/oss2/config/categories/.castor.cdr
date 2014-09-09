@@ -1,0 +1,7 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.categories.Categorygroup=com.netxforge.oss2.config.categories.descriptors.CategorygroupDescriptor
+com.netxforge.oss2.config.categories.Common=com.netxforge.oss2.config.categories.descriptors.CommonDescriptor
+com.netxforge.oss2.config.categories.Category=com.netxforge.oss2.config.categories.descriptors.CategoryDescriptor
+com.netxforge.oss2.config.categories.Categories=com.netxforge.oss2.config.categories.descriptors.CategoriesDescriptor
+com.netxforge.oss2.config.categories.Catinfo=com.netxforge.oss2.config.categories.descriptors.CatinfoDescriptor
+com.netxforge.oss2.config.categories.Header=com.netxforge.oss2.config.categories.descriptors.HeaderDescriptor

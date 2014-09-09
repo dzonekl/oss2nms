@@ -1,0 +1,15 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.threshd.Group=com.netxforge.oss2.config.threshd.descriptors.GroupDescriptor
+com.netxforge.oss2.config.threshd.ThresholdingConfig=com.netxforge.oss2.config.threshd.descriptors.ThresholdingConfigDescriptor
+com.netxforge.oss2.config.threshd.Filter=com.netxforge.oss2.config.threshd.descriptors.FilterDescriptor
+com.netxforge.oss2.config.threshd.Parameter=com.netxforge.oss2.config.threshd.descriptors.ParameterDescriptor
+com.netxforge.oss2.config.threshd.ResourceFilter=com.netxforge.oss2.config.threshd.descriptors.ResourceFilterDescriptor
+com.netxforge.oss2.config.threshd.Service=com.netxforge.oss2.config.threshd.descriptors.ServiceDescriptor
+com.netxforge.oss2.config.threshd.Package=com.netxforge.oss2.config.threshd.descriptors.PackageDescriptor
+com.netxforge.oss2.config.threshd.ThreshdConfiguration=com.netxforge.oss2.config.threshd.descriptors.ThreshdConfigurationDescriptor
+com.netxforge.oss2.config.threshd.ExcludeRange=com.netxforge.oss2.config.threshd.descriptors.ExcludeRangeDescriptor
+com.netxforge.oss2.config.threshd.IncludeRange=com.netxforge.oss2.config.threshd.descriptors.IncludeRangeDescriptor
+com.netxforge.oss2.config.threshd.Threshold=com.netxforge.oss2.config.threshd.descriptors.ThresholdDescriptor
+com.netxforge.oss2.config.threshd.Basethresholddef=com.netxforge.oss2.config.threshd.descriptors.BasethresholddefDescriptor
+com.netxforge.oss2.config.threshd.Thresholder=com.netxforge.oss2.config.threshd.descriptors.ThresholderDescriptor
+com.netxforge.oss2.config.threshd.Expression=com.netxforge.oss2.config.threshd.descriptors.ExpressionDescriptor

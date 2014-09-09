@@ -1,0 +1,10 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.views.Categories=com.netxforge.oss2.config.views.descriptors.CategoriesDescriptor
+com.netxforge.oss2.config.views.Member=com.netxforge.oss2.config.views.descriptors.MemberDescriptor
+com.netxforge.oss2.config.views.Header=com.netxforge.oss2.config.views.descriptors.HeaderDescriptor
+com.netxforge.oss2.config.views.View=com.netxforge.oss2.config.views.descriptors.ViewDescriptor
+com.netxforge.oss2.config.views.Category=com.netxforge.oss2.config.views.descriptors.CategoryDescriptor
+com.netxforge.oss2.config.views.Common=com.netxforge.oss2.config.views.descriptors.CommonDescriptor
+com.netxforge.oss2.config.views.Viewinfo=com.netxforge.oss2.config.views.descriptors.ViewinfoDescriptor
+com.netxforge.oss2.config.views.Views=com.netxforge.oss2.config.views.descriptors.ViewsDescriptor
+com.netxforge.oss2.config.views.Membership=com.netxforge.oss2.config.views.descriptors.MembershipDescriptor

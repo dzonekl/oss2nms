@@ -1,0 +1,12 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.javamail.SendmailMessage=com.netxforge.oss2.config.javamail.descriptors.SendmailMessageDescriptor
+com.netxforge.oss2.config.javamail.End2endMailConfig=com.netxforge.oss2.config.javamail.descriptors.End2endMailConfigDescriptor
+com.netxforge.oss2.config.javamail.ReadmailHost=com.netxforge.oss2.config.javamail.descriptors.ReadmailHostDescriptor
+com.netxforge.oss2.config.javamail.SendmailProtocol=com.netxforge.oss2.config.javamail.descriptors.SendmailProtocolDescriptor
+com.netxforge.oss2.config.javamail.SendmailHost=com.netxforge.oss2.config.javamail.descriptors.SendmailHostDescriptor
+com.netxforge.oss2.config.javamail.JavamailProperty=com.netxforge.oss2.config.javamail.descriptors.JavamailPropertyDescriptor
+com.netxforge.oss2.config.javamail.ReadmailConfig=com.netxforge.oss2.config.javamail.descriptors.ReadmailConfigDescriptor
+com.netxforge.oss2.config.javamail.SendmailConfig=com.netxforge.oss2.config.javamail.descriptors.SendmailConfigDescriptor
+com.netxforge.oss2.config.javamail.ReadmailProtocol=com.netxforge.oss2.config.javamail.descriptors.ReadmailProtocolDescriptor
+com.netxforge.oss2.config.javamail.JavamailConfiguration=com.netxforge.oss2.config.javamail.descriptors.JavamailConfigurationDescriptor
+com.netxforge.oss2.config.javamail.UserAuth=com.netxforge.oss2.config.javamail.descriptors.UserAuthDescriptor

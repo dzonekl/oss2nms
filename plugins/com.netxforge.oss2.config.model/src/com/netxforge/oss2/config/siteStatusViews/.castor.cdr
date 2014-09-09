@@ -1,0 +1,7 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.siteStatusViews.Category=com.netxforge.oss2.config.siteStatusViews.descriptors.CategoryDescriptor
+com.netxforge.oss2.config.siteStatusViews.Rows=com.netxforge.oss2.config.siteStatusViews.descriptors.RowsDescriptor
+com.netxforge.oss2.config.siteStatusViews.View=com.netxforge.oss2.config.siteStatusViews.descriptors.ViewDescriptor
+com.netxforge.oss2.config.siteStatusViews.Views=com.netxforge.oss2.config.siteStatusViews.descriptors.ViewsDescriptor
+com.netxforge.oss2.config.siteStatusViews.RowDef=com.netxforge.oss2.config.siteStatusViews.descriptors.RowDefDescriptor
+com.netxforge.oss2.config.siteStatusViews.SiteStatusViewConfiguration=com.netxforge.oss2.config.siteStatusViews.descriptors.SiteStatusViewConfigurationDescriptor

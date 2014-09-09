@@ -1,0 +1,8 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.scriptd.StopScript=com.netxforge.oss2.config.scriptd.descriptors.StopScriptDescriptor
+com.netxforge.oss2.config.scriptd.EventScript=com.netxforge.oss2.config.scriptd.descriptors.EventScriptDescriptor
+com.netxforge.oss2.config.scriptd.ReloadScript=com.netxforge.oss2.config.scriptd.descriptors.ReloadScriptDescriptor
+com.netxforge.oss2.config.scriptd.Engine=com.netxforge.oss2.config.scriptd.descriptors.EngineDescriptor
+com.netxforge.oss2.config.scriptd.Uei=com.netxforge.oss2.config.scriptd.descriptors.UeiDescriptor
+com.netxforge.oss2.config.scriptd.StartScript=com.netxforge.oss2.config.scriptd.descriptors.StartScriptDescriptor
+com.netxforge.oss2.config.scriptd.ScriptdConfiguration=com.netxforge.oss2.config.scriptd.descriptors.ScriptdConfigurationDescriptor

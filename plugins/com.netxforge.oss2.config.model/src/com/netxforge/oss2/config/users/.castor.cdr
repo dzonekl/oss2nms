@@ -1,0 +1,7 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.config.users.Contact=com.netxforge.oss2.config.users.descriptors.ContactDescriptor
+com.netxforge.oss2.config.users.Header=com.netxforge.oss2.config.users.descriptors.HeaderDescriptor
+com.netxforge.oss2.config.users.Users=com.netxforge.oss2.config.users.descriptors.UsersDescriptor
+com.netxforge.oss2.config.users.Password=com.netxforge.oss2.config.users.descriptors.PasswordDescriptor
+com.netxforge.oss2.config.users.Userinfo=com.netxforge.oss2.config.users.descriptors.UserinfoDescriptor
+com.netxforge.oss2.config.users.User=com.netxforge.oss2.config.users.descriptors.UserDescriptor

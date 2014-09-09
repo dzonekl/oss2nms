@@ -1,0 +1,5 @@
+#Wed Sep 03 15:34:26 CEST 2014
+com.netxforge.oss2.xml.rtc.Node=com.netxforge.oss2.xml.rtc.descriptors.NodeDescriptor
+com.netxforge.oss2.xml.rtc.Category=com.netxforge.oss2.xml.rtc.descriptors.CategoryDescriptor
+com.netxforge.oss2.xml.rtc.Header=com.netxforge.oss2.xml.rtc.descriptors.HeaderDescriptor
+com.netxforge.oss2.xml.rtc.EuiLevel=com.netxforge.oss2.xml.rtc.descriptors.EuiLevelDescriptor

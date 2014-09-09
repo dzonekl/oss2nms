@@ -1,0 +1,3 @@
+#Wed Sep 03 15:34:27 CEST 2014
+com.netxforge.oss2.config.trapd.Snmpv3User=com.netxforge.oss2.config.trapd.descriptors.Snmpv3UserDescriptor
+com.netxforge.oss2.config.trapd.TrapdConfiguration=com.netxforge.oss2.config.trapd.descriptors.TrapdConfigurationDescriptor
