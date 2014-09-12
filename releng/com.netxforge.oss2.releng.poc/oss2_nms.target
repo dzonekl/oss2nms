@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
-<target name="oss2_nms" sequenceNumber="1410276107">
+<target name="oss2_nms" sequenceNumber="1410363057">
   <locations>
     <location includeMode="slicer" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.jdt.source.feature.group" version="3.9.2.v20140221-1700"/>
@@ -66,7 +66,6 @@
       <unit id="org.apache.commons.lang" version="0.0.0"/>
       <unit id="dnsjava" version="0.0.0"/>
       <unit id="javax.persistence.api" version="0.0.0"/>
-      <unit id="aopalliance" version="0.0.0"/>
       <unit id="junit" version="0.0.0"/>
       <unit id="org.hibernate.annotations" version="0.0.0"/>
       <unit id="org.hibernate.commons-annotations" version="0.0.0"/>
@@ -86,6 +85,10 @@
       <unit id="org.springframework.security.core" version="0.0.0"/>
       <unit id="org.springframework.security.spring-security-crypto" version="0.0.0"/>
       <repository location="http://p2.netxforge.com/oss2/mvn.p2"/>
+    </location>
+    <location includeMode="slicer" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.aopalliance" version="0.0.0"/>
+      <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/"/>
     </location>
   </locations>
 </target>

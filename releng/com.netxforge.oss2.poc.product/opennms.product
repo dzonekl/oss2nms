@@ -8,6 +8,7 @@
 
    <launcherArgs>
       <programArgs>-console 8811 -noExit -consoleLog</programArgs>
+      <vmArgs>-Dopennms.home=/Users/Christophe/Desktop/opennms.home</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
@@ -26,6 +27,7 @@
 
    <features>
       <feature id="com.netxforge.oss2.poc.feature" version="1.0.0.qualifier"/>
+      <feature id="com.netxforge.oss2.poc.lib.feature"/>
    </features>
 
 

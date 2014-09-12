@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" immediate="true" name="com.netxforge.oss2.services">
+   <implementation class="com.netxforge.oss2.services.ds.DiscoveryComponent"/>
+   <service>
+      <provide interface="com.netxforge.oss2.services.ds.IDiscoveryComponent"/>
+   </service>
+   <reference bind="setDiscoveryConfigComponent" cardinality="1..1" interface="com.netxforge.oss2.config.ds.IDiscoveryConfigComponent" name="IDiscoveryConfigComponent" policy="static" unbind="unsetDiscoveryConfigComponent"/>
+</scr:component>

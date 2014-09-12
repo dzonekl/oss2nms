@@ -17,10 +17,6 @@
       [Enter License Description here.]
    </license>
 
-   <includes
-         id="com.netxforge.oss2.poc.lib.feature"
-         version="0.0.0"/>
-
    <plugin
          id="com.netxforge.oss2.icmp"
          download-size="0"

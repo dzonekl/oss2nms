@@ -17,6 +17,10 @@ public class NMSActivator implements BundleActivator {
 	 */
 	public void start(BundleContext bundleContext) throws Exception {
 		NMSActivator.context = bundleContext;
+		
+		// Kick start our Services here. 
+		System.out.println("starting bundle");
+		
 	}
 
 	/*
@@ -25,6 +29,7 @@ public class NMSActivator implements BundleActivator {
 	 */
 	public void stop(BundleContext bundleContext) throws Exception {
 		NMSActivator.context = null;
+		System.out.println("stoping bundle");
 	}
 
 }

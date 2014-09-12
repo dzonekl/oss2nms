@@ -14,4 +14,6 @@ Require-Bundle: com.netxforge.oss2.model;bundle-version="1.0.0",
  org.springframework.transaction;bundle-version="3.0.7",
  org.apache.commons.lang;bundle-version="2.6.0",
  com.netxforge.oss2.core;bundle-version="1.0.0"
-Export-Package: com.netxforge.oss2.config
+Export-Package: com.netxforge.oss2.config,
+ com.netxforge.oss2.config.ds
+Service-Component: OSGI-INF/discoveryconfig.xml

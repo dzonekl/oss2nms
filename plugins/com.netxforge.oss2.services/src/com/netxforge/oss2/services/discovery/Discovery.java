@@ -60,8 +60,6 @@ import com.netxforge.oss2.icmp.Pinger;
 import com.netxforge.oss2.model.discovery.IPPollAddress;
 import com.netxforge.oss2.model.events.EventBuilder;
 import com.netxforge.oss2.model.events.EventForwarder;
-//import org.opennms.netmgt.model.events.annotations.EventHandler;
-//import org.opennms.netmgt.model.events.annotations.EventListener;
 import com.netxforge.oss2.model.events.annotations.EventHandler;
 import com.netxforge.oss2.model.events.annotations.EventListener;
 import com.netxforge.oss2.xml.event.Event;
