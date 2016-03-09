@@ -774,7 +774,7 @@
     <activemqVersion>5.6.0</activemqVersion>
     <commonsBeanutilsVersion>1.8.3</commonsBeanutilsVersion>
     <commonsCodecVersion>1.7</commonsCodecVersion>
-    <commonsCollectionsVersion>3.2.1</commonsCollectionsVersion>
+    <commonsCollectionsVersion>3.2.2</commonsCollectionsVersion>
     <commonsIoVersion>2.0.1</commonsIoVersion>
     <commonsLangVersion>2.6</commonsLangVersion>
     <commonsLoggingVersion>1.1.1</commonsLoggingVersion>
